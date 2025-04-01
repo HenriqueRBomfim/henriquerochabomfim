@@ -2,6 +2,7 @@ import Image from 'next/image';
 import StoryBlock from "./components/story_block";
 import Header from "./components/header";
 import HighlightsCarousel from "./components/HighlightsCarousel";
+import PixCopyButton from "./components/PixCopyButton";
 
 export default function Home() {
   return (
@@ -139,15 +140,13 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
           reverse={true}
         />
         <StoryBlock
-          title="Motivação de estudar e me esforçar"
-          text="Meus pais sempre me motivaram a estudar, dizendo que era o melhor caminho para 
-          transformar a nossa realidade e alcançar horizontes que eles não alcançaram. Estudei 
-          em escola pública até o 9º ano do ensino fundamental mudando de escola em escola toda
-          vez que notava que não estava sendo desafiado o suficiente."
-          image="/plinio.jpg"
+          title="Site em construção"
+          text="Vou continuar adicionando a continuação da minha história aqui e melhorando o site.
+          Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
+          image="/continua.jpg"
           reverse={false}
         />
-        <StoryBlock
+        {/* <StoryBlock
           title="Base Familiar"
           text="Antes de contar quem eu me tornei e que caminho estou seguindo, vou contar 
           um pouco sobre a minha origem: Nasci em um lar cristão em que meus pais já serviam 
@@ -169,7 +168,7 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
           vez que notava que não estava sendo desafiado o suficiente."
           image="/plinio.jpg"
           reverse={false}
-        />
+        /> */}
       </div>
       
       {/* Destaques */}
@@ -178,8 +177,18 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
       {/* Doação */}
       <section id="donate" className="p-6 text-center mt-20">
         <h2 className="text-2xl font-bold">Ajude no Meu Intercâmbio</h2>
-        <p className="mt-2">Se quiser apoiar minha jornada, qualquer doação será bem-vinda!</p>
-        <button className="mt-4 bg-green-500 text-white px-6 py-2 rounded text-lg">Fazer uma Doação</button>
+        <div align="center" className='mt-4 flex justify-center items-center'>
+          <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
+            <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
+          </a>
+          <a href="https://www.linkedin.com/in/henriquerochabomfim/" target="_blank">
+            <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+          </a>
+        </div>
+        <div className="p-4">
+          <h1 className="text-2xl font-bold">Apoie minha jornada!</h1>
+          <PixCopyButton />
+        </div>
       </section>
     </div>
   );
