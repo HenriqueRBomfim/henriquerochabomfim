@@ -54,7 +54,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             </div>
           ))
         ) : (
-          <div className="relative flex flex-col items-center w-full h-[660px] overflow-hidden">
+          <div className="relative flex flex-col items-center w-full h-[660px] overflow-hidden touch-none">
             {[prevIndex, currentIndex, nextIndex].map((index, i) => {
               const isCurrent = index === currentIndex;
               const yOffset = i === 0 ? -350 : i === 2 ? 350 : 0;
@@ -74,8 +74,9 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                     scale,
                     opacity: opacityVal,
                     zIndex: isCurrent ? 10 : 1,
-                    left: '0%',
+                    left: '50%',
                     transform: 'translateX(-50%)',
+                    touchAction: 'pan-y',
                   }}
                 >
                   {isCurrent && captions[index] && (
