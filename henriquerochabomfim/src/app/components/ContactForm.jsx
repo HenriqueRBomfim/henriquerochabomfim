@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import PixCopyButton from "./PixCopyButton";
+import PixCopyButton from "./pixCopyButton";
 
 export default function ContactForm() {
   const [subject, setSubject] = useState("");

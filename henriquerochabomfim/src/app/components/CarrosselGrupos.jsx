@@ -124,6 +124,12 @@ const grupos = [
     link: "https://brasil.campus-party.org/",
   },
   {
+    logo: "/logo_life4sec.png",
+    nome: "Life4Sec",
+    cargo: "Voluntário de Organização do Evento",
+    link: "https://life4sec.com.br/",
+  },
+  {
     logo: "/logo_hackersec.png",
     nome: "Hackersec",
     cargo: "Voluntário de Organização do Evento",

@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import StoryBlock from "./components/story_block";
+import StoryBlock from "./components/storyBlock";
 import Header from "./components/header";
-import HighlightsCarousel from "./components/HighlightsCarousel";
-import PixCopyButton from "./components/PixCopyButton";
-import CarrosselGrupos from './components/CarrosselGrupos';
-import ContactForm from "./components/ContactForm";
+import HighlightsCarousel from "./components/highlightsCarousel";
+import PixCopyButton from "./components/pixCopyButton";
+import CarrosselGrupos from './components/carrosselGrupos';
+import ContactForm from "./components/contactForm";
 
 export default function Home() {
   return (
@@ -185,7 +185,7 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
         <StoryBlock
           title="2º Semestre (2022.2)
 "
-          text="No segundo semestre, apliquei para o processo seletivo do Insper Coding e fui aprovado como membro de Visão Computacional com IA, momento em que comecei a estudar sobre PyTorch e TensorFlow, e para o time de desenvolvimento de jogos com Unity. Também fui reeleito como líder de sala. /n
+          text="No segundo semestre, apliquei para o processo seletivo do Insper Coding e fui aprovado como membro de Visão Computacional com IA, momento em que comecei a estudar sobre PyTorch e TensorFlow, e para o time de desenvolvimento de jogos com Unity. Nesse momento, o Insper Coding tinha cerca de 12 membros. Também fui reeleito como líder de sala. /n
 Nesse semestre, o Grupo de Ação Social (GAS) do Insper estava iniciando as aulas de programação em Python e desenvolvimento web com HTML e CSS para comunidades carentes economicamente e precisavam de alunos do Insper que pudessem dar essas aulas de forma voluntária. Me candidatei e fui aprovado como professor de Python. Desde esse momento em 2022.2, eu nunca mais parei de ser professor de programação e web dev com eles, sempre atendendo novas turmas em institutos diferentes, atualmente já tendo ajudado a formar cerca de 100 alunos. Essa é uma experiência que reforçou minha satisfação em ver que estou sendo útil para ajudar o próximo e o quanto é possível aprender enquanto ensino.
 "
           image={["/coding_2semestre.png", "/gas_1.png"]}
@@ -219,7 +219,7 @@ Fui à conferência anual do Four Summit, um evento do Instituto Four que dura v
 Também passei 2 dias inteiros na sede da consultora global McKinsey, nas Corporate Towers da Faria Lima, para aprender sobre gestão de processos, design de ambiente de desenvolvimento e a importância de uma boa organização da equipe. /n
 Fui a um evento do Ismart na Amazon, ao lado do shopping JK Iguatemi, para conhecer o processo de estágio regular dessa empresa e receber dicas para processos seletivos globais. /n
 Nesse período, também conclui minha trilha de liderança internacional da Aspire Leaders Program from Harvard Business School. /n
-Continuei como professor do GAS, membro do Apoio Acadêmico do comitê de bolsistas, líder de sala e Diretor de Game Dev no Insper Coding, além de que me tornei Presidente do Insper Academy. Até este momento, eu já tinha 252 horas de atividade complementar e os 200 pontos de engajamento para intercâmbio.
+Continuei como professor do GAS, membro do Apoio Acadêmico do comitê de bolsistas, líder de sala e Diretor de Game Dev no Insper Coding, além de que me tornei Presidente do Insper Academy. Até este momento, eu já tinha 252 horas de atividade complementar e atingi os 200 pontos de engajamento para intercâmbio (200 é o limite do quanto um aluno do Insper pode usar suas horas complementares para aumentar suas chances de conseguir uma vaga de intercâmbio.)
 "
           image={["/foursummit1.jpeg", "/mckinsey.jpeg", "/amazon.jpeg", "/aspire_certificado.png"]}
           caption={[
@@ -257,6 +257,77 @@ Virei membro da Insper Sec, continuei como professor do GAS, Diretor do Apoio Ac
           ]}
           reverse={true}
         />
+        <h2 className="text-2xl font-bold mb-2 text-center">Férias (2024.1 – 2024.2)</h2>
+        <StoryBlock
+          title="Campus Party (2024.1 – 2024.2)"
+          text="Durante as férias entre 2024.1 e 2024.2, trabalhei como voluntário da Life4Sec em dois eventos: Campus Party SP 2024 e HackerSec Conference 2024. /n
+Em relação à Campus Party, participei de todos os dias do evento, tendo ajudado na bancada da Life4Sec, atraindo pessoas para conhecerem essa comunidade de Cyber Segurança e ajudando na organização geral do evento. /n
+Tive a oportunidade de encontrar pessoas famosas nesse evento, como o Peter Jordan, do canal Ei Nerd, o Gustavo Guanabara, do canal Curso em Vídeo e o Domingos dos Santos, matemático e astrônomo. /n
+"
+          image={["/cppeter.jpeg", "/cpguanabara.jpeg", "/cpkaua.jpeg"]}
+          caption={[
+            "Eu com o Peter Jordan",
+            "Eu com o Gustavo Guanabara",
+            "Eu com o Kauã, da comunidade Life4Sec",
+          ]}
+          reverse={false}
+        />
+        <StoryBlock
+          title="Conferência Gestão e Inovação (2024.1 – 2024.2)"
+          text="Em julho de 2024, participei da Conferência Gestão e Inovação da Fundação Estudar, após ser aprovado no processo seletivo. O evento começou com uma palestra inspiradora de André Barrence, Head do Google for Startups, que compartilhou sua trajetória e valores — destacando frases como “Não busque a perfeição, busque o progresso”. Ao longo do dia, reencontrei amigos do Ismart e conheci pessoas incríveis, como Júlia Cerqueira Santos, Breno Santos e Raissa Paula. /n
+Participei de talks sobre sustentabilidade, inovação e colaboração, com representantes de empresas como Itaú, Stone, Danone, Suzano e Lojas Renner. Consegui conexões importantes, como Fabio Guido (Itaú) e Carolina da Costa (Stone), que enriqueceram muito a experiência com suas histórias e conselhos valiosos. Também foi um prazer conhecer líderes como Luiz Fernando Silva Neto e Beatriz Claudino, com trajetórias admiráveis. /n
+Durante os intervalos, conversei com representantes de empresas como Ambev, Wiz Co., Inspira e outras, explorando oportunidades futuras e formas de contribuir. O evento foi uma oportunidade única de aprendizado e networking com pessoas brilhantes, e saí inspirado a continuar participando de iniciativas transformadoras.
+"
+          image={["wcgi.jpeg","/cgi1.jpeg", "/cgi2.jpeg"]}
+          caption={[
+            "Workshop para a Gestão e Inovação",
+            "Eu com o pessoal da Conferência Gestão e Inovação",
+            "Eu com mais amigos da Conferência Gestão e Inovação",
+          ]}
+          reverse={true}
+        />
+        <StoryBlock
+          title="Contando sobre o mundo universitário para os vestibulandos do Ismart (2024.1 – 2024.2)"
+          text="Fui a um evento do Ismart no Inteli em que ajudei dezenas de jovens vestibulandos com a escolha de universidade, vestibular, oportunidades de desenvolvimento pessoal e profissional, dicas de como aproveitar a faculdade e muito mais. /n
+Foi bem gratificante ver que motivei eles a ser esforçarem e os ajudei a decidir, um dos participantes desse dia até passou no vestibular do Insper e veio me contar sobre isso no encontro de boas-vindas dos bolsistas no Insper.
+"
+          image={["inteli0.jpeg","/inteli1.jpeg", "/inteli2.jpeg"]}
+          caption={[
+            "Eu na entrada do Inteli",
+            "Eu com vestibulandos do Ismart",
+            "Eu com mais vestibulandos do Ismart",
+          ]}
+          reverse={false}
+        />
+        <StoryBlock
+          title="Evento sobre estágio no Itaú (2024.1 – 2024.2)"
+          text="Fui a um evento na sede do banco Itaú. Nesse momento, conheci vários estagiários desse banco, recebi várias dicas de carreira e um panorama geral sobre como ser estagiário deles."
+          image={["itau.jpeg","/itau2.jpeg"]}
+          caption={[
+            "Eu com amigos do Ismart na sede do Itaú",
+            "Plateia do evento",
+          ]}
+          reverse={true}
+        />
+        <StoryBlock
+          title="6º Semestre (2024.2)"
+          text="Assim que esse semestre começou, fui aprovado no processo seletivo da Fundação Estudar como voluntário no Summer Job, cargo em que durante algumas semanas fiquei responsável por divulgar e vender o curso Liderança na Prática. No fim, fiquei em 4º lugar do time de Summers, tendo vendido o curso por pelo menos R$180,00 para 10 pessoas e conseguido 2 isenções de custo. /n
+Quando as aulas começaram, eu fiz uma parceria entre o time de tecnologia da Boston Consulting Group (BCG X), o Insper Coding e o Insper Data. Com isso, fizemos um evento de explicação sobre o processo de estágio regular nessa empresa de consultoria que atraiu 46 universitários ao evento. /n
+Nesse semestre, eu tinha criado setores no Insper Academy, ainda como presidente: Semana de Introdução, Raposa Fluente e Semana Academy. A Semana de Introdução foi um evento em que alunos veteranos de todos os cursos do Insper puderam dar dicas aos calouros sobre como ir bem nas matérias mais difíceis, esse evento começou a ter recorrência semestral. O Raposa Fluente se tornou o primeiro clube de idiomas no Insper, em que através de conversas e interações 100% em inglês e prática de questões de provas de proficiência, ajudamos dezenas de alunos a aumentarem suas chances de conseguir nota o bastante para fazer intercâmbio ou obter um certificado de proficiência. A Semana Academy foi um evento que ocorreu durante a Semana Transforme, tendo como objetivo incentivar outras organizações estudantis a divulgarem seus conhecimentos e arrecadarem doações ao programa de bolsas do Insper. /n
+Fui buddy de um universitário da Catalunia, em que durante esse semestre nós interagimos em inglês e participamos de atividades de integração cultural para ele conhecer melhor o Brasil. /n
+Fui chamado pela Life4Sec para trabalhar voluntariamente na organização do evento anual HackerSec Conference. Nesse evento, ouvi diversas palestras sobre o mundo da Cyber Segurança e pude conversar com o CEO da HackerSec, Andrew Martinez. Posteriormente, fiz uma parceria da Insper Sec com o Andrew Martinez e organizamos um evento de Cyber Segurança no Insper. /n
+Neste semestre, após 1 ano e meio como Diretor de Games e 6 meses como Vice-Presidente, me tornei Presidente do Insper Coding. Essa organização passou de 12 membros em 2022.2 para 46 membros ativos em 2024.2 fazendo projetos de qualidade em Web Development, Jogos Digitais e outras soluções com tecnologia. Sou muito grato à gestão de 2024.2 e 2025.1, todos fazem muito bem suas responsabilidades e me ajudaram a não ficar tão sobrecarregado com as tarefas de gestão do Coding. /n
+Continuei como Diretor do Apoio Acadêmico do Comitê de Bolsistas do Insper, fazendo tours, líder de sala, professor de programação do GAS Informar, membro da Insper Sec e alcancei a marca de X horas complementares, continuando com os 200 pontos de intercâmbio. 
+"
+          image={["/summerfundacao.jpeg", "/timesummer.jpeg", "/eventobcg.jpeg", "/semanadeintroducao.jpeg", "/buddies.jpeg", "/hackersec.jpeg", "/hackersecandrew.jpeg", "/codingdiretor.jpeg", "/codinginaugural.jpeg"]}
+          caption={[
+            "Eu com amigos do Insper, Ismart e com o CEO do Instituto Four",
+            "Eu e a Dri na sede da McKinsey",
+            "Eu na Amazon",
+            "Certificado da Aspire Leaders Program",
+          ]}
+          reverse={false}
+        />
         <StoryBlock
           title="Site em construção"
           text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
@@ -264,7 +335,6 @@ Virei membro da Insper Sec, continuei como professor do GAS, Diretor do Apoio Ac
           image="/continua.jpg"
           reverse={false}
         />
-        
       </div>
       
       {/* Destaques */}
