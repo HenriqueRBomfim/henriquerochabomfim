@@ -33,11 +33,11 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
   return (
     <Wrapper
       {...wrapperProps}
-      className={`flex flex-col md:flex-row items-center gap-8 py-16 px-8 max-w-5xl mx-auto ${
+      className={`flex flex-col md:flex-row items-center gap-8 py-16 px-4 sm:px-6 max-w-6xl mx-auto ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
-      <div className="md:w-1/2 flex flex-col items-center gap-4">
+      <div className="md:w-1/2 w-full flex flex-col items-center gap-4">
         {images.length <= 2 ? (
           images.map((img, idx) => (
             <div key={idx} className="flex flex-col items-center">
@@ -54,7 +54,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             </div>
           ))
         ) : (
-          <div className="relative flex flex-col items-center w-full h-[660px] overflow-hidden touch-none">
+          <div className="relative flex flex-col items-center w-full h-[80vh] max-h-[700px] overflow-hidden touch-none">
             {[prevIndex, currentIndex, nextIndex].map((index, i) => {
               const isCurrent = index === currentIndex;
               const yOffset = i === 0 ? -350 : i === 2 ? 350 : 0;
@@ -68,15 +68,18 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                   dragConstraints={{ top: 0, bottom: 0 }}
                   onDragEnd={handleDragEnd}
                   onClick={() => setCurrentIndex(index)}
-                  className="absolute cursor-pointer flex flex-col items-center"
-                  style={{
+                  animate={{
                     y: yOffset,
                     scale,
                     opacity: opacityVal,
+                  }}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  className="absolute cursor-pointer flex flex-col items-center w-full px-4"
+                  style={{
                     zIndex: isCurrent ? 10 : 1,
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    touchAction: 'pan-y',
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    touchAction: "pan-y",
                   }}
                 >
                   {isCurrent && captions[index] && (
@@ -87,7 +90,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                   <img
                     src={images[index]}
                     alt={`${title} - ${index}`}
-                    className="rounded-xl shadow-md w-[90%] max-w-4xl object-cover"
+                    className="rounded-xl shadow-md w-full max-w-2xl object-cover"
                   />
                 </motion.div>
               );
@@ -96,7 +99,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
         )}
       </div>
 
-      <div className="md:w-1/2 text-center md:text-left">
+      <div className="md:w-1/2 w-full text-center md:text-left px-4">
         <h2 className="text-2xl font-bold mb-4 space-y-2">
           {title.split("/n").map((line, index) => (
             <p key={index}>{line}</p>
@@ -109,7 +112,9 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                 "The Final Recipes - Minecraft Mods - CurseForge",
                 ""
               )}
-              {paragraph.includes("The Final Recipes - Minecraft Mods - CurseForge") && (
+              {paragraph.includes(
+                "The Final Recipes - Minecraft Mods - CurseForge"
+              ) && (
                 <a
                   href="https://www.curseforge.com/minecraft/mc-mods/the-final-recipes"
                   target="_blank"
