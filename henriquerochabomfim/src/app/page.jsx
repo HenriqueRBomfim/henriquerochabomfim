@@ -69,6 +69,7 @@ export default function Home() {
           Ingolstadt, lugar onde, após um esforço de anos, conquistei 1 das 5 vagas de 
           intercâmbio disponíveis para cursar disciplinar de tecnologia e negócios na Alemanha."
           image="/Henrique Rocha Bomfim.jpeg"
+          caption="Eu"
           reverse={false}
         />
         <StoryBlock
@@ -84,6 +85,7 @@ export default function Home() {
            Tenho um irmão gêmeo que conseguiu bolsa de estudos pelo ProUni para cursar Arquitetura 
            e Urbanismo na Universidade Presbiteriana Mackenzie e uma irmã mais nova no ensino fundamental."
           image="/familia.jpeg"
+          caption="Minha família S2"
           reverse={true}
         />
         <StoryBlock
@@ -93,12 +95,14 @@ export default function Home() {
           em escola pública até o 9º ano do ensino fundamental mudando de escola em escola toda
           vez que notava que não estava sendo desafiado o suficiente."
           image="/plinio.jpg"
+          caption="Eu fazendo um projeto social para crianças no ensino fundamental"
           reverse={false}
         />
         <StoryBlock
           title="Conhecendo e ingressando no ISMART (2018)"
           text="No 9º ano, estudando na EMEF Plínio de Queiroz, escola pública no Parque Boa Esperança, conheci o ISMART (Instituto Social para Motivar Apoiar e Reconhecer Talentos), uma ONG que desde 1999 vem buscando jovens talentos e oferece bolsas de estudo integrais (100%) para o ensino médio em colégios particulares de excelência para quem passar no longo processo seletivo no 7º ou 9º ano do fundamental. /n Após passar por 5 etapas, incluindo provas de português, matemática, lógica, entrevista individual, entrevista com a família e desafio de trabalho em grupo, ao longo de 2018, consegui finalizar o processo seletivo e garantir minha vaga no Colégio Objetivo da Avenida Paulista para cursar o ensino médio."
           image="/ismart.jpg"
+          caption="Parceiros do Ismart"
           reverse={true}
         />
         <StoryBlock
@@ -177,35 +181,61 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
           reverse={true}
         />
         <StoryBlock
+          title="2º Semestre (2022.2)
+"
+          text="No segundo semestre, apliquei para o processo seletivo do Insper Coding e fui aprovado como membro de Visão Computacional com IA, momento em que comecei a estudar sobre PyTorch e TensorFlow, e para o time de desenvolvimento de jogos com Unity. Também fui reeleito como líder de sala. /n
+Nesse semestre, o Grupo de Ação Social (GAS) do Insper estava iniciando as aulas de programação em Python e desenvolvimento web com HTML e CSS para comunidades carentes economicamente e precisavam de alunos do Insper que pudessem dar essas aulas de forma voluntária. Me candidatei e fui aprovado como professor de Python. Desde esse momento em 2022.2, eu nunca mais parei de ser professor de programação e web dev com eles, sempre atendendo novas turmas em institutos diferentes, atualmente já tendo ajudado a formar cerca de 100 alunos. Essa é uma experiência que reforçou minha satisfação em ver que estou sendo útil para ajudar o próximo e o quanto é possível aprender enquanto ensino.
+"
+          image={["/coding_2semestre.png", "/gas_1.png"]}
+          caption={[
+            "Apresentação de jogos do Insper Coding",
+            "Aula de Python que fiz pelo GAS em 2022.2",
+          ]}
+          reverse={false}
+        />
+        <StoryBlock
+          title="3º Semestre (2023.1)"
+          text="No terceiro semestre, após o atual presidente e diretor de desenvolvimento de jogos do Insper Coding ter sido aprovado para um intercâmbio, ele abriu a oportunidade dos membros atuais se candidatarem para ocupar o cargo de Diretor de Game Dev. Eu estava iniciando meu terceiro semestre, não tinha tanta experiência ainda com esse assunto, mas tomei a decisão arriscada de me candidatar para gerenciar as equipes, projetos e capacitações desse setor naquela época. Com isso, no fim das contas, me tornei o novo Diretor de Game Dev no Insper Coding em 2023.1. /n
+
+Nesse semestre, eu e meu amigo Humberto criamos a organização estudantil Insper Academy, que na época era voltada à preparação de alunos universitários para competirem nas olimpíadas de matemática de nível superior. Meu amigo ficou como Presidente e eu como Vice-Presidente. Essa organização mudou muito com o tempo, mas o processo de criar uma organização foi bem interessante. /n
+Também participei do Desafio do Design (DD), que é o primeiro momento da segunda etapa do vestibular do Insper, onde diversos alunos veteranos fazem atividades para tranquilizar os candidatos antes das etapas avaliativas. /n
+Além disso, entrei para o time de Apoio Acadêmico do Comitê de Bolsistas, pois eu gostava de dar aulas sobre os conteúdos que eu ia bem, mas que via alguns colegas com dificuldade em aprender. /n
+Fui reeleito como líder de sala e continuei como professor de programação voluntário do GAS. Somando todas as atividades que fiz nesse semestre, consegui 97 horas de atividade extracurricular em 2023.1.
+"
+          image={["/coding_3.png", "/academy2023.1.png", "/dd2023.1.jpeg"]}
+          caption={[
+            "Apresentação do Roguelike Dungeons do Insper Coding na Semana Transforme",
+            "Anúncio de criação da Insper Academy",
+            "Eu com alguns alunos do DD",
+          ]}
+          reverse={true}
+        />
+        <StoryBlock
+          title="4º Semestre (2023.2)"
+          text="Nesse semestre, comecei a ir em conferências de inovação, liderança e tecnologia, além de diversos eventos com o Ismart. /n
+Fui à conferência anual do Four Summit, um evento do Instituto Four que dura vários dias e reúne diversos líderes do mercado para discutir sobre inovação, tecnologia, liderança e sustentabilidade.   /n
+Também passei 2 dias inteiros na sede da consultora global McKinsey, nas Corporate Towers da Faria Lima, para aprender sobre gestão de processos, design de ambiente de desenvolvimento e a importância de uma boa organização da equipe. /n
+Fui a um evento do Ismart na Amazon, ao lado do shopping JK Iguatemi, para conhecer o processo de estágio regular dessa empresa e receber dicas para processos seletivos globais. /n
+Nesse período, também conclui minha trilha de liderança internacional da Aspire Leaders Program from Harvard Business School. /n
+Continuei como professor do GAS, membro do Apoio Acadêmico do comitê de bolsistas, líder de sala e Diretor de Game Dev no Insper Coding, além de que me tornei Presidente do Insper Academy. Até este momento, eu já tinha 252 horas de atividade complementar e os 200 pontos de engajamento para intercâmbio.
+"
+          image={["/foursummit1.jpeg", "/mckinsey.jpeg", "/amazon.jpeg", "/aspire_certificado.png"]}
+          caption={[
+            "Eu com amigos do Insper, Ismart e com o CEO do Instituto Four",
+            "Eu e a Dri na sede da McKinsey",
+            "Eu na Amazon",
+            "Certificado da Aspire Leaders Program",
+          ]}
+          reverse={false}
+        />
+        <StoryBlock
           title="Site em construção"
           text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
           Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
           image="/continua.jpg"
           reverse={false}
         />
-        {/* <StoryBlock
-          title="Base Familiar"
-          text="Antes de contar quem eu me tornei e que caminho estou seguindo, vou contar 
-          um pouco sobre a minha origem: Nasci em um lar cristão em que meus pais já serviam 
-          a Deus na Congregação Cristão no Brasil (CCB). Meu pai nasceu e foi criado no interior
-           de uma cidade da Bahia, tendo estudado apenas até a 5ª série do ensino fundamental e 
-           trabalha em um mercado atacadista. Minha mãe sempre foi de São Paulo, SP, e estudou 
-           até o nível técnico em enfermagem, sempre se esforçando para trabalhar em hospitais 
-           cada vez melhores e fazendo cursos que a desenvolveram na área. Tenho um irmão gêmeo 
-           que está cursando Arquitetura e Urbanismo na Universidade Presbiteriana Mackenzie e 
-           uma irmã mais nova no ensino fundamental."
-          image="/familia.jpeg"
-          reverse={true}
-        />
-        <StoryBlock
-          title="Motivação de estudar e me esforçar"
-          text="Meus pais sempre me motivaram a estudar, dizendo que era o melhor caminho para 
-          transformar a nossa realidade e alcançar horizontes que eles não alcançaram. Estudei 
-          em escola pública até o 9º ano do ensino fundamental mudando de escola em escola toda
-          vez que notava que não estava sendo desafiado o suficiente."
-          image="/plinio.jpg"
-          reverse={false}
-        /> */}
+        
       </div>
       
       {/* Destaques */}

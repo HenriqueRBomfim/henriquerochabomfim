@@ -7,9 +7,12 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center center"]
+    offset: ["start end", "center center"],
   });
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
+  const images = Array.isArray(image) ? image : [image];
+  const captions = Array.isArray(caption) ? caption : [caption];
 
   return (
     <motion.div
@@ -19,11 +22,21 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
-      <div className="md:w-1/2 flex flex-col items-center">
-        <img src={image} alt={title} className="rounded-xl shadow-lg w-full max-w-sm" />
-        {caption && (
-          <p className="text-sm text-gray-500 mt-2 text-center">{caption}</p>
-        )}
+      <div className="md:w-1/2 flex flex-col items-center gap-4">
+        {images.map((img, idx) => (
+          <div key={idx} className="flex flex-col items-center">
+            <img
+              src={img}
+              alt={`${title} - ${idx + 1}`}
+              className="rounded-xl shadow-lg w-full max-w-sm"
+            />
+            {captions[idx] && (
+              <p className="text-sm text-gray-500 mt-2 text-center">
+                {captions[idx]}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-2xl font-bold mb-4 space-y-2">
@@ -31,7 +44,6 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             <p key={index}>{line}</p>
           ))}
         </h2>
-
         <div className="text-lg text-gray-700 space-y-4">
           {text.split("/n").map((paragraph, index) => (
             <p key={index}>
