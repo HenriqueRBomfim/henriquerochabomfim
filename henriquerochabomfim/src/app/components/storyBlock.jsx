@@ -74,7 +74,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                     scale,
                     opacity: opacityVal,
                     zIndex: isCurrent ? 10 : 1,
-                    left: '50%',
+                    left: '0%',
                     transform: 'translateX(-50%)',
                   }}
                 >
