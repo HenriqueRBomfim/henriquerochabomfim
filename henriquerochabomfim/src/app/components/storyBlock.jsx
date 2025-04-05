@@ -54,7 +54,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             </div>
           ))
         ) : (
-          <div className="relative flex flex-col items-center w-full h-[80vh] max-h-[700px] overflow-hidden touch-none">
+          <div className="relative flex flex-col items-center justify-center w-full h-[80vh] max-h-[700px] overflow-hidden touch-none">
             {[prevIndex, currentIndex, nextIndex].map((index, i) => {
               const isCurrent = index === currentIndex;
               const yOffset = i === 0 ? -350 : i === 2 ? 350 : 0;
@@ -74,7 +74,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                     opacity: opacityVal,
                   }}
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  className="absolute cursor-pointer flex flex-col items-center w-full px-4"
+                  className="absolute cursor-pointer flex flex-col items-center w-[90%] max-w-xl px-4"
                   style={{
                     zIndex: isCurrent ? 10 : 1,
                     left: "50%",
@@ -90,7 +90,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                   <img
                     src={images[index]}
                     alt={`${title} - ${index}`}
-                    className="rounded-xl shadow-md w-full max-w-2xl object-cover"
+                    className="rounded-xl shadow-md w-full object-cover"
                   />
                 </motion.div>
               );
