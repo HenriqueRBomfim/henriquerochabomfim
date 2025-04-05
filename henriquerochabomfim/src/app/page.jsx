@@ -16,7 +16,7 @@ export default function Home() {
       <section className="h-screen flex flex-col justify-center items-center text-center p-3 mt-5 relative overflow-hidden">
         {/* Imagem de fundo com opacidade */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-80"
+          className="absolute inset-0 bg-cover bg-center opacity-100"
           style={{ backgroundImage: "url('/banner1.png')" }}
         ></div>
 
