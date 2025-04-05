@@ -13,11 +13,14 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
 
   const images = Array.isArray(image) ? image : [image];
   const captions = Array.isArray(caption) ? caption : [caption];
+  const useOpacity = images.length <= 2;
+
+  const Wrapper = useOpacity ? motion.div : "div";
+  const wrapperProps = useOpacity ? { ref, style: { opacity } } : { ref };
 
   return (
-    <motion.div
-      ref={ref}
-      style={{ opacity }}
+    <Wrapper
+      {...wrapperProps}
       className={`flex flex-col md:flex-row items-center gap-8 py-16 px-8 max-w-5xl mx-auto ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
@@ -65,7 +68,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </Wrapper>
   );
 };
 

@@ -231,6 +231,33 @@ Continuei como professor do GAS, membro do Apoio Acadêmico do comitê de bolsis
           reverse={false}
         />
         <StoryBlock
+          title="5º Semestre (2024.1)"
+          text="Já comecei esse semestre apresentando o Insper Coding em inglês para os intercambistas que vieram ao Insper. Cerca de 70 intercambistas vêm estudar no Insper por 6 meses todo semestre. /n
+Como projeto da disciplina de Computação Embarcada, eu e meu amigo Raul fizemos um controle Bluetooth para controlar o jogo Palworld sem precisar de cabos. Foi um projeto em que pratiquei bastante sobre design, Raspberry PI Pico e outras tecnologias. /n
+Houve também uma competição do Ismart em que universitários receberam o desafio de divulgar o Ismart no máximo possível de escolas de ensino fundamental, a fim de trazer novos talentos para o programa, aumentar as conexões entre os alunos formados e os que estão estudando e fortalecer a comunidade. Eu e minha equipe Ordem do Falcão ficamos em 3º lugar dentre todas as equipes de São Paulo, além de termos sido premiados na Sede do Ifood em Osasco. /n
+"
+          image={["/intercambistas.jpg", "/palworld.jpeg", "/ismartordem.jpeg"]}
+          caption={[
+            "Eu apresentando o Insper Coding para os intercambistas",
+            "Projeto de controle Bluetooth para o jogo Palworld",
+            "Eu e os finalistas na premiação do Ismart",
+          ]}
+          reverse={true}
+        />
+        <StoryBlock
+          title=""
+          text="Nesse momento, eu também estava finalizando meu curso de análise de dados com Python na Bloomberg junto com amigos do Ismart. Como projeto final do curso, eu e alguns amigos fizemos o NutriU, um protótipo de aplicativo de nutrição personalizado e que foi muito aclamado pelo time da Bloomberg. /n
+Virei membro da Insper Sec, continuei como professor do GAS, Diretor do Apoio Acadêmico do comitê de bolsistas, líder de sala, virei Vice-Presidente e continuei como Diretor de Game Dev no Insper Coding, Presidente do Insper Academy. Até este momento, eu já tinha 395 horas de atividade complementar e os 200 pontos de engajamento para intercâmbio.
+"
+          image={["/nutriu.jpeg", "/bloomberg.jpeg", "/gas.jpeg"]}
+          caption={[
+            "Aplicativo NutriU",
+            "Eu e os formados do curso na Bloomberg",
+            "Eu com os alunos do GAS",
+          ]}
+          reverse={true}
+        />
+        <StoryBlock
           title="Site em construção"
           text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
           Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
