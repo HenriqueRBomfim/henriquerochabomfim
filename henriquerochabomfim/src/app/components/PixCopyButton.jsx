@@ -17,7 +17,7 @@ export default function PixCopyButton() {
 
   return (
     <div>
-      <p className="mt-2">Se quiser apoiar minha jornada, qualquer doação será bem-vinda!</p>
+      <p className="mt-2">Se puder apoiar minha jornada, qualquer doação será bem-vinda!</p>
       <p className="mt-2">Me ajude a fazer intercâmbio ao transferir para este PIX: {pixKey}</p>
       <button 
         onClick={copyToClipboard} 

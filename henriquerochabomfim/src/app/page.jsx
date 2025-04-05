@@ -4,6 +4,7 @@ import Header from "./components/header";
 import HighlightsCarousel from "./components/HighlightsCarousel";
 import PixCopyButton from "./components/PixCopyButton";
 import CarrosselGrupos from './components/CarrosselGrupos';
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -164,7 +165,8 @@ Em relação às olimpíadas nesse momento, fiz a OBA, OBR e ONC, desta vez conq
 Insper, um novo mundo de possibilidades
 "
           text="Chegando ao Insper, tive meu segundo choque de realidade: Passei de conviver com pessoas de classe média alta a classe alta para pessoas da elite brasileira. Porém, o choque durou pouco tempo tendo em vista que eu me acostumei com isso durante o ensino médio. /n
-O Insper parecia um universo de possibilidades, muito além do que eu jamais sonhei em alcançar. Com uma infraestrutura extraordinária e muitos laboratórios para me preparar na prática como engenheiro de computação. Contando com professores incríveis e pessoas de diversos estados do Brasil, comecei a explorar as oportunidades desde o primeiro semestre.
+O Insper parecia um universo de possibilidades, muito além do que eu jamais sonhei em alcançar. Com uma infraestrutura extraordinária e muitos laboratórios para me preparar na prática como engenheiro de computação. Contando com professores incríveis e pessoas de diversos estados do Brasil, comecei a explorar as oportunidades desde o primeiro semestre. /n
+Obs: Leve em consideração que tudo o que eu fiz a partir de agora foi morando na Vila Ré, a cerca de 1h25 do Insper.
 "
           image="/insper2.jpg"
           caption="Uma sala harvard do Insper"
@@ -242,21 +244,7 @@ Continuei como professor do GAS, membro do Apoio Acadêmico do comitê de bolsis
       <HighlightsCarousel />
       
       {/* Doação */}
-      <section id="donate" className="p-6 text-center mt-20">
-        <h2 className="text-2xl font-bold">Ajude no Meu Intercâmbio</h2>
-        <div align="center" className='mt-4 flex justify-center items-center'>
-          <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-          </a>
-          <a href="https://www.linkedin.com/in/henriquerochabomfim/" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-          </a>
-        </div>
-        <div className="p-4">
-          <h1 className="text-2xl font-bold">Apoie minha jornada até a Alemanha!</h1>
-          <PixCopyButton />
-        </div>
-      </section>
+      <ContactForm />
     </div>
   );
 }
