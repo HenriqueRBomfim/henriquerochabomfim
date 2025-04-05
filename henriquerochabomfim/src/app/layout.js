@@ -19,12 +19,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body
-        className=
-        {`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link rel="icon" href="/logo.png" />
+        <title>Henrique Rocha Bomfim</title>
+        <meta
+          name="description"
+          content="Tudo sobre Henrique Rocha Bomfim, estudante de engenharia da computação no Insper."
+        />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
   );
 }
+

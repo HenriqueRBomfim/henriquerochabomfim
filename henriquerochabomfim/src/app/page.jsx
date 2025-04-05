@@ -97,7 +97,7 @@ export default function Home() {
         />
         <StoryBlock
           title="Conhecendo e ingressando no ISMART (2018)"
-          text="No 9º ano, estudando na EMEF Plínio de Queiroz, escola pública no Parque Boa Esperança em que sou muito grato pelo apoio dos professores e amigos, conheci o ISMART (Instituto Social para Motivar Apoiar e Reconhecer Talentos), uma ONG que desde 1999 vem buscando jovens talentos e oferece bolsas de estudo integrais (100%) para o ensino médio em colégios particulares de excelência para quem passar no longo processo seletivo no 7º ou 9º ano do fundamental. /n Após passar por 5 etapas, incluindo provas de português, matemática, lógica, entrevista individual, entrevista com a família e desafio de trabalho em grupo, ao longo de 2018, consegui finalizar o processo seletivo e garantir minha vaga no Colégio Objetivo da Avenida Paulista para cursar o ensino médio."
+          text="No 9º ano, estudando na EMEF Plínio de Queiroz, escola pública no Parque Boa Esperança, conheci o ISMART (Instituto Social para Motivar Apoiar e Reconhecer Talentos), uma ONG que desde 1999 vem buscando jovens talentos e oferece bolsas de estudo integrais (100%) para o ensino médio em colégios particulares de excelência para quem passar no longo processo seletivo no 7º ou 9º ano do fundamental. /n Após passar por 5 etapas, incluindo provas de português, matemática, lógica, entrevista individual, entrevista com a família e desafio de trabalho em grupo, ao longo de 2018, consegui finalizar o processo seletivo e garantir minha vaga no Colégio Objetivo da Avenida Paulista para cursar o ensino médio."
           image="/ismart.jpg"
           reverse={true}
         />
@@ -223,7 +223,7 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
           </a>
         </div>
         <div className="p-4">
-          <h1 className="text-2xl font-bold">Apoie minha jornada!</h1>
+          <h1 className="text-2xl font-bold">Apoie minha jornada até a Alemanha!</h1>
           <PixCopyButton />
         </div>
       </section>
