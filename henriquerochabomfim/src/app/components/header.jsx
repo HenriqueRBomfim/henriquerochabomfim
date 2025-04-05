@@ -17,14 +17,14 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center z-50">
-      <h1 className="text-xl font-bold">Henrique Rocha</h1>
+      <h1 className="text-xl font-bold">Henrique Rocha Bomfim</h1>
       <nav>
         <a href="#about" className="hover:bg-gray-200 rounded mx-2 px-4 py-2">Sobre</a>
         <a href="#highlights" className="hover:bg-gray-200 rounded mx-2 px-4 py-2">Destaques</a>
         <a
           href="#donate"
           onClick={playSound}
-          className="mx-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="mx-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
         >
           Doar
         </a>

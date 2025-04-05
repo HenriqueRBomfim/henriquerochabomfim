@@ -3,6 +3,7 @@ import StoryBlock from "./components/story_block";
 import Header from "./components/header";
 import HighlightsCarousel from "./components/HighlightsCarousel";
 import PixCopyButton from "./components/PixCopyButton";
+import CarrosselGrupos from './components/CarrosselGrupos';
 
 export default function Home() {
   return (
@@ -11,12 +12,47 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center text-center p-3 mt-5">
-        <Image src="/Henrique Rocha Bomfim.jpeg" width={150} height={190} className="rounded-full shadow-lg" alt="Henrique Rocha" />
-        <h2 className="text-3xl font-semibold mt-4">Olá, sou o Henrique Rocha!</h2>
-        <p className="text-lg mt-2">Engenheiro da Computação no Insper, buscando transformar vidas através da tecnologia e educação.</p>
+      <section className="h-screen flex flex-col justify-center items-center text-center p-3 mt-5 relative overflow-hidden">
+        {/* Imagem de fundo com opacidade */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-80"
+          style={{ backgroundImage: "url('/banner1.png')" }}
+        ></div>
+
+        {/* Conteúdo acima da imagem */}
+        <div className="relative z-10 flex flex-col items-center gap-4">
+          {/* Imagem com caixinha arredondada */}
+          <div className="bg-white bg-opacity-90 rounded-4xl p-3 shadow-lg">
+            <Image
+              src="/Henrique Rocha Bomfim.jpeg"
+              width={150}
+              height={190}
+              className="rounded-full"
+              alt="Henrique Rocha"
+            />
+          </div>
+
+          {/* Título com caixinha */}
+          <div className="bg-white bg-opacity-90 rounded-2xl px-6 py-3 shadow-md">
+            <h2 className="text-3xl font-semibold text-black">Oi! Eu sou o Henrique Rocha!</h2>
+          </div>
+
+          {/* Parágrafo com caixinha */}
+          <div className="bg-white bg-opacity-90 rounded-2xl px-6 py-3 shadow-md max-w-md">
+            <p className="text-lg text-black text-center">
+              Estudante bolsista de Engenharia da Computação no Insper, buscando transformar vidas através de tecnologia, liderança e educação.
+            </p>
+          </div>
+        </div>
       </section>
-      
+
+      <section className="p-6 max-w-4xl mx-auto mt-10">
+        <h2 className="text-2xl font-bold mb-4">Por onde eu já passei</h2>
+      </section>
+
+      {/* Carrossel de grupos */}
+      <CarrosselGrupos />
+
       {/* Sobre Mim */}
       <section id="about" className="p-6 max-w-4xl mx-auto mt-10">
         <h2 className="text-2xl font-bold mb-4">Minha História</h2>
@@ -39,13 +75,14 @@ export default function Home() {
           title="Base Familiar"
           text="Antes de contar quem eu me tornei e que caminho estou seguindo, vou contar 
           um pouco sobre a minha origem: Nasci em um lar cristão em que meus pais já serviam 
-          a Deus na Congregação Cristão no Brasil (CCB). Meu pai nasceu e foi criado no interior
-           de uma cidade da Bahia, tendo estudado apenas até a 5ª série do ensino fundamental e 
-           trabalha em um mercado atacadista. Minha mãe sempre foi de São Paulo, SP, e estudou 
+          a Deus na Congregação Cristã no Brasil (CCB). Meu pai nasceu e foi criado no interior
+           da Bahia, tendo estudado apenas até a 5ª série do ensino fundamental e 
+           trabalha em um mercado atacadista. Minha mãe sempre foi de São Paulo - SP, e estudou 
            até o nível técnico em enfermagem, sempre se esforçando para trabalhar em hospitais 
-           cada vez melhores e fazendo cursos que a desenvolveram na área. Tenho um irmão gêmeo 
-           que está cursando Arquitetura e Urbanismo na Universidade Presbiteriana Mackenzie e 
-           uma irmã mais nova no ensino fundamental."
+           cada vez melhores e fazendo cursos que a desenvolveram na área. Assim que eu passei 
+           no Insper, minha mãe se sentiu motivada e começou a cursar faculdade de Enfermagem. 
+           Tenho um irmão gêmeo que conseguiu bolsa de estudos pelo ProUni para cursar Arquitetura 
+           e Urbanismo na Universidade Presbiteriana Mackenzie e uma irmã mais nova no ensino fundamental."
           image="/familia.jpeg"
           reverse={true}
         />
@@ -95,7 +132,7 @@ Nesse ano também fiz um curso de introdução à economia na Escola de Economia
         <StoryBlock
           title="2º ano de olimpíadas (2020)"
           text="Após o curso de férias na Mundo Maker, passaram-se dois meses e iniciou-se a pandemia do COVID-19, em março de 2020. Comecei a ter aulas remotas e acesso ao conteúdo online do Objetivo. Nesse período do segundo ano, fiz as provas da Olimpíada Brasileira de Biologia (OBB), Olimpíada Nacional de Ciências (ONC), Olimpíada Brasileira de Robótica Teórica (OBR) e Olimpíada Brasileira de Astronomia (OBA) para me incentivar a estudar esses conteúdos com mais intensidade do que o padrão do ensino médio e me preparar melhor para os simulados de vestibulares como FUVEST, INSPER e ENEM. /n
-Como resultado, consegui medalha de prata na OBA e bronze na OBR, mas não consegui nem menção honrosa na ONC.
+Como resultado, consegui medalha de prata na OBA e bronze na OBR.
 "
           image="/obr.jpeg"
           caption="Medalha de bronze na OBR"
@@ -141,7 +178,7 @@ Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguage
         />
         <StoryBlock
           title="Site em construção"
-          text="Vou continuar adicionando a continuação da minha história aqui e melhorando o site.
+          text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
           Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
           image="/continua.jpg"
           reverse={false}
