@@ -321,10 +321,12 @@ Continuei como Diretor do Apoio Acadêmico do Comitê de Bolsistas do Insper, fa
 "
           image={["/summerfundacao.jpeg", "/timesummer.jpeg", "/eventobcg.jpeg", "/semanadeintroducao.jpeg", "/buddies.jpeg", "/hackersec.jpeg", "/hackersecandrew.jpeg", "/codingdiretor.jpeg", "/codinginaugural.jpeg"]}
           caption={[
-            "Eu com amigos do Insper, Ismart e com o CEO do Instituto Four",
-            "Eu e a Dri na sede da McKinsey",
-            "Eu na Amazon",
-            "Certificado da Aspire Leaders Program",
+            "Eu no escritório da Fundação Estudar",
+            "Eu e o time de Summer Job",
+            "Evento do BCG X",
+            "Davi, conselheiro de Direito do Academy, com os alunos do evento de introdução",
+            "Eu e meu buddy",
+            "Eu e o Andrew Martinez",
           ]}
           reverse={false}
         />
