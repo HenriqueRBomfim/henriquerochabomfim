@@ -35,11 +35,7 @@ body {
 }
 
 .animate-slide {
-  animation: slide 45s linear infinite;
-}
-
-.animate-slide-fast {
-  animation: slide 21s linear infinite;
+  animation: slide 35s linear infinite;
 }
 
 @keyframes scroll {

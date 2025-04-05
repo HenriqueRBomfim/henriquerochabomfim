@@ -33,9 +33,9 @@ export default function ContactForm() {
             />
         </a>
         </div>
-      <h2 className="text-2xl font-bold mb-4 py-6">Quer entrar em contato?</h2>
+      <h2 className="text-2xl font-bold mb-4 py-6">Entre em contato:</h2>
       <p className="mb-6">
-        Quer me mandar uma mensagem, fazer uma parceria, ou promover sua marca? Mande um e-mail abaixo:
+        Quer me mandar uma mensagem, sugerir uma adição ao site, fazer uma parceria, ou promover sua marca? Mande um e-mail abaixo:
       </p>
       <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-4">
         <input

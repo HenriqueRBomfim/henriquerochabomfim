@@ -138,21 +138,10 @@ const grupos = [
 ];
 
 export default function CarrosselGrupos() {
-  const [fast, setFast] = useState(false);
-
   return (
     <section className="py-2">
       <div className="max-w-4xl mx-auto overflow-hidden relative">
-        <div className="flex justify-center mb-4">
-          <button
-            onClick={() => setFast((prev) => !prev)}
-            className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition cursor-pointer"
-          >
-            {fast ? "Velocidade Normal >" : "Acelerar >>"}
-          </button>
-        </div>
-
-        <div className={`flex w-max ${fast ? "animate-slide-fast" : "animate-slide"}`}>
+        <div className="flex w-max animate-slide">
           {[...Array(2)].flatMap((_, repeatIdx) =>
             grupos.map((item, idx) => (
               <a
