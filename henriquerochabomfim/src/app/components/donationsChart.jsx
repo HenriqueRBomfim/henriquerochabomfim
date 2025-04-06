@@ -159,6 +159,9 @@ export default function DonationsChart() {
             />
           </PieChart>
         </ResponsiveContainer>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          Meta até dia 30/04/2025: alcançar pelo menos 20% do valor arrecadado
+        </p>
       </div>
     </div>
   );
