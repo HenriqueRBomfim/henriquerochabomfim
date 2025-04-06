@@ -84,6 +84,41 @@ export default function DonationsChart() {
     };
   }, []);
 
+  const renderCustomLabel = (props) => {
+    const {
+      cx,
+      cy,
+      midAngle,
+      innerRadius,
+      outerRadius,
+      percent,
+      value,
+      index,
+    } = props;
+    const RADIAN = Math.PI / 180;
+    const radius = innerRadius + (outerRadius - innerRadius) * 1.2;
+    const x = cx + radius * Math.cos(-midAngle * RADIAN);
+    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+    const color = COLORS[index % COLORS.length];
+
+    return (
+      <text
+        x={x}
+        y={y}
+        textAnchor={x > cx ? "start" : "end"}
+        dominantBaseline="central"
+        fontSize={12}
+      >
+        <tspan x={x} dy="-0.4em" fill={color}>
+          {`R$ ${value.toLocaleString("pt-BR")}`}
+        </tspan>
+        <tspan x={x} dy="1.2em" fill={color}>
+          {(percent * 100).toFixed(1) + "%"}
+        </tspan>
+      </text>
+    );
+  };
+
   return (
     <div className="w-full mt-10 flex justify-center">
       <div className="w-full sm:w-[90%] lg:w-[700px] flex flex-col items-center justify-center h-[350px] sm:h-[400px]">
@@ -97,10 +132,10 @@ export default function DonationsChart() {
               cx="50%"
               cy="45%"
               labelLine={false}
-              label={({ value }) => `R$${value.toLocaleString("pt-BR")}`}
               outerRadius={isMobile ? 80 : 100}
               fill="#8884d8"
               dataKey="value"
+              label={renderCustomLabel}
             >
               {data.map((_, index) => (
                 <Cell
@@ -109,7 +144,9 @@ export default function DonationsChart() {
                 />
               ))}
             </Pie>
-            <Tooltip formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`} />
+            <Tooltip
+              formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`}
+            />
             <Legend
               layout="horizontal"
               verticalAlign="bottom"
