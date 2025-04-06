@@ -49,17 +49,13 @@ export default function DonationsChart() {
 
             if (cell.includes("meta") && !isNaN(parsed)) {
               meta = parsed;
-              console.log("Meta encontrada:", parsed);
             }
 
             if (cell.includes("arrecadado") && !isNaN(parsed)) {
               arrecadado = parsed;
-              console.log("Arrecadado encontrado:", parsed);
             }
           });
         }
-
-        console.log("Meta final:", meta, "Arrecadado final:", arrecadado);
 
         if (meta > 0 && arrecadado >= 0) {
           setData([
@@ -78,8 +74,10 @@ export default function DonationsChart() {
   }, []);
 
   return (
-    <div className="w-full h-[400px] mt-10">
-      <h2 className="text-xl font-bold text-center mb-4">Progresso da Campanha</h2>
+    <div className="w-full max-w-md mx-auto h-[300px] sm:h-[400px] mt-10">
+      <h2 className="text-xl font-bold text-center mb-4">
+        Progresso da Campanha
+      </h2>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
@@ -87,8 +85,10 @@ export default function DonationsChart() {
             cx="50%"
             cy="50%"
             labelLine={false}
-            label={({ name, value }) => `${name}: R$${value.toLocaleString()}`}
-            outerRadius={130}
+            label={({ name, value }) =>
+              `${name}: R$${value.toLocaleString("pt-BR")}`
+            }
+            outerRadius={100}
             fill="#8884d8"
             dataKey="value"
           >
@@ -96,8 +96,8 @@ export default function DonationsChart() {
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
-          <Tooltip formatter={(value) => `R$ ${value.toLocaleString()}`} />
-          <Legend />
+          <Tooltip formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`} />
+          <Legend layout="horizontal" verticalAlign="bottom" align="center" />
         </PieChart>
       </ResponsiveContainer>
     </div>

@@ -53,17 +53,6 @@ export default function ContactForm() {
             <PixCopyButton />
     </div>
 
-    {/* <div className="mt-10">
-      <h2 className="text-xl font-bold text-center mb-4">Tabela de Custos Estimados</h2>
-      <div className="w-full max-w-6xl mx-auto rounded-lg overflow-hidden shadow-md border border-gray-300">
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbn8oWqvkge2XSfs6uo2IuI4Nzmjf_lTA5O0JxkaPEZKKnuxWEPGOHJ9SKIAYGiiIWTJCWevdm3Hfd/pubhtml?widget=true&amp;headers=false"
-          className="w-full h-[600px]"
-          loading="lazy"
-        />
-      </div>
-    </div> */}
-
     <CostTable />
 
     <DonationsChart />
