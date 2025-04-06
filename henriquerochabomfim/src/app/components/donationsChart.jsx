@@ -74,7 +74,7 @@ export default function DonationsChart() {
     };
 
     fetchCSVData();
-    handleResize(); // inicial
+    handleResize();
     window.addEventListener("resize", handleResize);
     const interval = setInterval(fetchCSVData, 30000);
 
@@ -85,21 +85,19 @@ export default function DonationsChart() {
   }, []);
 
   return (
-    <div className="w-full h-[300px] sm:h-[400px] mt-10 flex justify-center">
-      <div className="w-full sm:w-[90%] lg:w-[700px]">
-        <h2 className="text-xl font-bold text-center mb-4">
+    <div className="w-full mt-10 flex justify-center">
+      <div className="w-full sm:w-[90%] lg:w-[700px] flex flex-col items-center justify-center h-[350px] sm:h-[400px]">
+        <h2 className="text-xl font-bold text-center mb-2">
           Progresso da Campanha
         </h2>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
               data={data}
-              cx={isMobile ? "50%" : "40%"}
-              cy="50%"
+              cx="50%"
+              cy="45%"
               labelLine={false}
-              label={({ name, value }) =>
-                `${name}: R$${value.toLocaleString("pt-BR")}`
-              }
+              label={({ value }) => `R$${value.toLocaleString("pt-BR")}`}
               outerRadius={isMobile ? 80 : 100}
               fill="#8884d8"
               dataKey="value"
@@ -113,13 +111,14 @@ export default function DonationsChart() {
             </Pie>
             <Tooltip formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`} />
             <Legend
-              layout={isMobile ? "horizontal" : "vertical"}
-              verticalAlign={isMobile ? "bottom" : "middle"}
-              align={isMobile ? "center" : "right"}
+              layout="horizontal"
+              verticalAlign="bottom"
+              align="center"
               wrapperStyle={{
                 fontSize: "12px",
                 lineHeight: "1.2",
               }}
+              formatter={(value) => value}
             />
           </PieChart>
         </ResponsiveContainer>
