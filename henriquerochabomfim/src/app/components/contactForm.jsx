@@ -15,24 +15,8 @@ export default function ContactForm() {
 
   return (
     <section id="donate" className="p-6 mt-10 text-center">
-        <h2 className="text-2xl font-bold py-2">Ajude no Meu Intercâmbio</h2>
+      <h1 className="text-2xl font-bold py-2">Ajude no Meu Intercâmbio</h1>
 
-        <div align="center" className="mt-4 flex justify-center items-center gap-2">
-        <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
-            <img
-            src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge"
-            height="35"
-            alt="instagram logo"
-            />
-        </a>
-        <a href="https://www.linkedin.com/in/henriquerochabomfim/" target="_blank">
-            <img
-            src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge"
-            height="35"
-            alt="linkedin logo"
-            />
-        </a>
-        </div>
       <h2 className="text-2xl font-bold mb-4 py-6">Entre em contato:</h2>
       <p className="mb-6">
         Quer me mandar uma mensagem, sugerir uma adição ao site, fazer uma parceria, ou promover sua marca? Mande um e-mail abaixo:
@@ -65,6 +49,23 @@ export default function ContactForm() {
     <div className="p-4">
         <h1 className="text-2xl font-bold mb-2">Apoie minha jornada até a Alemanha!</h1>
             <PixCopyButton />
+    </div>
+
+    <div align="center" className="mt-4 flex justify-center items-center gap-2">
+      <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
+          <img
+          src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge"
+          height="35"
+          alt="instagram logo"
+          />
+      </a>
+      <a href="https://www.linkedin.com/in/henriquerochabomfim/" target="_blank">
+          <img
+          src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge"
+          height="35"
+          alt="linkedin logo"
+          />
+      </a>
     </div>
     </section>
   );

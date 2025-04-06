@@ -326,9 +326,35 @@ Continuei como Diretor do Apoio Acadêmico do Comitê de Bolsistas do Insper, fa
             "Evento do BCG X",
             "Davi, conselheiro de Direito do Academy, com os alunos do evento de introdução",
             "Eu e meu buddy",
+            "Evento HackerSec Conference",
             "Eu e o Andrew Martinez",
+            "Eu apresentando o cronograma do Insper Coding",
+            "Membros do Coding na reunião inaugural do semestre",
           ]}
           reverse={false}
+        />
+        <StoryBlock
+          title="7º Semestre (2025.1)"
+          text="Em janeiro de 2025, fui aprovado para um estágio de férias no maior banco de investimentos da América Latina, o BTG Pactual.  /n
+Durante esse período de 1 mês, fiquei responsável pelo projeto Motor de Contas Contábeis Viradas, um novo sistema com robô virtual que resultou em uma eficiência de 42 horas mensais para o time de analistas que usará o sistema, além de permitir uma escala muito maior de análise de fechamentos com valor incorreto e diminuir a possibilidade de erros humanos. /n
+Também me tornei Community Leader Voluntário dos Alumni na Aspire Leaders Program from Harvard Business School. Com esta nova responsabilidade, devo organizar eventos presenciais para a comunidade de mais de 700 brasileiros formados nessa trilha de liderança. Também sou um dos principais divulgadores, sendo chamado frequentemente para gravar depoimentos e conversar com bolsistas universitários.  /n
+Neste momento, eu juntei minha preparação de anos e apliquei para um intercâmbio concorrido: 1 das 5 vagas na Technische Hochschule Ingolstadt (THI), Universidade pública em Ingolstadt, Alemanha, visando estudar lá por 6 meses, entre agosto de 2025 e fevereiro de 2026. /n
+A Universidade Técnica de Ciências Aplicadas de Ingolstadt é uma universidade pública alemã de ciências aplicadas localizada em Ingolstadt. Fundada em 1994, conta atualmente com cerca de 6.500 alunos em cinco faculdades e oferece mais de 80 cursos. O foco central da pesquisa e do ensino está em tecnologia e negócios. /n
+Após muito esforço e preparação, consegui atingir todos os critérios de aplicação: fiz a prova de proficiência do Duolingo English Test (DET), alcançando o nível C1 de inglês, me autorizando a fazer intercâmbio em qualquer universidade do mundo que aceite o DET como comprovante de proficiência. Tinha os 200 pontos de intercâmbio. Tinha um Coeficiente de Rendimento (CR) acima de 7. Minha posição na sala estava dentro do top 15. Fiz uma ótima carta de motivação em inglês e fiz um passaporte. /n
+Com isso, conquistei 1 das 5 vagas nessa universidade e estou me preparando para alcançar esse sonho! Sobre valores, consegui uma bolsa bilateral para não precisar pagar mensalidade da THI e uma bolsa para viajar pela Europa. Porém, não tenho bolsa nem dinheiro para arcar com os seguintes custos: /n
+
+Por isso, conto com a sua ajuda para divulgar meu site e as publicações sobre essa jornada de intercâmbio. Estou fazendo um planejamento para conseguir dinheiro através de venda de produtos ou serviços, também estou no processo seletivo de uma bolsa de estudos externa, mas não é garantido que dê certo. Com sua colaboração, posso alcançar mais pessoas, conquistar as doações necessárias e tornar possível meu sonho de chegar à Alemanha e me manter por lá! /n
+"
+          image={["/btgequipe.jpeg","/btgceo.jpeg","/aspireequipe.jpeg","/aspireteam.jpeg", "/thi.jpeg","thi.png"]}
+          caption={[
+            "Eu com a equipe de estagiários do BTG Pactual",
+            "Eu com o CEO do BTG Pactual, Roberto Sallouti",
+            "Eu com os Alumni da Aspire Leaders Program",
+            "Eu com minha dupla de CL de SP e a Diretora da Aspire no Brasil",
+            "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
+            "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
+          ]}
+          reverse={true}
         />
         <StoryBlock
           title="Site em construção"
