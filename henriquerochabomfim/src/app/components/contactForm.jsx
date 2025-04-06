@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import PixCopyButton from "./pixCopyButton";
+import DonationsChart from "./donationsChart";
+import CostTable from "./costTable";
 
 export default function ContactForm() {
   const [subject, setSubject] = useState("");
@@ -51,7 +53,22 @@ export default function ContactForm() {
             <PixCopyButton />
     </div>
 
-    <div align="center" className="mt-4 flex justify-center items-center gap-2">
+    {/* <div className="mt-10">
+      <h2 className="text-xl font-bold text-center mb-4">Tabela de Custos Estimados</h2>
+      <div className="w-full max-w-6xl mx-auto rounded-lg overflow-hidden shadow-md border border-gray-300">
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbn8oWqvkge2XSfs6uo2IuI4Nzmjf_lTA5O0JxkaPEZKKnuxWEPGOHJ9SKIAYGiiIWTJCWevdm3Hfd/pubhtml?widget=true&amp;headers=false"
+          className="w-full h-[600px]"
+          loading="lazy"
+        />
+      </div>
+    </div> */}
+
+    <CostTable />
+
+    <DonationsChart />
+
+    <div align="center" className="mt-8 flex justify-center items-center gap-2 py-8">
       <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
           <img
           src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge"
