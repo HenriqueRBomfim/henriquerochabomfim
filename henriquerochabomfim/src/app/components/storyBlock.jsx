@@ -54,48 +54,49 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             </div>
           ))
         ) : (
-          <div className="relative flex flex-col items-center justify-center w-full h-[80vh] max-h-[700px] overflow-hidden touch-none">
-            {[prevIndex, currentIndex, nextIndex].map((index, i) => {
-              const isCurrent = index === currentIndex;
-              const yOffset = i === 0 ? -350 : i === 2 ? 350 : 0;
-              const scale = isCurrent ? 1 : 0.75;
-              const opacityVal = isCurrent ? 1 : 0.5;
+        <div className="relative w-full h-[80vh] max-h-[700px] overflow-hidden">
+          {[prevIndex, currentIndex, nextIndex].map((index, i) => {
+            const isCurrent = index === currentIndex;
+            const yOffset = i === 0 ? -350 : i === 2 ? 350 : 0;
+            const scale = isCurrent ? 1 : 0.75;
+            const opacityVal = isCurrent ? 1 : 0.5;
 
-              return (
-                <motion.div
-                  key={index}
-                  drag="y"
-                  dragConstraints={{ top: 0, bottom: 0 }}
-                  onDragEnd={handleDragEnd}
-                  onClick={() => setCurrentIndex(index)}
-                  animate={{
-                    y: yOffset,
-                    scale,
-                    opacity: opacityVal,
-                  }}
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  className="absolute cursor-pointer flex flex-col items-center w-[90%] max-w-xl px-4"
-                  style={{
-                    zIndex: isCurrent ? 10 : 1,
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    touchAction: "pan-y",
-                  }}
-                >
-                  {isCurrent && captions[index] && (
-                    <p className="text-lg text-gray-700 mb-4 text-center bg-white/80 px-4 py-2 rounded shadow-md">
-                      {captions[index]}
-                    </p>
-                  )}
-                  <img
-                    src={images[index]}
-                    alt={`${title} - ${index}`}
-                    className="rounded-xl shadow-md w-full object-cover"
-                  />
-                </motion.div>
-              );
-            })}
-          </div>
+            return (
+              <motion.div
+                key={index}
+                drag="y"
+                dragConstraints={{ top: 0, bottom: 0 }}
+                onDragEnd={handleDragEnd}
+                onClick={() => setCurrentIndex(index)}
+                animate={{
+                  y: yOffset,
+                  scale,
+                  opacity: opacityVal,
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                className="absolute flex flex-col items-center w-[90%] max-w-xl px-4 cursor-pointer"
+                style={{
+                  zIndex: isCurrent ? 10 : 1,
+                  top: "0%",
+                  left: "0%",
+                  transform: "translate(-50%, -50%)",
+                  touchAction: "pan-y",
+                }}
+              >
+                {isCurrent && captions[index] && (
+                  <p className="text-lg text-gray-700 mb-4 text-center bg-white/80 px-4 py-2 rounded shadow-md">
+                    {captions[index]}
+                  </p>
+                )}
+                <img
+                  src={images[index]}
+                  alt={`${title} - ${index}`}
+                  className="rounded-xl shadow-md w-full object-contain max-h-[600px]"
+                />
+              </motion.div>
+            );
+          })}
+        </div>
         )}
       </div>
 
