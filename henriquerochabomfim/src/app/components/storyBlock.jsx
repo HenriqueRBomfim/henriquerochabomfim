@@ -78,7 +78,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                 style={{
                   zIndex: isCurrent ? 10 : 1,
                   top: "0%",
-                  left: "0%",
+                  left: "15%",
                   transform: "translate(-50%, -50%)",
                   touchAction: "pan-y",
                 }}
