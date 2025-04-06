@@ -16,6 +16,7 @@ const CSV_URL =
 
 export default function DonationsChart() {
   const [data, setData] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const fetchCSVData = async () => {
@@ -68,38 +69,61 @@ export default function DonationsChart() {
       }
     };
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
     fetchCSVData();
+    handleResize(); // inicial
+    window.addEventListener("resize", handleResize);
     const interval = setInterval(fetchCSVData, 30000);
-    return () => clearInterval(interval);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
-    <div className="w-full max-w-md mx-auto h-[300px] sm:h-[400px] mt-10">
-      <h2 className="text-xl font-bold text-center mb-4">
-        Progresso da Campanha
-      </h2>
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
-          <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            labelLine={false}
-            label={({ name, value }) =>
-              `${name}: R$${value.toLocaleString("pt-BR")}`
-            }
-            outerRadius={100}
-            fill="#8884d8"
-            dataKey="value"
-          >
-            {data.map((_, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
-          </Pie>
-          <Tooltip formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`} />
-          <Legend layout="horizontal" verticalAlign="bottom" align="center" />
-        </PieChart>
-      </ResponsiveContainer>
+    <div className="w-full h-[300px] sm:h-[400px] mt-10 flex justify-center">
+      <div className="w-full sm:w-[90%] lg:w-[700px]">
+        <h2 className="text-xl font-bold text-center mb-4">
+          Progresso da Campanha
+        </h2>
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={data}
+              cx={isMobile ? "50%" : "40%"}
+              cy="50%"
+              labelLine={false}
+              label={({ name, value }) =>
+                `${name}: R$${value.toLocaleString("pt-BR")}`
+              }
+              outerRadius={isMobile ? 80 : 100}
+              fill="#8884d8"
+              dataKey="value"
+            >
+              {data.map((_, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={COLORS[index % COLORS.length]}
+                />
+              ))}
+            </Pie>
+            <Tooltip formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`} />
+            <Legend
+              layout={isMobile ? "horizontal" : "vertical"}
+              verticalAlign={isMobile ? "bottom" : "middle"}
+              align={isMobile ? "center" : "right"}
+              wrapperStyle={{
+                fontSize: "12px",
+                lineHeight: "1.2",
+              }}
+            />
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 }
