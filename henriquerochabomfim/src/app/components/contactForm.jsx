@@ -57,6 +57,17 @@ export default function ContactForm() {
 
     <DonationsChart />
 
+    {/* Metas */}
+    <h2 className="text-2xl font-bold mb-2 text-center py-2">Metas</h2>
+    <div className="flex justify-center items-center flex-col">
+      <p className="text-sm text-center text-gray-600 mb-2 py-3">
+        ☑ Meta até dia 15/04/2025: alcançar pelo menos 10% do valor arrecadado
+      </p>
+      <p className="text-sm text-center text-gray-600 mb-2 py-3">
+        ⌛Meta até dia 30/04/2025: alcançar pelo menos 20% do valor arrecadado
+      </p>
+    </div>
+
     <div align="center" className="mt-8 flex justify-center items-center gap-2 py-8">
       <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
           <img

@@ -367,7 +367,7 @@ Por isso, conto com a sua ajuda para divulgar meu site e as publicações sobre 
       
       {/* Destaques */}
       <HighlightsCarousel />
-      
+
       {/* Doação */}
       <ContactForm />
     </div>
