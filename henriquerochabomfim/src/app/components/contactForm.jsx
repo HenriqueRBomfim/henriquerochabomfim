@@ -68,6 +68,47 @@ export default function ContactForm() {
       </p>
     </div>
 
+    {/* Painel de Doadores */}
+    <div className="w-full max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-6">
+      <h3 className="text-xl font-semibold text-center text-gray-800 mb-4">✨ Pessoas que estão tornando esse sonho possível ✨</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[300px] overflow-y-auto px-2">
+        {[
+          "Pedro Pereira Cecílio Ventura",
+          "Stephany Araujo da Silva Lobato",
+          "Nicolas Jesus Silveira",
+          "Thiago de Jesus Santana",
+          "Dielly Santana Farias",
+          "Nereide De Oliveira Costa",
+          "Pedro Henrique Stanzani De Freitas",
+          "Rodney Matheus Santos Fernandes",
+          "Sofia Maria Guimaraes Pavarina",
+          "Julia Diniz Do Nascimento Zanini",
+          "Maria Isabela Marques Pereira",
+          "Giovana Coelho Santana Leite",
+          "Florencio Vente Coha",
+          "Valentina Nieto Garcia",
+          "Leilany De Lima Alencar",
+          "Suzette Amoroso Ribeiro",
+          "Claudio Alves de Carvalho",
+          "Bruno Schmitt Locatelli",
+          "Railson da Silva Nunes",
+          "Adriana Rodrigues Julio",
+          "Flavio Augusto de Maia",
+          "Adriana Fonseca de Souza",
+          "Gustavo Colombi Ribolla",
+          "Mariana Abigair Souza Sabino",
+          "Luiz F A Steinberg",
+        ].map((nome, index) => (
+          <div
+            key={index}
+            className="bg-gray-100 rounded-xl px-4 py-2 text-sm text-gray-700 text-center shadow-sm hover:bg-yellow-100 transition duration-200"
+          >
+            {nome}
+          </div>
+        ))}
+      </div>
+    </div>
+
     <div align="center" className="mt-8 flex justify-center items-center gap-2 py-8">
       <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
           <img
