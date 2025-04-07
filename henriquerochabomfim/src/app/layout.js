@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <Script
         type="application/ld+json"
+        id="structured-data"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
