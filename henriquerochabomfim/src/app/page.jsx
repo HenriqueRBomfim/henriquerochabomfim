@@ -25,7 +25,7 @@ export default function Home() {
           {/* Imagem com caixinha arredondada */}
           <div className="bg-white bg-opacity-90 rounded-4xl p-3 shadow-lg">
             <Image
-              src="/Henrique Rocha Bomfim.jpeg"
+              src="/henrique-rocha-bomfim.jpeg"
               width={150}
               height={190}
               className="rounded-full"
@@ -69,7 +69,7 @@ export default function Home() {
           Hochschule Ingolstadt (THI), Universidade Técnica de Ciências Aplicadas de 
           Ingolstadt, lugar onde, após um esforço de anos, conquistei 1 das 5 vagas de 
           intercâmbio disponíveis para cursar disciplinar de tecnologia e negócios na Alemanha."
-          image="/Henrique Rocha Bomfim.jpeg"
+          image="/henrique-rocha-bomfim.jpeg"
           caption="Eu"
           reverse={false}
         />

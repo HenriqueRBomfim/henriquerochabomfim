@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,6 +27,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Henrique Rocha Bomfim",
+            "image": "https://www.henriquerochabomfim.com.br/henrique-rocha-bomfim.jpeg",
+            "url": "https://www.henriquerochabomfim.com.br/",
+            "jobTitle": "Engenheiro da Computação",
+            "affiliation": "Insper",
+            "sameAs": [
+              "https://www.linkedin.com/in/henriquerochabomfim/",
+              "https://www.facebook.com/profile.php?id=100010716075101",
+              "https://www.instagram.com/_riquerocha_/"
+            ]
+          }),
+        }}
+      />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
