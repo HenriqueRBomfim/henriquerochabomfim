@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
           name="description"
           content="Tudo sobre Henrique Rocha Bomfim, estudante de engenharia da computação no Insper."
         />
+        <meta name="google-site-verification" content="-B4i2LAMEhBoe-4BmPpeNpVzakrtNU6HptbUxDFJlpc" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
