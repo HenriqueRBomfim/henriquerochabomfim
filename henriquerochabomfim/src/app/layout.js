@@ -56,6 +56,8 @@ export default function RootLayout({ children }) {
           }),
         }}
       />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3440014283691586"
+        crossorigin="anonymous"></script>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
