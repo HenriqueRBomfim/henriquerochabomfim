@@ -38,8 +38,8 @@ export default function RootLayout({ children }) {
             "image": {
               "@type": "ImageObject",
               "url": "https://www.henriquerochabomfim.com.br/henrique-rocha-bomfim.jpeg",
-              "width": 800,
-              "height": 800
+              "width": 623,
+              "height": 682
             },
             "url": "https://www.henriquerochabomfim.com.br/",
             "jobTitle": "Engenheiro da Computação",
