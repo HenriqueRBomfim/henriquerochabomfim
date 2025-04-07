@@ -99,7 +99,8 @@ export default function ContactForm() {
           "Mariana Abigair Souza Sabino",
           "Luiz F A Steinberg",
           "Guilherme Katayama Kaidei",
-          "Amanda Figueiredo Bittencourt"
+          "Amanda Figueiredo Bittencourt",
+          "Henrique Fazzio Badin"
         ].map((nome, index) => (
           <div
             key={index}
