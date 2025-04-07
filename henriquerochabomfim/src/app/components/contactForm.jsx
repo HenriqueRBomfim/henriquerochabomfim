@@ -98,6 +98,8 @@ export default function ContactForm() {
           "Gustavo Colombi Ribolla",
           "Mariana Abigair Souza Sabino",
           "Luiz F A Steinberg",
+          "Guilherme Katayama Kaidei",
+          "Amanda Figueiredo Bittencourt"
         ].map((nome, index) => (
           <div
             key={index}
