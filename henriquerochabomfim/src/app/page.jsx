@@ -29,7 +29,7 @@ export default function Home() {
               width={150}
               height={190}
               className="rounded-full"
-              alt="Henrique Rocha"
+              alt="Henrique Rocha Bomfim"
             />
           </div>
 
