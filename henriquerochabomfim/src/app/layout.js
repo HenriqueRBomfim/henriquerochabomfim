@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.ico" />
         <title>Henrique Rocha Bomfim</title>
         <meta
           name="description"
