@@ -34,10 +34,19 @@ export default function RootLayout({ children }) {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Henrique Rocha Bomfim",
-            "image": "https://www.henriquerochabomfim.com.br/henrique-rocha-bomfim.jpeg",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.henriquerochabomfim.com.br/henrique-rocha-bomfim.jpeg",
+              "width": 800,
+              "height": 800
+            },
             "url": "https://www.henriquerochabomfim.com.br/",
             "jobTitle": "Engenheiro da Computação",
-            "affiliation": "Insper",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "Insper"
+            },
+            "description": "Site oficial de Henrique Rocha Bomfim, engenheiro da computação no Insper.",
             "sameAs": [
               "https://www.linkedin.com/in/henriquerochabomfim/",
               "https://www.facebook.com/profile.php?id=100010716075101",
