@@ -9,7 +9,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
     target: ref,
     offset: ["start end", "center center"],
   });
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0.75, 1], [0.75, 1]);
 
   const images = Array.isArray(image) ? image : [image];
   const captions = Array.isArray(caption) ? caption : [caption];
@@ -59,7 +59,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
               const isCurrent = index === currentIndex;
               const yOffset = i === 0 ? -350 : i === 2 ? 350 : 0;
               const scale = isCurrent ? 1 : 0.75;
-              const opacityVal = isCurrent ? 1 : 0.5;
+              const opacityVal = isCurrent ? 1 : 0.75;
 
               return (
                 <motion.div

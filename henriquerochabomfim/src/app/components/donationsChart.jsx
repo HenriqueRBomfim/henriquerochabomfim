@@ -49,7 +49,7 @@ export default function DonationsChart() {
             const parsed = parseFloat(cleanValue);
 
             if (cell.includes("meta") && !isNaN(parsed)) {
-              meta = parsed + 5000;
+              meta = parsed;
             }
 
             if (cell.includes("arrecadado") && !isNaN(parsed)) {
