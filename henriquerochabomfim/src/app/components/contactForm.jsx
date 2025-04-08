@@ -54,6 +54,7 @@ export default function ContactForm() {
     "Adriana Aparecida Ferreira",
     "Samandra Andraade De Melo",
     "Ana Paula Da Silva",
+    "Luiza De Jesus Lopes"
   ];
 
   return (
