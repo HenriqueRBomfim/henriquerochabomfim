@@ -1,35 +1,78 @@
 "use client";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
-  const [clickSound, setClickSound] = useState(null);
+  const [sound, setSound] = useState(null);
+  const [donateClicks, setDonateClicks] = useState(0);
+  const [showBorder, setShowBorder] = useState(false);
 
   useEffect(() => {
-    setClickSound(new Audio("/orb.mp3")); // Som no diretório /public
+    setSound(new Audio());
   }, []);
 
-  const playSound = () => {
-    if (clickSound) {
-      clickSound.currentTime = 0; // Reinicia o áudio para múltiplos cliques
-      clickSound.play();
+  const playSound = (audioPath) => {
+    if (sound) {
+      sound.src = audioPath;
+      sound.currentTime = 0;
+      sound.play();
     }
   };
 
+  const handleClick = (audioPath, sectionId) => {
+    playSound(audioPath);
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleDonateClick = (e) => {
+    e.preventDefault();
+    playSound("/orb.mp3");
+    setDonateClicks((prev) => prev + 1);
+
+    if (donateClicks === 1) {
+      setShowBorder(true);
+
+      setTimeout(() => {
+        setShowBorder(false);
+        setDonateClicks(0);
+      }, 10000);
+    }
+
+    document.getElementById("donate")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center z-50">
+    <motion.div className="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center z-50">
       <h1 className="text-xl font-bold">Henrique Rocha Bomfim</h1>
-      <nav>
-        <a href="#about" className="hover:bg-gray-200 rounded mx-2 px-4 py-2">Sobre</a>
-        <a href="#highlights" className="hover:bg-gray-200 rounded mx-2 px-4 py-2">Destaques</a>
-        <a
-          href="#donate"
-          onClick={playSound}
-          className="mx-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
-        >
-          Doar
-        </a>
+      <nav className="flex space-x-4 p-2">
+        {[
+          { label: "Sobre", id: "about", sound: "/submerge.mp3" },
+          { label: "Destaques", id: "highlights", sound: "/mergulho.mp3" },
+          { label: "Doar", id: "donate", sound: "/orb.mp3", onClick: handleDonateClick, green: true }
+        ].map(({ label, id, sound, onClick, green }) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            onClick={(e) => {
+              e.preventDefault();
+              if (onClick) {
+                onClick(e);
+              } else {
+                handleClick(sound, id);
+              }
+            }}
+            className={`relative rounded px-4 py-2 transition border-2 border-transparent
+              ${green ? "bg-green-500 text-white hover:bg-green-700" : "hover:bg-gray-200"}
+              ${showBorder ? "animate-border" : ""}`}
+          >
+            {label}
+            {showBorder && (
+              <span className="absolute inset-0 rounded border-2 border-transparent animate-border"></span>
+            )}
+          </a>
+        ))}
       </nav>
-    </header>
+    </motion.div>
   );
 };
 

@@ -50,3 +50,20 @@ body {
 .scroll-animation {
   animation: scroll 20s linear infinite;
 }
+
+@layer utilities {
+  .animate-border {
+    border-image-source: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
+    border-image-slice: 1;
+    border-width: 2px;
+    animation: border-spin 1s linear infinite;
+  }
+
+  @keyframes border-spin {
+    0% { border-image-source: linear-gradient(0deg, red, orange, yellow, green, cyan, blue, violet); }
+    25% { border-image-source: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet); }
+    50% { border-image-source: linear-gradient(180deg, red, orange, yellow, green, cyan, blue, violet); }
+    75% { border-image-source: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet); }
+    100% { border-image-source: linear-gradient(360deg, red, orange, yellow, green, cyan, blue, violet); }
+  }
+}

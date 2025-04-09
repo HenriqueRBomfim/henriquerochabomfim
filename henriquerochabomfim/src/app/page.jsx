@@ -86,7 +86,7 @@ export default function Home() {
            Tenho um irmão gêmeo que conseguiu bolsa de estudos pelo ProUni para cursar Arquitetura 
            e Urbanismo na Universidade Presbiteriana Mackenzie e uma irmã mais nova no ensino fundamental."
           image="/familia.jpeg"
-          caption="Minha família S2"
+          caption="Minha família ❤️"
           reverse={true}
         />
         <StoryBlock
@@ -110,11 +110,11 @@ export default function Home() {
           title="Desafios dessa mudança de realidade (2019)"
           text="Eu acordava às 04:00 da manhã e saia às 05:00 todos os dias do ensino médio para chegar a tempo para as aulas às 07:00. Como vim de escola pública, eu não tive uma base de física, química e biologia e acabava indo mal nessas matérias no início do ensino médio, tendo tirado notas baixas que eu nunca tinha tirado antes. Eu ficava triste ao ver que pessoal que sempre estudou em escola particular tratava como se fosse normal saber aqueles conteúdos enquanto eu tinha dificuldade. /n
 Porém, não deixei esses pensamentos durarem muito. Comecei a estudar muito mais do que o esperado e entrei em preparatórios para Olimpíadas do Conhecimento, em que eu não sabia que existiam outras além da OBMEP. /n
-Sou muito grato pela amizade que fiz com o pessoal do Objetivo. Todos me receberam muito bem e tenho amizade até hoje S2. /n
+Sou muito grato pela amizade que fiz com o pessoal do Objetivo. Todos me receberam muito bem e tenho amizade até hoje ❤️. /n
 Quando eu menos esperava, comecei a ir cada vez melhor na escola, melhorando muito em todas as matérias e ficando mais próximo das tão sonhadas medalhas.
 "
           image="/objetivo.jpg"
-          caption="Meus amigos do Colégio Objetivo S2"
+          caption="Meus amigos do Colégio Objetivo ❤️"
           reverse={false}
         />
         <StoryBlock
@@ -180,7 +180,7 @@ Descobri que existiam cerca de 50 organizações estudantis no Insper, grupos vo
 Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguagem de programação Java e o desenvolvimento de modificações (Mods) para o jogo Minecraft, a fim de me preparar para entrar no Insper Coding no 2º semestre de 2022 (2022.2). No fim das contas, consegui fazer um mod que trabalhei meses para deixá-lo bonito e jogável: The Final Recipes - Minecraft Mods - CurseForge
 "
           image="/1semestre.jpg"
-          caption="Amigos do Insper no 1º semestre S2"
+          caption="Amigos do Insper no 1º semestre ❤️"
           reverse={true}
         />
         <StoryBlock
