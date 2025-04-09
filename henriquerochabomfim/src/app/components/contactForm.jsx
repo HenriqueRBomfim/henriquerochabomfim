@@ -60,7 +60,10 @@ export default function ContactForm() {
     "Larissa Santos Bonfim",
     "Miguel Santos Bonfim",
     "Laís Uyeda Aivazoglou",
-    "Sandra Bonfim"
+    "Sandra Bonfim",
+    "Luiz Cesar Drnellas Do Nascimento",
+    "Antonio Marques Bonfim Rosa",
+    "William Chaine Stevenson"
   ];
 
   return (
