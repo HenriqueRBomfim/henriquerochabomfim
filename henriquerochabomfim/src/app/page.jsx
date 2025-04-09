@@ -68,7 +68,7 @@ export default function Home() {
           preparando para estudar entre agosto de 2025 e fevereiro de 2026 na Technische 
           Hochschule Ingolstadt (THI), Universidade Técnica de Ciências Aplicadas de 
           Ingolstadt, lugar onde, após um esforço de anos, conquistei 1 das 5 vagas de 
-          intercâmbio disponíveis para cursar disciplinar de tecnologia e negócios na Alemanha."
+          intercâmbio disponíveis para cursar disciplinas de tecnologia e negócios na Alemanha."
           image="/henrique-rocha-bomfim.jpeg"
           caption="Eu"
           reverse={false}
