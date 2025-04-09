@@ -56,7 +56,11 @@ export default function ContactForm() {
     "Ana Paula Da Silva",
     "Luiza De Jesus Lopes",
     "Luiza A Pollaro",
-    "Deborah Andrade De Oliveira"
+    "Deborah Andrade De Oliveira",
+    "Larissa Santos Bonfim",
+    "Miguel Santos Bonfim",
+    "Laís Uyeda Aivazoglou",
+    "Sandra Bonfim"
   ];
 
   return (
