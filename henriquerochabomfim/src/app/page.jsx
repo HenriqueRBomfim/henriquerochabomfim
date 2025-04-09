@@ -357,7 +357,7 @@ Por isso, conto com a sua ajuda para divulgar meu site e as publicações sobre 
           reverse={true}
         />
         <StoryBlock
-          title="Site em construção"
+          title="Site em construção, pois essa jornada só está começando!"
           text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
           Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
           image="/continua.jpg"
