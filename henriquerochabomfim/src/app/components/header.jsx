@@ -19,8 +19,7 @@ const Header = () => {
     }
   };
 
-  const handleClick = (audioPath, sectionId) => {
-    playSound(audioPath);
+  const handleClick = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -46,10 +45,10 @@ const Header = () => {
       <h1 className="text-xl font-bold">Henrique Rocha Bomfim</h1>
       <nav className="flex space-x-4 p-2">
         {[
-          { label: "Sobre", id: "about", sound: "/submerge.mp3" },
-          { label: "Destaques", id: "highlights", sound: "/mergulho.mp3" },
-          { label: "Doar", id: "donate", sound: "/orb.mp3", onClick: handleDonateClick, green: true }
-        ].map(({ label, id, sound, onClick, green }) => (
+          { label: "Sobre", id: "about" },
+          { label: "Destaques", id: "highlights" },
+          { label: "Doar", id: "donate", onClick: handleDonateClick, green: true }
+        ].map(({ label, id, onClick, green }) => (
           <a
             key={id}
             href={`#${id}`}
@@ -58,17 +57,13 @@ const Header = () => {
               if (onClick) {
                 onClick(e);
               } else {
-                handleClick(sound, id);
+                handleClick(id);
               }
             }}
             className={`relative rounded px-4 py-2 transition border-2 border-transparent
-              ${green ? "bg-green-500 text-white hover:bg-green-700" : "hover:bg-gray-200"}
-              ${showBorder ? "animate-border" : ""}`}
+              ${green ? "bg-green-500 text-white hover:bg-green-700" : "hover:bg-gray-200"}`}
           >
             {label}
-            {showBorder && (
-              <span className="absolute inset-0 rounded border-2 border-transparent animate-border"></span>
-            )}
           </a>
         ))}
       </nav>

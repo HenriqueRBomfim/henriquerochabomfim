@@ -65,7 +65,10 @@ export default function ContactForm() {
     "Antonio Marques Bonfim Rosa",
     "William Chaine Stevenson",
     "Eduardo Felipe Z Santana",
-    "Edinei Farias de Melo Soares"
+    "Edinei Farias de Melo Soares",
+    "Evelyn Da Cruz Farias",
+    "Thiago Sato de Castro",
+    "Guilherme Rocha Bomfim"
   ];
 
   return (
