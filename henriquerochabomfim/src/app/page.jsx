@@ -357,11 +357,24 @@ Por isso, conto com a sua ajuda para divulgar meu site e as publicações sobre 
           reverse={true}
         />
         <StoryBlock
+          title="Por que escolhi a THI para meu intercâmbio?"
+          text="Estudar na Technische Hochschule Ingolstadt (THI) representa um passo essencial na minha trajetória acadêmica e profissional. Como estudante de Engenharia da Computação, sempre busquei oportunidades para expandir meus conhecimentos e desenvolver soluções inovadoras. A THI, com sua forte ênfase em tecnologia aplicada e parcerias com grandes empresas, é o ambiente ideal para aprofundar minhas habilidades e aprender com alguns dos melhores profissionais e pesquisadores da Europa. /n
+Além disso, a Alemanha é referência global em engenharia e inovação, e viver essa experiência imersiva me permitirá absorver metodologias de ensino avançadas, participar de projetos de ponta e me conectar com uma comunidade acadêmica diversa e qualificada. Esse intercâmbio não apenas elevará meu nível técnico, mas também ampliará minha visão sobre como a tecnologia pode transformar negócios e impactar positivamente a sociedade. /n
+Essa oportunidade é mais do que um crescimento acadêmico — é a chance de me preparar para contribuir ativamente para o futuro da engenharia e da inovação no Brasil. Porém, para que esse sonho se torne realidade, preciso de apoio. Com sua ajuda, posso superar os desafios financeiros e aproveitar ao máximo essa experiência transformadora. Juntos, podemos fazer essa jornada acontecer!
+"
+          image={["/thi.jpeg","thi.png"]}
+          caption={[
+            "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
+            "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
+          ]}
+          reverse={false}
+        />
+        <StoryBlock
           title="Site em construção, pois essa jornada só está começando!"
           text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
           Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
           image="/continua.jpg"
-          reverse={false}
+          reverse={true}
         />
       </div>
       
