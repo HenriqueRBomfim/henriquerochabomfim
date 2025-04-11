@@ -70,7 +70,8 @@ export default function ContactForm() {
     "Thiago Sato de Castro",
     "Guilherme Rocha Bomfim",
     "Renata Pereira Da Costa",
-    "Arthur Pereira Lima Reis"
+    "Arthur Pereira Lima Reis",
+    "Aline Lilian Dos Santos",
   ];
 
   return (
