@@ -68,7 +68,9 @@ export default function ContactForm() {
     "Edinei Farias de Melo Soares",
     "Evelyn Da Cruz Farias",
     "Thiago Sato de Castro",
-    "Guilherme Rocha Bomfim"
+    "Guilherme Rocha Bomfim",
+    "Renata Pereira Da Costa",
+    "Arthur Pereira Lima Reis"
   ];
 
   return (
