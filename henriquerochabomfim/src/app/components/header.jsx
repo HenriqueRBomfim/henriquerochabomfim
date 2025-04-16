@@ -56,13 +56,13 @@ const Header = () => {
         {[
           { label: "Sobre", id: "about" },
           { label: "Destaques", id: "highlights" },
-          { label: "Jogo", id: "game_drop" },
           {
             label: "Doar",
             id: "donate",
             onClick: handleDonateClick,
             green: true,
           },
+          { label: "Jogo", id: "game_drop" },
         ].map(({ label, id, onClick, green }) => (
           <div key={id} className="relative flex flex-col items-center">
             <a
@@ -76,7 +76,11 @@ const Header = () => {
                 }
               }}
               className={`relative rounded px-4 py-2 transition border-2 border-transparent
-                ${green ? "bg-green-500 text-white hover:bg-green-700" : "hover:bg-gray-200"}`}
+                ${green 
+                  ? "bg-green-500 text-white hover:bg-green-700" 
+                  : id === "game_drop" 
+                    ? "bg-red-500 text-white hover:bg-red-700" 
+                    : "hover:bg-gray-200"}`}
             >
               {label}
             </a>
