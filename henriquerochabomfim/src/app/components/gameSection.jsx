@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import SearchBar from './searchBar'
 import axios from 'axios'
 
 export default function GameSection() {
