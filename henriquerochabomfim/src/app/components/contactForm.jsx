@@ -4,6 +4,7 @@ import { useState } from "react";
 import PixCopyButton from "./pixCopyButton";
 import DonationsChart from "./donationsChart";
 import CostTable from "./costTable";
+import GameSection from "./gameSection"; // Importando o GameSection
 
 export default function ContactForm() {
   const [subject, setSubject] = useState("");
@@ -165,16 +166,8 @@ export default function ContactForm() {
         </a>
       </div>
 
-      <h2 className="text-xl font-bold mt-6">Criei um jogo de zumbis do zero para te entreter neste site, você pode jogá-lo abaixo:</h2>
-      <h3 className="text-xl font mt-6">Obs: Só funciona em notebook e computador. Abaixe o volume do seu dispositivo caso fique muito alto</h3>
-      <div className="flex justify-center mt-4">
-        <iframe
-          allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
-          id="game_drop"
-          src="https://html-classic.itch.zone/html/13347305/index.html"
-          className="w-full max-w-5xl h-[700px] border-0"
-        ></iframe>
-      </div>
+      {/* Chamada do GameSection */}
+      <GameSection />
     </section>
   );
 }
