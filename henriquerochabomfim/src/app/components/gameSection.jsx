@@ -3,14 +3,14 @@ import SearchBar from './searchBar'
 import axios from 'axios'
 
 export default function GameSection() {
-  const [topPlayer, setTopPlayer] = useState(null)
+  // const [topPlayer, setTopPlayer] = useState(null)
 
-  useEffect(() => {
-    // Usando a URL relativa para fazer a requisição
-    axios.get('/api/top') // O Vercel redireciona para o backend no Render
-      .then(res => setTopPlayer(res.data))
-      .catch(err => console.error(err))
-  }, [])
+  // useEffect(() => {
+  //   // Usando a URL relativa para fazer a requisição
+  //   axios.get('/api/top') // O Vercel redireciona para o backend no Render
+  //     .then(res => setTopPlayer(res.data))
+  //     .catch(err => console.error(err))
+  // }, [])
 
   return (
     <div className="mt-6">
@@ -29,7 +29,7 @@ export default function GameSection() {
         <iframe
           allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
           id="game_drop"
-          src="https://html-classic.itch.zone/html/13347305/index.html"
+          src="https://html-classic.itch.zone/html/13419058/index.html"
           className="w-full max-w-5xl h-[700px] border-0"
         ></iframe>
       </div>

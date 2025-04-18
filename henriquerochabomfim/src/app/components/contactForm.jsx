@@ -4,7 +4,6 @@ import { useState } from "react";
 import PixCopyButton from "./pixCopyButton";
 import DonationsChart from "./donationsChart";
 import CostTable from "./costTable";
-import GameSection from "./gameSection"; // Importando o GameSection
 
 export default function ContactForm() {
   const [subject, setSubject] = useState("");
@@ -165,9 +164,6 @@ export default function ContactForm() {
             />
         </a>
       </div>
-
-      {/* Chamada do GameSection */}
-      <GameSection />
     </section>
   );
 }
