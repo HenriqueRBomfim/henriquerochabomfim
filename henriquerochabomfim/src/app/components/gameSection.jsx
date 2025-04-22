@@ -102,7 +102,7 @@ export default function GameSection() {
         <iframe
           allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
           id="game_drop"
-          src="https://html-classic.itch.zone/html/13419058/index.html"
+          src="https://html-classic.itch.zone/html/13454418/index.html"
           className="w-full max-w-5xl h-[700px] border-0"
         ></iframe>
       </div>
