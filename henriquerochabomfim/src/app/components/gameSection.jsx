@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Trophy, Clock, User } from 'lucide-react'
 import { motion } from "framer-motion"
+import SearchBar from './searchBar'
 
 export default function GameSection() {
   const [topPlayers, setTopPlayers] = useState([])
