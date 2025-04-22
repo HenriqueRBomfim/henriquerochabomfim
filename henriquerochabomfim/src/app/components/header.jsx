@@ -160,18 +160,19 @@ const Header = () => {
               Jogos
             </a>
           
-            <button
-              onClick={() => handleClick("resume")}
-              className="text-left px-4 py-2 hover:bg-gray-100 rounded"
+            <a
+              href="/curriculo.pdf"
+              download
+              className="text-left px-4 py-2 hover:bg-gray-100 rounded block"
             >
               Currículo
-            </button>
-            <button
+            </a>
+            {/* <button
               onClick={() => handleClick("projects")}
               className="text-left px-4 py-2 hover:bg-gray-100 rounded"
             >
               Projetos
-            </button>
+            </button> */}
           </motion.div>
         )}
       </AnimatePresence>

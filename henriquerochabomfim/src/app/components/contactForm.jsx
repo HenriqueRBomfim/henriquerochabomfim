@@ -72,6 +72,11 @@ export default function ContactForm() {
     "Renata Pereira Da Costa",
     "Arthur Pereira Lima Reis",
     "Aline Lilian Dos Santos",
+    "Diego Correia Lima Pinheiro",
+    "Heloísa Fernandes Dias Da Silva",
+    "Gabriel de Castro Ribeiro",
+    "Frederico Maradei Ayres",
+    "Eliana Aparecida Diniz"
   ];
 
   return (
