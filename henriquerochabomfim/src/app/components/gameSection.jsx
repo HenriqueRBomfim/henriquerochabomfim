@@ -19,8 +19,11 @@ export default function GameSection() {
           Criei um jogo de zumbis em que você pode ganhar R$50,00 caso esteja no top 1 no ranking no dia 15 de Maio de 2025!:
         </h2>
         <p className="text-m font mt-6">
-          Para comprovar que ganhou, você deve enviar o código secreto (que recebeu por email do score_do_jogo@contato.henriquerochabomfim.com.br) da partida campeã para o meu email: henriquerochaintercambio@hotmail.com após o dia 15 de Maio de 2025.
+          Para comprovar que ganhou, você deve enviar o código secreto da partida campeã para o meu email: henriquerochaintercambio@hotmail.com após o dia 15 de Maio de 2025.
         </p>
+        <h5 className="text-xs font mt-6">
+          Você recebeu o código secreto por este email: score_do_jogo@contato.henriquerochabomfim.com.br
+        </h5>
         <h4 className="text-m font mt-6">
           Obs: Só funciona em notebook e computador. O jogo é para que você faça uma doação para o meu intercâmbio, então não se esqueça de doar pelo menos R$10,00 para o PIX henriquerochaintercambio@hotmail.com para poder receber o prêmio caso ganhe!
         </h4>
@@ -35,7 +38,7 @@ export default function GameSection() {
         
           {/* Wrapper para tornar o conteúdo deslizável no mobile */}
           <div className="overflow-x-auto">
-            <div className="flex gap-4 w-max">
+            <div className="flex flex-col gap-4 min-w-[300px] sm:min-w-[400px]">
               {topPlayers.map((player, index) => {
                 const medalEmojis = ["🥇", "🥈", "🥉", "🎖️", "🎖️"]
                 const positionColors = [
@@ -65,10 +68,10 @@ export default function GameSection() {
                     text: "text-blue-700",
                   },
                 ]
-        
+
                 const { bg, border, text } = positionColors[index] || positionColors[4]
                 const emoji = medalEmojis[index] || "🎖️"
-        
+
                 return (
                   <motion.div
                     key={index}
@@ -90,7 +93,7 @@ export default function GameSection() {
                   </motion.div>
                 )
               })}
-          </div>
+            </div>
         </div>
       </div>
       )}
