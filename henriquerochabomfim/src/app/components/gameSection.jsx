@@ -18,13 +18,13 @@ export default function GameSection() {
         <h2 className="text-xl font-bold">
           Criei um jogo de zumbis em que você pode ganhar R$50,00 caso esteja no top 1 no ranking no dia 15 de Maio de 2025!:
         </h2>
-        <p className="text-xl font mt-6">
+        <p className="text-m font mt-6">
           Para comprovar que ganhou, você deve enviar o código secreto (que recebeu por email do score_do_jogo@contato.henriquerochabomfim.com.br) da partida campeã para o meu email: henriquerochaintercambio@hotmail.com após o dia 15 de Maio de 2025.
         </p>
-        <h4 className="text-l font mt-6">
+        <h4 className="text-m font mt-6">
           Obs: Só funciona em notebook e computador. O jogo é para que você faça uma doação para o meu intercâmbio, então não se esqueça de doar pelo menos R$10,00 para o PIX henriquerochaintercambio@hotmail.com para poder receber o prêmio caso ganhe!
         </h4>
-        <h4 className="text-l font mt-6">
+        <h4 className="text-m font mt-6">
           Mesmo que não esteja no primeiro lugar, toda ajuda é bem-vinda!
         </h4>
       </div>
