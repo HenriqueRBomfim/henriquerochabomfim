@@ -4,6 +4,7 @@ import { useState } from "react";
 import PixCopyButton from "./pixCopyButton";
 import DonationsChart from "./donationsChart";
 import CostTable from "./costTable";
+import WiseDonationButton from './WiseDonationButton';
 
 export default function ContactForm() {
   const [subject, setSubject] = useState("");
@@ -92,7 +93,7 @@ export default function ContactForm() {
   ];
 
   return (
-    <section id="donate" className="p-6 mt-10 text-center">
+    <section className="p-6 mt-10 text-center">
       <h1 className="text-2xl font-bold py-2">Ajude no Meu Intercâmbio</h1>
 
       <h2 className="text-2xl font-bold mb-4 py-6">Entre em contato:</h2>
@@ -124,10 +125,12 @@ export default function ContactForm() {
         </button>
       </form>
 
-      <div className="p-4">
+      <div className="p-4" id="donate">
         <h1 className="text-2xl font-bold mb-2">Apoie minha jornada até a Alemanha!</h1>
         <PixCopyButton />
       </div>
+
+      <WiseDonationButton />
 
       <CostTable />
 

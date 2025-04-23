@@ -64,7 +64,7 @@ const Header = () => {
         <nav className="flex space-x-4 p-2 relative">
           {[
             {
-              label: "Doar",
+              label: "Doar (PIX/Wise)",
               id: "donate",
               onClick: handleDonateClick,
               green: true,

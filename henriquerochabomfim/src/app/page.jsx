@@ -2,7 +2,6 @@ import Image from 'next/image';
 import StoryBlock from "./components/storyBlock";
 import Header from "./components/header";
 import HighlightsCarousel from "./components/highlightsCarousel";
-import PixCopyButton from "./components/pixCopyButton";
 import CarrosselGrupos from './components/carrosselGrupos';
 import ContactForm from "./components/contactForm";
 
