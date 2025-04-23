@@ -17,6 +17,8 @@ const CSV_URL =
 export default function DonationsChart() {
   const [data, setData] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [meta, setMeta] = useState(0);
+  const [arrecadado, setArrecadado] = useState(0);
 
   useEffect(() => {
     const fetchCSVData = async () => {
@@ -25,8 +27,8 @@ export default function DonationsChart() {
         const text = await res.text();
         const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
 
-        let meta = 0;
-        let arrecadado = 0;
+        let tempMeta = 0;
+        let tempArrecadado = 0;
 
         for (const line of lines) {
           const cells = line.split(",").map((cell) =>
@@ -49,20 +51,22 @@ export default function DonationsChart() {
             const parsed = parseFloat(cleanValue);
 
             if (cell.includes("meta") && !isNaN(parsed)) {
-              meta = parsed;
+              tempMeta = parsed;
             }
 
             if (cell.includes("arrecadado") && !isNaN(parsed)) {
-              arrecadado = parsed;
+              tempArrecadado = parsed;
             }
           });
         }
 
-        if (meta > 0 && arrecadado >= 0) {
+        if (tempMeta > 0 && tempArrecadado >= 0) {
           setData([
-            { name: "Arrecadado", value: arrecadado },
-            { name: "Faltando", value: Math.max(0, meta - arrecadado) },
+            { name: "Arrecadado", value: tempArrecadado },
+            { name: "Faltando", value: Math.max(0, tempMeta - tempArrecadado) },
           ]);
+          setMeta(tempMeta);
+          setArrecadado(tempArrecadado);
         }
       } catch (err) {
         console.error("Erro ao carregar CSV:", err);
@@ -119,46 +123,71 @@ export default function DonationsChart() {
     );
   };
 
+  const percentage = meta > 0 ? (arrecadado / meta) * 100 : 0;
+
   return (
     <div className="w-full mt-10 flex justify-center">
-      <div className="w-full sm:w-[90%] lg:w-[700px] flex flex-col items-center justify-center h-[350px] sm:h-[400px]">
+      <div className="w-full sm:w-[90%] lg:w-[700px] flex flex-col items-center justify-center">
         <h2 className="text-xl font-bold text-center mb-2">
           Progresso da Campanha
         </h2>
-        <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
-            <Pie
-              data={data}
-              cx="50%"
-              cy="45%"
-              labelLine={false}
-              outerRadius={isMobile ? 80 : 100}
-              fill="#8884d8"
-              dataKey="value"
-              label={renderCustomLabel}
-            >
-              {data.map((_, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={COLORS[index % COLORS.length]}
-                />
-              ))}
-            </Pie>
-            <Tooltip
-              formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`}
-            />
-            <Legend
-              layout="horizontal"
-              verticalAlign="bottom"
-              align="center"
-              wrapperStyle={{
-                fontSize: "12px",
-                lineHeight: "1.2",
+
+        {/* Gráfico de Pizza */}
+        <div className="h-[350px] sm:h-[400px] w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <PieChart>
+              <Pie
+                data={data}
+                cx="50%"
+                cy="45%"
+                labelLine={false}
+                outerRadius={isMobile ? 80 : 100}
+                fill="#8884d8"
+                dataKey="value"
+                label={renderCustomLabel}
+              >
+                {data.map((_, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+              <Tooltip
+                formatter={(value) => `R$ ${value.toLocaleString("pt-BR")}`}
+              />
+              <Legend
+                layout="horizontal"
+                verticalAlign="bottom"
+                align="center"
+                wrapperStyle={{
+                  fontSize: "12px",
+                  lineHeight: "1.2",
+                }}
+                formatter={(value) => value}
+              />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+
+        {/* Barra de Progresso */}
+        <div className="w-full mt-6">
+          <div className="w-full bg-gray-200 rounded-full h-6 overflow-hidden relative">
+            <div
+              className="h-full transition-all duration-500"
+              style={{
+                width: `${Math.min(percentage, 100)}%`,
+                background: percentage >= 100
+                  ? "linear-gradient(to right, #3b82f6, #60a5fa)" 
+                  : "linear-gradient(to right, #00C49F, #00E6A0)",
               }}
-              formatter={(value) => value}
-            />
-          </PieChart>
-        </ResponsiveContainer>
+            ></div>
+          </div>
+          <div className="flex justify-between text-sm mt-2">
+            <span>Arrecadado: R$ {arrecadado.toLocaleString("pt-BR")}</span>
+            <span>Meta: R$ {meta.toLocaleString("pt-BR")}</span>
+          </div>
+        </div>
       </div>
     </div>
   );
