@@ -77,7 +77,18 @@ export default function ContactForm() {
     "Gabriel de Castro Ribeiro",
     "Frederico Maradei Ayres",
     "Eliana Aparecida Diniz",
-    "Márcio Fernando Stabile Junior"
+    "Márcio Fernando Stabile Junior",
+    "Lucas Henrique Reis Bahia",
+    "Vania Beck",
+    "Rafael Mafort Coimbra",
+    "Matheus Henrique Silva Amorim",
+    "Celia Hanako Kano",
+    "Roberto Candido De Oliveira Junior",
+    "Aparecida Lurdes Vieira",
+    "Gabriel Marmentini",
+    "Marcelo Amarante S Carvalho",
+    "Pedro Kenzo Muramatsu Carmo",
+    "Luiz Carlos Siciliano",
   ];
 
   return (
