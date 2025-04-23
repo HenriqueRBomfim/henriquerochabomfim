@@ -94,7 +94,9 @@ export default function ContactForm() {
     "Ana Teresa Alvarez Calderon Velarde",
     "Michelle Araujo Mesquita",
     "Fabio Roberto De Miranda",
-    "Carolina Tardin"
+    "Carolina Tardin",
+    "Felipe Adeildo Da Silva",
+    "Gabriela Abib"
   ];
 
   return (
