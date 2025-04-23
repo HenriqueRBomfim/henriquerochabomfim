@@ -76,7 +76,8 @@ export default function ContactForm() {
     "Heloísa Fernandes Dias Da Silva",
     "Gabriel de Castro Ribeiro",
     "Frederico Maradei Ayres",
-    "Eliana Aparecida Diniz"
+    "Eliana Aparecida Diniz",
+    "Márcio Fernando Stabile Junior"
   ];
 
   return (
