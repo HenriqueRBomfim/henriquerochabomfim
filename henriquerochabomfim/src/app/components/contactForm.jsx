@@ -90,6 +90,11 @@ export default function ContactForm() {
     "Marcelo Amarante S Carvalho",
     "Pedro Kenzo Muramatsu Carmo",
     "Luiz Carlos Siciliano",
+    "Maria Eduarda Rodrigues De Barros",
+    "Ana Teresa Alvarez Calderon Velarde",
+    "Michelle Araujo Mesquita",
+    "Fabio Roberto De Miranda",
+    "Carolina Tardin"
   ];
 
   return (

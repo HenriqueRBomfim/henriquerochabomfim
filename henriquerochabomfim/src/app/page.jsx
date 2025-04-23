@@ -4,8 +4,10 @@ import Header from "./components/header";
 import HighlightsCarousel from "./components/highlightsCarousel";
 import CarrosselGrupos from './components/carrosselGrupos';
 import ContactForm from "./components/contactForm";
+// import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  // const { t } = useTranslation();
   return (
     <div className="bg-gray-100 text-gray-900">
       {/* Header */}

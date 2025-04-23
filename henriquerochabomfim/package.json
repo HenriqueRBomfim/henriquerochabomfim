@@ -13,10 +13,13 @@
     "@vercel/speed-insights": "^1.2.0",
     "axios": "^1.8.4",
     "framer-motion": "^12.6.2",
+    "i18next": "^25.0.1",
     "lucide-react": "^0.488.0",
     "next": "15.2.3",
+    "next-i18next": "^15.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.5.1",
     "recharts": "^2.15.2"
   },
   "devDependencies": {
