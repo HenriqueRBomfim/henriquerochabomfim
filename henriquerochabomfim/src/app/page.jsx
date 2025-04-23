@@ -77,7 +77,7 @@ export default function Home() {
           title="Base Familiar"
           text="Antes de contar quem eu me tornei e que caminho estou seguindo, vou contar 
           um pouco sobre a minha origem: Nasci em um lar cristão em que meus pais já serviam 
-          a Deus na Congregação Cristã no Brasil (CCB). Meu pai nasceu e foi criado no interior
+          a Deus na Congregação Cristã no Brasil (CCB), onde atuo como violinista desde 2018. Meu pai nasceu e foi criado no interior
            da Bahia, tendo estudado apenas até a 5ª série do ensino fundamental e 
            trabalha em um mercado atacadista. Minha mãe sempre foi de São Paulo - SP, e estudou 
            até o nível técnico em enfermagem, sempre se esforçando para trabalhar em hospitais 
