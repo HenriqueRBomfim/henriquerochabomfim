@@ -4,7 +4,7 @@ import { useState } from "react";
 import PixCopyButton from "./pixCopyButton";
 import DonationsChart from "./donationsChart";
 import CostTable from "./costTable";
-import WiseDonationButton from './WiseDonationButton';
+import WiseDonationButton from './wiseDonationButton';
 
 export default function ContactForm() {
   const [subject, setSubject] = useState("");
