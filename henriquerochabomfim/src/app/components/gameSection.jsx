@@ -113,6 +113,9 @@ export default function GameSection() {
       <h4 className="text-m font mt-6">
           Curtiu o jogo? Independente do ranking, faça uma doação e compartilhe meu site 🤩
       </h4>
+      <h3 className="text-m font mt-6">
+          No dia 16/05, além de reiniciar o ranking, atualizarei o jogo com pets, armas, skins e muito mais! Fique ligado! 🔥
+      </h3>
     </div>
   )
 }
