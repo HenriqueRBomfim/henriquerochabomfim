@@ -169,6 +169,12 @@ export default function ContactForm() {
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
           ⌛ Meta até dia 24/04/2025: alcançar pelo menos 30% do valor arrecadado
         </p>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          ⌛ Meta até dia 05/05/2025: alcançar pelo menos 40% do valor arrecadado
+        </p>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          ⌛ Meta até dia 15/05/2025: alcançar pelo menos 50% do valor arrecadado
+        </p>
       </div>
 
       <div className="w-full max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-6">
