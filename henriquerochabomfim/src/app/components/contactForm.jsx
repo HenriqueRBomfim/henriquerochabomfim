@@ -96,7 +96,18 @@ export default function ContactForm() {
     "Fabio Roberto De Miranda",
     "Carolina Tardin",
     "Felipe Adeildo Da Silva",
-    "Gabriela Abib"
+    "Gabriela Abib",
+    "Elder Leandro Da Silva",
+    "Rodolfo Da Silva Avelino",
+    "José Israel Masiero Neto",
+    "Andressa Jesus Cardoso",
+    "Luana Moreira Dias",
+    "Victor Alexandre Alves Machado",
+    "Monise Christina Santos Souza",
+    "Mariana Roth Aparício",
+    "Mariana Araujo De Albuquerque",
+    "Erik Leonardo Soares De Oliveira",
+    "Alessandra K C Barbosa"
   ];
 
   return (

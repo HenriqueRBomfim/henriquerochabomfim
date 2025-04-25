@@ -109,6 +109,10 @@ export default function GameSection() {
           className="w-full max-w-5xl h-[700px] border-0"
         ></iframe>
       </div>
+
+      <h4 className="text-m font mt-6">
+          Curtiu o jogo? Independente do ranking, faça uma doação e compartilhe meu site 🤩
+      </h4>
     </div>
   )
 }
