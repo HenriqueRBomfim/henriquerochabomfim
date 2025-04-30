@@ -107,7 +107,8 @@ export default function ContactForm() {
     "Mariana Roth Aparício",
     "Mariana Araujo De Albuquerque",
     "Erik Leonardo Soares De Oliveira",
-    "Alessandra K C Barbosa"
+    "Alessandra K C Barbosa",
+    "Paulina Achurra"
   ];
 
   return (
@@ -167,7 +168,9 @@ export default function ContactForm() {
           <span className="text-xs text-gray-500">🏆 Meta alcançada em: 09/04/2025</span>
         </p>
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ⌛ Meta até dia 24/04/2025: alcançar pelo menos 30% do valor arrecadado
+          ✅ Meta até dia 24/04/2025: alcançar pelo menos 30% do valor arrecadado
+          <br />
+          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 28/04/2025</span>
         </p>
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
           ⌛ Meta até dia 05/05/2025: alcançar pelo menos 40% do valor arrecadado
