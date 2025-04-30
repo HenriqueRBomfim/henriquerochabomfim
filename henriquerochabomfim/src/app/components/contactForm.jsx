@@ -108,7 +108,14 @@ export default function ContactForm() {
     "Mariana Araujo De Albuquerque",
     "Erik Leonardo Soares De Oliveira",
     "Alessandra K C Barbosa",
-    "Paulina Achurra"
+    "Fernando Hartmann Barazzetti",
+    "Cleiciane Bonfim Aguiar",
+    "Vanessa Aparecida Da Silva Sampaio",
+    "Matheus Siqueira De Azevedo",
+    "Lara Victoria Araújo Lima",
+    "Paulina A Achurra Burgos",
+    "Luis Antonio Santana Rodrigues",
+    
   ];
 
   return (
