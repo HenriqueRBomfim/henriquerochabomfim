@@ -115,7 +115,7 @@ export default function ContactForm() {
     "Lara Victoria Araújo Lima",
     "Paulina A Achurra Burgos",
     "Luis Antonio Santana Rodrigues",
-    
+    "Ricardo Slem Ribeiro",
   ];
 
   return (
