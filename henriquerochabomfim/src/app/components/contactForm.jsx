@@ -116,6 +116,11 @@ export default function ContactForm() {
     "Paulina A Achurra Burgos",
     "Luis Antonio Santana Rodrigues",
     "Ricardo Slem Ribeiro",
+    "Ricardo Wurzmann",
+    "João Pereira Rodrigues Chade",
+    "Pedro Carvalho Ribeiro Neto",
+    "Tomas Rolim Miele",
+    "Yuri Tabacof"
   ];
 
   return (
