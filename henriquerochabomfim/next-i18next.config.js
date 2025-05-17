@@ -1,9 +1,9 @@
-const i18nConfig = {
-    i18n: {
-      defaultLocale: 'pt',
-      locales: ['pt', 'en'],
-    },
-  };
+// const i18nConfig = {
+//     i18n: {
+//       defaultLocale: 'pt',
+//       locales: ['pt', 'en'],
+//     },
+//   };
   
-  export default i18nConfig;
+//   module.exports = i18nConfig;
   
