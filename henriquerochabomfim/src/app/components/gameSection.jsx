@@ -16,7 +16,7 @@ export default function GameSection() {
   return (
     <div className="mt-6">
       <div className="mt-6 max-w-screen-md mx-auto px-4">
-        <h2 className="text-xl font-bold">
+        {/* <h2 className="text-xl font-bold">
           Criei um jogo de zumbis em que você pode ganhar R$50,00 caso esteja no top 1 no ranking no dia 15 de Maio de 2025!:
         </h2>
         <p className="text-m font mt-6">
@@ -24,13 +24,13 @@ export default function GameSection() {
         </p>
         <h5 className="text-xs font mt-6">
           Você recebeu o código secreto por este email: score_do_jogo@contato.henriquerochabomfim.com.br
-        </h5>
+        </h5> */}
         <h4 className="text-m font mt-6">
           Obs: Só funciona em notebook e computador. O jogo é para que você faça uma doação para o meu intercâmbio, então não se esqueça de doar pelo menos R$10,00 para o PIX henriquerochaintercambio@hotmail.com para poder receber o prêmio caso ganhe!
         </h4>
-        <h4 className="text-m font mt-6">
+        {/* <h4 className="text-m font mt-6">
           Mesmo que não esteja no primeiro lugar, toda ajuda é bem-vinda!
-        </h4>
+        </h4> */}
       </div>
 
       {topPlayers.length > 0 && (
@@ -113,9 +113,9 @@ export default function GameSection() {
       <h4 className="text-m font mt-6">
           Curtiu o jogo? Independente do ranking, faça uma doação e compartilhe meu site 🤩
       </h4>
-      <h3 className="text-m font mt-6">
+      {/* <h3 className="text-m font mt-6">
           No dia 16/05, além de reiniciar o ranking, atualizarei o jogo com pets, armas, skins e muito mais! Fique ligado! 🔥
-      </h3>
+      </h3> */}
     </div>
   )
 }
