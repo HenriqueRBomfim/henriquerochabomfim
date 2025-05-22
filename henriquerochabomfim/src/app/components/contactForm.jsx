@@ -126,6 +126,10 @@ export default function ContactForm() {
     "Vivia de Souza",
     "Eduardo Machado De Oliveira",
     "Vinicius Clemente da Silva",
+    "Rebeca Pereira Gusmao Borges Alves",
+    "Amanda De Souza Missel",
+    "Aline Barbosa De Brito",
+    "Keiya Nishio"
   ];
 
   return (
