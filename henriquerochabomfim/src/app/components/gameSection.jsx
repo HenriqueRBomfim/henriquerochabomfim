@@ -16,28 +16,14 @@ export default function GameSection() {
   return (
     <div className="mt-6">
       <div className="mt-6 max-w-screen-md mx-auto px-4">
-        {/* <h2 className="text-xl font-bold">
-          Criei um jogo de zumbis em que você pode ganhar R$50,00 caso esteja no top 1 no ranking no dia 15 de Maio de 2025!:
-        </h2>
-        <p className="text-m font mt-6">
-          Para comprovar que ganhou, você deve enviar o código secreto da partida campeã para o meu email: henriquerochaintercambio@hotmail.com após o dia 15 de Maio de 2025.
-        </p>
-        <h5 className="text-xs font mt-6">
-          Você recebeu o código secreto por este email: score_do_jogo@contato.henriquerochabomfim.com.br
-        </h5> */}
         <h4 className="text-m font mt-6">
-          Obs: Só funciona em notebook e computador. O jogo é para que você faça uma doação para o meu intercâmbio, então não se esqueça de doar pelo menos R$10,00 para o PIX henriquerochaintercambio@hotmail.com para poder receber o prêmio caso ganhe!
+          Obs: Só funciona em notebook e computador. Esses jogos fazem parte da minha campanha de intercâmbio! Então, se curtir a experiência, considere fazer uma doação de qualquer valor via PIX: henriquerochaintercambio@hotmail.com. Toda contribuição faz diferença!
         </h4>
-        {/* <h4 className="text-m font mt-6">
-          Mesmo que não esteja no primeiro lugar, toda ajuda é bem-vinda!
-        </h4> */}
       </div>
 
-      {topPlayers.length > 0 && (
+      {/* {topPlayers.length > 0 && (
         <div className="mt-6">
           <h4 className="text-lg font-semibold mb-2">🏆 Ranking Top 5</h4>
-        
-          {/* Wrapper para tornar o conteúdo deslizável no mobile */}
           <div className="overflow-x-auto">
             <div className="flex flex-col gap-4 min-w-[300px] sm:min-w-[400px]">
               {topPlayers.map((player, index) => {
@@ -95,27 +81,37 @@ export default function GameSection() {
                 )
               })}
             </div>
+          </div>
         </div>
-      </div>
       )}
 
-      <SearchBar />
+      <SearchBar /> */}
 
-      <div className="flex justify-center mt-6">
-        <iframe
-          allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
-          id="game_drop"
-          src="https://html-classic.itch.zone/html/13454905/index.html"
-          className="w-full max-w-5xl h-[700px] border-0"
-        ></iframe>
+      <div className="flex flex-col items-center gap-8 mt-8">
+        {/* Jogo 1 */}
+        <div className="w-full flex justify-center">
+          <iframe
+            allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+            id="game_drop"
+            src="https://html-classic.itch.zone/html/13454905/index.html"
+            className="w-full max-w-5xl h-[700px] border-0"
+          ></iframe>
+        </div>
+
+        {/* Jogo 2 */}
+        <div className="w-full flex justify-center">
+          <iframe
+            allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+            id="grave_digger"
+            src="https://html-classic.itch.zone/html/13868390/GraveDiggerV1.0.2/index.html"
+            className="w-full max-w-5xl h-[700px] border-0"
+          ></iframe>
+        </div>
       </div>
 
       <h4 className="text-m font mt-6">
-          Curtiu o jogo? Independente do ranking, faça uma doação e compartilhe meu site 🤩
+        Curtiu os jogos? Toda contribuição me ajuda a financiar meu intercâmbio – compartilhe também para apoiar essa jornada! ✈️🌍
       </h4>
-      {/* <h3 className="text-m font mt-6">
-          No dia 16/05, além de reiniciar o ranking, atualizarei o jogo com pets, armas, skins e muito mais! Fique ligado! 🔥
-      </h3> */}
     </div>
   )
 }
