@@ -129,7 +129,11 @@ export default function ContactForm() {
     "Rebeca Pereira Gusmao Borges Alves",
     "Amanda De Souza Missel",
     "Aline Barbosa De Brito",
-    "Keiya Nishio"
+    "Keiya Nishio",
+    "Leandro Dos Santos Da Costa",
+    "Marcel Marques Boonen",
+    "Luigi Orlandi Quinze",
+    "Maria Leda Pereira De Oliveira",
   ];
 
   return (
