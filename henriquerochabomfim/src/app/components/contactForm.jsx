@@ -134,6 +134,8 @@ export default function ContactForm() {
     "Marcel Marques Boonen",
     "Luigi Orlandi Quinze",
     "Maria Leda Pereira De Oliveira",
+    "Osvaldo Cotinguiba Bonfim",
+    "Andrew Toshiaki N Kurauchi"
   ];
 
   return (
