@@ -205,7 +205,21 @@ export default function ContactForm() {
           <span className="text-xs text-gray-500">🏆 Meta alcançada em: 15/05/2025</span>
         </p>
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ⌛ Meta até dia 30/05/2025: alcançar pelo menos 50% do valor arrecadado
+          ✅ Meta até dia 30/05/2025: alcançar pelo menos 50% do valor arrecadado
+          <br />
+          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 05/06/2025</span>
+        </p>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          ⌛ Meta até dia 15/06/2025: alcançar pelo menos 60% do valor arrecadado
+        </p>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          ⌛ Meta até dia 30/06/2025: alcançar pelo menos 75% do valor arrecadado
+        </p>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          ⌛ Meta até dia 15/07/2025: alcançar pelo menos 90% do valor arrecadado
+        </p>
+        <p className="text-sm text-center text-gray-600 mb-2 py-3">
+          ⌛ Meta até dia 31/07/2025: alcançar 100% do valor arrecadado
         </p>
       </div>
 
