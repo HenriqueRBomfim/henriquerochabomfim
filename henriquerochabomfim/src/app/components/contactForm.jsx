@@ -135,7 +135,14 @@ export default function ContactForm() {
     "Luigi Orlandi Quinze",
     "Maria Leda Pereira De Oliveira",
     "Osvaldo Cotinguiba Bonfim",
-    "Andrew Toshiaki N Kurauchi"
+    "Andrew Toshiaki N Kurauchi",
+    "Tio Mia",
+    "Tia Cida",
+    "Pedro Wagner",
+    "Gabriel Hideki Stanzani Onishi",
+    "Crisley Da Silva Guenin",
+    "João Marco barros",
+    "Andreia Ferreira Forte",
   ];
 
   return (
