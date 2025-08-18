@@ -143,6 +143,25 @@ export default function ContactForm() {
     "Crisley Da Silva Guenin",
     "João Marco barros",
     "Andreia Ferreira Forte",
+    "Marina Hermógenes Siqueira",
+    "Lister Ogusuku Ribeiro",
+    "Tawany Oliveira Santos",
+    "Ivan Diniz Assan",
+    "Carlos Henrique Ferreira",
+    "Isabela Braga Coelho Faria",
+    "Paulo Guimaraes",
+    "Marcio Carneiro De Moura",
+    "Gabriel Correira da Costa",
+    "Lorena Stephanie Silveira Dos Santos",
+    "Barbara Pereira Barroso Grecco",
+    "Sabrina Da Silva Frazão",
+    "Gustavo Kramer",
+    "Natalia Siqueira Alves",
+    "Lucca Mesquita Perticarrari",
+    "Eliana Aparecida Diniz",
+    "Marco Antonio Graziano Finoti",
+    "Carolina Franch Soares Leite",
+    "Lucas Silva Puig"
   ];
 
   return (
