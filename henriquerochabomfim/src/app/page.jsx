@@ -43,7 +43,7 @@ export default function Home() {
           {/* Parágrafo com caixinha */}
           <div className="bg-white bg-opacity-90 rounded-2xl px-6 py-3 shadow-md max-w-md">
             <p className="text-lg text-black text-center">
-              Estudante bolsista de Engenharia da Computação no Insper, buscando transformar vidas através de tecnologia, liderança e educação.
+              Estudante de Engenharia da Computação no Insper, fundador da Startellite e ex-estagiário da BASF global. Apaixonado por resolver problemas de altíssima escala.
             </p>
           </div>
         </div>
@@ -64,13 +64,11 @@ export default function Home() {
       <div className="space-y-16">
         <StoryBlock
           title="Panorama Geral"
-          text="Olá! Meu nome é Henrique Rocha, mas pode me chamar de Rique. Sou bolsista 
-          integral de engenharia da computação no Insper e sou a primeira pessoa da minha 
-          árvore genealógica a ingressar em uma universidade. Neste momento, estou me 
-          preparando para estudar entre agosto de 2025 e fevereiro de 2026 na Technische 
-          Hochschule Ingolstadt (THI), Universidade Técnica de Ciências Aplicadas de 
-          Ingolstadt, lugar onde, após um esforço de anos, conquistei 1 das 5 vagas de 
-          intercâmbio disponíveis para cursar disciplinas de tecnologia e negócios na Alemanha."
+          text="Olá! Meu nome é Henrique Rocha, mas pode me chamar de Rique. Sou bolsista
+          integral de engenharia da computação no Insper e sou a primeira pessoa da minha
+          árvore genealógica a ingressar em uma universidade. /n
+          Já fui estagiário de Engenharia de Software na sede mundial da BASF em Ludwigshafen, Alemanha, onde otimizei em 20x um pipeline global de análise química. Estudei na Technische Hochschule Ingolstadt (THI), percorri diversos países e cidades europeias durante o intercâmbio, incluindo Vaticano e Inglaterra, e voltei ao Brasil para fundar a Startellite — uma plataforma que conecta startups a engenheiros de software de alta qualidade. /n
+          Essa página conta toda a minha história, desde o começo."
           image="/henrique-rocha-bomfim.jpeg"
           caption="Eu"
           reverse={false}
@@ -357,10 +355,9 @@ Em relação às atividades que estou fazendo neste semestre: me tornei Gerente 
         />
         <StoryBlock
           title="Por que escolhi a THI para meu intercâmbio?"
-          text="Estudar na Technische Hochschule Ingolstadt (THI) representa um passo essencial na minha trajetória acadêmica e profissional. Como estudante de Engenharia da Computação, sempre busquei oportunidades para expandir meus conhecimentos e desenvolver soluções inovadoras. A THI, com sua forte ênfase em tecnologia aplicada e parcerias com grandes empresas, é o ambiente ideal para aprofundar minhas habilidades e aprender com alguns dos melhores profissionais e pesquisadores da Europa. /n
-Além disso, a Alemanha é referência global em engenharia e inovação, e viver essa experiência imersiva me permitirá absorver metodologias de ensino avançadas, participar de projetos de ponta e me conectar com uma comunidade acadêmica diversa e qualificada. Esse intercâmbio não apenas elevará meu nível técnico, mas também ampliará minha visão sobre como a tecnologia pode transformar negócios e impactar positivamente a sociedade. /n
-Essa oportunidade é mais do que um crescimento acadêmico — é a chance de me preparar para contribuir ativamente para o futuro da engenharia e da inovação no Brasil. Porém, para que esse sonho se torne realidade, preciso de apoio. Com sua ajuda, posso superar os desafios financeiros e aproveitar ao máximo essa experiência transformadora. Juntos, podemos fazer essa jornada acontecer!
-"
+          text="Estudar na Technische Hochschule Ingolstadt (THI) representou um passo essencial na minha trajetória acadêmica e profissional. Como estudante de Engenharia da Computação, sempre busquei oportunidades para expandir meus conhecimentos e desenvolver soluções inovadoras. A THI, com sua forte ênfase em tecnologia aplicada e parcerias com grandes empresas como a Audi e a BMW, foi o ambiente ideal para aprofundar minhas habilidades e aprender com profissionais e pesquisadores de alto nível da Europa. /n
+Além disso, a Alemanha é referência global em engenharia e inovação. Viver essa experiência imersiva me permitiu absorver metodologias de ensino avançadas, fazer um estágio na sede mundial da BASF, explorar a Europa e me conectar com uma comunidade acadêmica diversa e qualificada. /n
+O intercâmbio foi muito mais do que crescimento acadêmico — foi uma virada de chave que moldou o engenheiro e empreendedor que sou hoje. Continue lendo para saber como foi!"
           image={["/thi.jpeg","thi.png"]}
           caption={[
             "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
@@ -369,18 +366,120 @@ Essa oportunidade é mais do que um crescimento acadêmico — é a chance de me
           reverse={false}
         />
         <StoryBlock
-          title="Site em construção, pois essa jornada só está começando!"
-          text="Continuarei adicionando a continuação da minha história aqui e melhorando o site.
-          Se você quiser saber mais sobre mim, entre em contato comigo pelo Instagram ou LinkedIn."
-          image="/continua.jpg"
+          title="O Intercâmbio na Europa (Set/2025 – Fev/2026)"
+          text="Em setembro de 2025, embarquei para a Alemanha para viver a experiência mais transformadora da minha vida. Além das disciplinas na THI — com foco em Inteligência Artificial, Software Security e Macroeconomia —, aproveitei cada semana livre para explorar a Europa. /n
+No total, passei por Alemanha, França, Holanda, Bélgica, Luxemburgo, Áustria, Suíça, Itália, Espanha, Portugal, Vaticano e Inglaterra. /n
+Para viabilizar os R$59.166 necessários para os 6 meses, organizei uma campanha de crowdfunding com 145 apoiadores. O Insper contribuiu com R$45 mil para a Bolsa Cultural, a campanha arrecadou R$37 mil e o complemento da BASF fechou o que faltava, além de ter me dado mais conforto depois. Gerenciar esse orçamento foi, por si só, uma formação valiosa em finanças e planejamento. /n
+A vivência intercultural foi profunda: convivi com estudantes de dezenas de países, aprendi sobre diferentes formas de resolver problemas e voltei com uma visão muito mais ampla sobre engenharia, negócios e vida."
+          image={[
+            "/intercambio/THI%20Ingolstadt.jpg",
+            "/intercambio/Faculdade%20THI%20Ingolstadt%20Alemanha.jpg",
+            "/intercambio/Ingolstadt%20Alemanha.jpg",
+            "/intercambio/thi.jpeg",
+            "/intercambio/thi.png",
+            "/intercambio/Port%C3%A3o%20de%20Brandemburgo%20Berlim%20Alemanha.jpg",
+            "/intercambio/Marienplatz%20Munique%20Alemanha.jpg",
+            "/intercambio/Oktoberfest%20Munique%20Alemanha.jpg",
+            "/intercambio/Frankfurt%20Alemanha.jpg",
+            "/intercambio/Rothenburg%20ob%20der%20Tauber%20Alemanha.jpg",
+            "/intercambio/Stonehenge%20Inglaterra.jpg",
+            "/intercambio/Torrei%20Eiffel%20Paris%20Fran%C3%A7a.jpg",
+            "/intercambio/Girassois%20Museu%20do%20Van%20Gogh%20Amsterdam%20Holanda.jpg",
+            "/intercambio/Parlamento%20Europeu%20Bruxelas%20B%C3%A9lgica.jpg",
+            "/intercambio/Grindelwald%20First%20Mountain%20Su%C3%AD%C3%A7a.jpg",
+            "/intercambio/Lago%20Brienz%20Su%C3%AD%C3%A7a.jpg",
+            "/intercambio/Matterhorn%20Zermatt%20Su%C3%AD%C3%A7a.jpg",
+            "/intercambio/Kufstein%20Austria.jpg",
+            "/intercambio/Pompeia%20Italia.jpg",
+            "/intercambio/Parque%20G%C3%BCell%20Barcelona%20Espanha.jpg",
+            "/intercambio/La%20Sagrada%20Fam%C3%ADlia%20Barcelona%20Espanha.jpg",
+            "/intercambio/Urso%20de%20Madrid%20Espanha.jpg",
+            "/intercambio/Lisboa.jpg",
+            "/intercambio/Universidade%20de%20Coimbra%20Portugal.jpg",
+            "/intercambio/Escola%20de%20Atenas%20Vaticano.jpg",
+          ]}
+          caption={[
+            "THI Ingolstadt",
+            "Faculdade THI Ingolstadt, Alemanha",
+            "Ingolstadt, Alemanha",
+            "THI Ingolstadt",
+            "THI Ingolstadt",
+            "Portão de Brandemburgo, Berlim",
+            "Marienplatz, Munique",
+            "Oktoberfest, Munique",
+            "Frankfurt",
+            "Rothenburg ob der Tauber",
+            "Stonehenge",
+            "Torre Eiffel, Paris",
+            "Museu do Van Gogh, Amsterdã",
+            "Parlamento Europeu, Bruxelas",
+            "Grindelwald First Mountain",
+            "Lago Brienz",
+            "Matterhorn, Zermatt",
+            "Kufstein",
+            "Pompeia",
+            "Parque Güell, Barcelona",
+            "La Sagrada Família, Barcelona",
+            "Urso de Madrid",
+            "Lisboa",
+            "Universidade de Coimbra",
+            "Escola de Atenas, Vaticano",
+          ]}
           reverse={true}
+        />
+        <StoryBlock
+          title="Estágio de Engenharia de Software na BASF — Sede Mundial (Out/2025 – Fev/2026)"
+          text="Durante o intercâmbio, fui aprovado para um estágio de Engenharia de Software na sede global da BASF, a maior empresa química do mundo, em Ludwigshafen, Alemanha. /n
+Estagiei por 4 meses, da metade de outubro até a metade de fevereiro. /n
+Minha missão foi substituir um software legado em MatLab utilizado pela equipe de pesquisa e desenvolvimento global da empresa — um sistema pesado, difícil de manter e dependente de licenças caras. De forma autônoma, desenvolvi um Web App moderno em React/Vite para análise de calorimetria preditiva, sem nenhuma dependência externa, tornando a ferramenta acessível para engenheiros da BASF em todo o mundo. /n
+O resultado mais impactante foi a otimização de performance: reduzi o tempo de processamento das predições químicas de 5 minutos para apenas 15 segundos — uma melhoria de 20x. Além de acelerar o fluxo de trabalho dos pesquisadores, a nova interface eliminou a necessidade de licenças de software e democratizou o acesso à ferramenta globalmente. /n
+Essa experiência consolidou minha capacidade de entregar soluções de alto impacto de forma autônoma em um ambiente corporativo de nível mundial."
+          image={["/Estágio na BASF Ludwigshafen Alemanha.jpg"]}
+          caption={["Estágio na BASF em Ludwigshafen, Alemanha"]}
+          reverse={false}
+        />
+        <StoryBlock
+          title="Troféu Trajetória de Impacto — Insper (Novembro 2025)"
+          text="Em novembro de 2025, enquanto ainda estava na Alemanha, recebi uma das maiores honrarias da minha trajetória acadêmica: o Troféu Trajetória de Impacto do Insper. /n
+Esse prêmio é concedido anualmente aos bolsistas que mais se destacam em impacto acadêmico, extracurricular e social dentro da instituição. Em 2025, fui eleito 1 dos 2 bolsistas premiados em um universo de 400 estudantes bolsistas — o Top 0,5% da instituição. /n
+O reconhecimento levou em conta minhas 642 horas extracurriculares (6x acima da exigência mínima de formatura), minha atuação em 5 organizações estudantis, 7 semestres consecutivos como líder de sala, a presidência do Insper Code (de 9 para 46 membros), a cofundação do Insper Academy, o estágio no BTG Pactual e a trajetória desde a escola pública até o intercâmbio internacional. /n
+É o reconhecimento de que cada hora investida, cada aula dada no GAS, cada projeto entregue valeu a pena."
+          image={["/premio_bolsista_trajetoria_de_impacto.jpeg"]}
+          caption={["Troféu Trajetória de Impacto do Insper"]}
+          reverse={true}
+        />
+        <StoryBlock
+          title="Freelance em Contabilidade para Médicos — Kardium (2026)"
+          text="Após o retorno ao Brasil, comecei a trabalhar como freelancer no projeto Kardium, uma plataforma de contabilidade especializada para médicos recém-formados. O projeto foi idealizado por profissionais experientes do mercado financeiro, da XP Investimentos e da RB Investimentos, que identificaram uma lacuna no mercado: médicos que acabam de iniciar suas carreiras têm grandes desafios para organizar suas finanças e contabilidade. /n
+Meu papel foi atuar como desenvolvedor full-stack, traduzindo as regras de negócio complexas do mercado médico-financeiro em código estruturado, escalável e seguro. Esse projeto me introduziu profundamente ao domínio de finanças para profissionais liberais e foi a semente para o que viria a seguir."
+          image={["/kardium.png"]}
+          caption={["Logo do projeto Kardium"]}
+          reverse={false}
+        />
+        <StoryBlock
+          title="Fundação da Startellite (2026 – Presente)"
+          text="Com a experiência acumulada no BTG Pactual, na BASF, no Kardium e como Presidente do Insper Code, identifiquei um problema recorrente no ecossistema de startups: fundadores com ótimas ideias de negócio têm dificuldade de encontrar engenheiros de software qualificados, confiáveis e alinhados com a velocidade de uma startup. /n
+Em 2026, fundei a Startellite — uma plataforma que conecta fundadores de startups a desenvolvedores de software pré-selecionados das melhores universidades do Brasil (Insper, Inteli, USP e outras). Atuamos como elo de qualidade: apenas o Top 5% dos candidatos passam por nosso processo seletivo rigoroso de múltiplas etapas. /n
+Além da curadoria de talentos, a Startellite oferece suporte operacional completo para startups em fase inicial: serviços de CTO fracionado, precificação transparente através de uma calculadora proprietária, suporte jurídico e contábil, e auxílio na abertura de CNPJ. /n
+Como Tech Lead e desenvolvedor solo, conduzo o desenvolvimento full-stack da plataforma (front-end e back-end), projeto a arquitetura em nuvem (AWS), implemento protocolos de cybersegurança e traduzo a visão de negócio em um MVP escalável pronto para o go-to-market."
+          image={["/site_startellite.png"]}
+          caption={["Site da Startellite"]}
+          reverse={true}
+        />
+        <StoryBlock
+          title="Essa jornada continua!"
+          text="Você chegou ao fim do que foi registrado até agora, mas a história está longe de terminar. /n
+Continuarei adicionando novos capítulos aqui conforme a trajetória avança. /n
+Se você quiser saber mais, entrar em contato ou conhecer a Startellite, acesse os links no topo da página ou entre em contato pelo Instagram ou LinkedIn."
+          image="/continua.jpg"
+          reverse={false}
         />
       </div>
       
       {/* Destaques */}
       <HighlightsCarousel />
 
-      {/* Doação */}
+      {/* Progresso */}
       <ContactForm />
     </div>
   );

@@ -1,23 +1,9 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import { Trophy, Clock, User } from 'lucide-react'
-import { motion } from "framer-motion"
-import SearchBar from './searchBar'
-
 export default function GameSection() {
-  const [topPlayers, setTopPlayers] = useState([])
-
-  useEffect(() => {
-    axios.get('/api/top')
-      .then(res => setTopPlayers(res.data))
-      .catch(err => console.error(err))
-  }, [])
-
   return (
     <div className="mt-6">
       <div className="mt-6 max-w-screen-md mx-auto px-4">
         <h4 className="text-m font mt-6">
-          Obs: Só funciona em notebook e computador. Esses jogos fazem parte da minha campanha de intercâmbio! Então, se curtir a experiência, considere fazer uma doação de qualquer valor via PIX: henriquerochaintercambio@hotmail.com. Toda contribuição faz diferença!
+          Obs: Só funciona em notebook e computador.
         </h4>
       </div>
 
@@ -122,7 +108,7 @@ export default function GameSection() {
       </div>
 
       <h4 className="text-m font mt-6 text-center">
-        Curtiu os jogos? Toda contribuição me ajuda a financiar meu intercâmbio – compartilhe também para apoiar essa jornada! ✈️🌍
+        Curtiu os jogos? Compartilhe também se quiser apoiar essa página.
       </h4>
     </div>
   )

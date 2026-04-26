@@ -4,6 +4,24 @@ import { useState } from "react";
 
 const grupos = [
   {
+    logo: "/logo_startellite.png",
+    nome: "Startellite",
+    cargo: "Fundador & Tech Lead",
+    link: "https://www.startellite.com/",
+  },
+  {
+    logo: "/logo_basf.png",
+    nome: "BASF",
+    cargo: "Software Engineering Intern — Sede Mundial",
+    link: "https://www.basf.com/",
+  },
+  {
+    logo: "/logo_thi.jpg",
+    nome: "THI Ingolstadt",
+    cargo: "Intercambista — IA, Software Security e Macroeconomia",
+    link: "https://www.thi.de/",
+  },
+  {
     logo: "/logo_ccb.png",
     nome: "CCB",
     cargo: "Violinista",

@@ -1,4 +1,11 @@
 {
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix henriquerochabomfim run dev",
+    "build": "npm --prefix henriquerochabomfim run build",
+    "start": "npm --prefix henriquerochabomfim run start",
+    "lint": "npm --prefix henriquerochabomfim run lint"
+  },
   "dependencies": {
     "i18next": "^25.1.2",
     "next-i18next": "^15.4.2",

@@ -1,21 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import PixCopyButton from "./pixCopyButton";
 import DonationsChart from "./donationsChart";
-import CostTable from "./costTable";
-import WiseDonationButton from './wiseDonationButton';
 
 export default function ContactForm() {
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const mailtoLink = `mailto:henriquerochaintercambio@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-    window.location.href = mailtoLink;
-  };
-
   const doadores = [
     "Pedro Pereira Cecílio Ventura",
     "Stephany Araujo da Silva Lobato",
@@ -166,45 +153,11 @@ export default function ContactForm() {
 
   return (
     <section className="p-6 mt-10 text-center">
-      <h1 className="text-2xl font-bold py-2">Ajude no Meu Intercâmbio</h1>
+      <h1 className="text-2xl font-bold py-2">Progresso da campanha</h1>
 
-      <h2 className="text-2xl font-bold mb-4 py-6">Entre em contato:</h2>
-      <p className="mb-6">
-        Quer me mandar uma mensagem, sugerir uma adição ao site, fazer uma parceria, ou promover sua marca? Mande um e-mail abaixo:
+      <p className="mb-6 text-gray-700">
+        Acompanhe abaixo quanto já consegui arrecadar e os marcos atingidos ao longo da campanha.
       </p>
-      <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-4">
-        <input
-          type="text"
-          placeholder="Assunto do email"
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-          required
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-        <textarea
-          placeholder="Conteúdo do email"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-          rows={5}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-        <button
-          type="submit"
-          className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
-        >
-          Enviar
-        </button>
-      </form>
-
-      <div className="p-4" id="donate">
-        <h1 className="text-2xl font-bold mb-2">Apoie minha jornada até a Alemanha!</h1>
-        <PixCopyButton />
-      </div>
-
-      <WiseDonationButton />
-
-      <CostTable />
 
       <DonationsChart />
 
@@ -241,13 +194,19 @@ export default function ContactForm() {
           <span className="text-xs text-gray-500">🏆 Meta alcançada em: 17/08/2025</span>
         </p>
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ⌛ Meta até dia 30/06/2025: alcançar pelo menos 75% do valor arrecadado
+          ✅ Meta até dia 30/06/2025: alcançar pelo menos 75% do valor arrecadado
+          <br />
+          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 25/09/2025</span>
         </p>
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ⌛ Meta até dia 15/07/2025: alcançar pelo menos 90% do valor arrecadado
+          ✅ Meta até dia 15/07/2025: alcançar pelo menos 90% do valor arrecadado
+          <br />
+          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 04/11/2025</span>
         </p>
         <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ⌛ Meta até dia 31/07/2025: alcançar 100% do valor arrecadado
+          ✅ Meta até dia 31/07/2025: alcançar 100% do valor arrecadado
+          <br />
+          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 30/11/2025</span>
         </p>
       </div>
 
