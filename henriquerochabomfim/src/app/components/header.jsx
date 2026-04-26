@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "../context/languageContext";
 import { t } from "../lib/translations";
 
@@ -10,7 +10,6 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
-  const pathname = usePathname();
   const { lang, setLang } = useLanguage();
   const nav = t[lang].ui.nav;
 
@@ -20,21 +19,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleClick = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false);
-  };
-
   const toggleLang = () => setLang(lang === "pt" ? "en" : "pt");
 
   const navToAbout = (e) => {
     e.preventDefault();
-    if (pathname !== "/") {
-      router.push("/");
-      setTimeout(() => handleClick("about"), 120);
-    } else {
-      handleClick("about");
-    }
+    router.push("/sobre");
+    setMenuOpen(false);
   };
 
   return (
@@ -127,6 +117,13 @@ const Header = () => {
                   className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                 >
                   {nav.games}
+                </a>
+                <a
+                  href="/sobre"
+                  onClick={navToAbout}
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                >
+                  {nav.about}
                 </a>
                 <a
                   href="/curriculo.pdf"
