@@ -3,52 +3,57 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useLanguage } from "../context/languageContext";
+import { t } from "../lib/translations";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+  const { lang, setLang } = useLanguage();
+  const nav = t[lang].ui.nav;
 
   const handleClick = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // Fecha menu se clicado dentro do drawer
+    setMenuOpen(false);
   };
+
+  const toggleLang = () => setLang(lang === "pt" ? "en" : "pt");
 
   return (
     <>
       <motion.div className="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center z-50">
         <h1 className="text-xl font-bold">Henrique Rocha Bomfim</h1>
-        <nav className="flex space-x-4 p-2 relative">
-          {[
-            { label: "Sobre", id: "about" },
-          ].map(({ label, id, onClick, green }) => (
+        <nav className="flex items-center space-x-2 p-2 relative">
+          {[{ label: nav.about, id: "about" }].map(({ label, id }) => (
             <div key={id} className="relative flex flex-col items-center">
               <a
                 href={`#${id}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  console.log(router.pathname);  // Use router.pathname aqui
-
-                  if (router.pathname !== "/") {  // Verifique se não é a página principal
+                  if (router.pathname !== "/") {
                     router.push("/");
-                    setTimeout(() => {
-                      onClick ? onClick(e) : handleClick(id);
-                    }, 100); // Espera o redirecionamento
+                    setTimeout(() => handleClick(id), 100);
                   } else {
-                    onClick ? onClick(e) : handleClick(id);
+                    handleClick(id);
                   }
                 }}
-                className={`relative rounded px-4 py-2 transition border-2 border-transparent
-                  ${green
-                    ? "bg-green-500 text-white hover:bg-green-700"
-                    : "hover:bg-gray-200"
-                  }`}
+                className="relative rounded px-4 py-2 transition border-2 border-transparent hover:bg-gray-200"
               >
                 {label}
               </a>
             </div>
           ))}
 
-          {/* Botão do menu sanduíche */}
+          {/* Language toggle */}
+          <button
+            onClick={toggleLang}
+            className="px-3 py-1.5 rounded-lg border-2 border-blue-600 text-blue-700 font-mono text-sm font-bold hover:bg-blue-50 transition"
+            title={lang === "pt" ? "Switch to English" : "Mudar para Português"}
+          >
+            {t[lang].ui.languageToggle}
+          </button>
+
+          {/* Hamburger menu */}
           <button
             onClick={() => setMenuOpen(true)}
             className="p-2 rounded hover:bg-gray-200 text-black"
@@ -58,7 +63,6 @@ const Header = () => {
         </nav>
       </motion.div>
 
-      {/* Drawer lateral */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -69,44 +73,42 @@ const Header = () => {
             className="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 p-6 flex flex-col space-y-6"
           >
             <div className="flex justify-between items-center">
-              <h2 className="text-lg font-bold">Menu</h2>
+              <h2 className="text-lg font-bold">{nav.menu}</h2>
               <button onClick={() => setMenuOpen(false)}>
                 <X size={24} />
               </button>
             </div>
-          
+
             <a
               href="/"
-              onClick={() => {
-                router.push("/");
-                setMenuOpen(false);
-              }}
+              onClick={() => { router.push("/"); setMenuOpen(false); }}
               className="text-left px-4 py-2 hover:bg-gray-100 rounded"
             >
-              Página principal
+              {nav.home}
             </a>
-          
+
             <a
               href="/jogos"
               className="text-left px-4 py-2 hover:bg-gray-100 rounded"
               onClick={() => setMenuOpen(false)}
             >
-              Jogos
+              {nav.games}
             </a>
-          
+
             <a
               href="/curriculo.pdf"
               download
               className="text-left px-4 py-2 hover:bg-gray-100 rounded block"
             >
-              Currículo
+              {nav.resume}
             </a>
-            {/* <button
-              onClick={() => handleClick("projects")}
-              className="text-left px-4 py-2 hover:bg-gray-100 rounded"
+
+            <button
+              onClick={toggleLang}
+              className="text-left px-4 py-2 hover:bg-blue-50 rounded border border-blue-300 text-blue-700 font-mono font-bold"
             >
-              Projetos
-            </button> */}
+              {lang === "pt" ? "🌐 English" : "🌐 Português"}
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,9 +1,10 @@
 "use client";
 
 import DonationsChart from "./donationsChart";
+import { useLanguage } from "../context/languageContext";
+import { t } from "../lib/translations";
 
-export default function ContactForm() {
-  const doadores = [
+const doadores = [
     "Pedro Pereira Cecílio Ventura",
     "Stephany Araujo da Silva Lobato",
     "Nicolas Jesus Silveira",
@@ -148,71 +149,35 @@ export default function ContactForm() {
     "Eliana Aparecida Diniz",
     "Marco Antonio Graziano Finoti",
     "Carolina Franch Soares Leite",
-    "Lucas Silva Puig"
-  ];
+    "Lucas Silva Puig",
+];
+
+export default function ContactForm() {
+  const { lang } = useLanguage();
+  const ui = t[lang].ui.contact;
 
   return (
     <section className="p-6 mt-10 text-center">
-      <h1 className="text-2xl font-bold py-2">Progresso da campanha</h1>
+      <h1 className="text-2xl font-bold py-2">{ui.campaignTitle}</h1>
 
-      <p className="mb-6 text-gray-700">
-        Acompanhe abaixo quanto já consegui arrecadar e os marcos atingidos ao longo da campanha.
-      </p>
+      <p className="mb-6 text-gray-700">{ui.campaignSubtitle}</p>
 
-      <DonationsChart />
+      <DonationsChart chartLabels={ui.chartLabels} />
 
-      <h2 className="text-2xl font-bold mb-2 text-center py-2">Metas</h2>
+      <h2 className="text-2xl font-bold mb-2 text-center py-2">{ui.milestonesTitle}</h2>
       <div className="flex justify-center items-center flex-col">
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 12/04/2025: alcançar pelo menos 10% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 07/04/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 17/04/2025: alcançar pelo menos 20% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 09/04/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 24/04/2025: alcançar pelo menos 30% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 28/04/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 05/05/2025: alcançar pelo menos 40% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 15/05/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 30/05/2025: alcançar pelo menos 50% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 05/06/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 15/06/2025: alcançar pelo menos 60% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 17/08/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 30/06/2025: alcançar pelo menos 75% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 25/09/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 15/07/2025: alcançar pelo menos 90% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 04/11/2025</span>
-        </p>
-        <p className="text-sm text-center text-gray-600 mb-2 py-3">
-          ✅ Meta até dia 31/07/2025: alcançar 100% do valor arrecadado
-          <br />
-          <span className="text-xs text-gray-500">🏆 Meta alcançada em: 30/11/2025</span>
-        </p>
+        {ui.milestones.map((m, i) => (
+          <p key={i} className="text-sm text-center text-gray-600 mb-2 py-3">
+            {m.text}
+            <br />
+            <span className="text-xs text-gray-500">{m.achieved}</span>
+          </p>
+        ))}
       </div>
 
       <div className="w-full max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-6">
-        <h3 className="text-xl font-semibold text-center text-gray-800 mb-4">✨ Pessoas que estão tornando esse sonho possível ✨</h3>
-        <p className="text-lg text-center text-gray-700 mb-4">Total de doadores: {doadores.length}</p>
+        <h3 className="text-xl font-semibold text-center text-gray-800 mb-4">{ui.donorsTitle}</h3>
+        <p className="text-lg text-center text-gray-700 mb-4">{ui.donorsCount}{doadores.length}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[300px] overflow-y-auto px-2">
           {doadores.map((nome, index) => (
             <div
@@ -227,18 +192,18 @@ export default function ContactForm() {
 
       <div align="center" className="mt-8 flex justify-center items-center gap-2 py-8">
         <a href="https://www.instagram.com/_riquerocha_/" target="_blank">
-            <img
+          <img
             src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge"
             height="35"
             alt="instagram logo"
-            />
+          />
         </a>
         <a href="https://www.linkedin.com/in/henriquerochabomfim/" target="_blank">
-            <img
+          <img
             src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge"
             height="35"
             alt="linkedin logo"
-            />
+          />
         </a>
       </div>
     </section>

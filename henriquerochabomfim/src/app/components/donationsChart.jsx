@@ -14,7 +14,9 @@ const COLORS = ["#00C49F", "#FF8042"];
 const CSV_URL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRbn8oWqvkge2XSfs6uo2IuI4Nzmjf_lTA5O0JxkaPEZKKnuxWEPGOHJ9SKIAYGiiIWTJCWevdm3Hfd/pub?output=csv";
 
-export default function DonationsChart() {
+const DEFAULT_LABELS = { raised: "Arrecadado", remaining: "Faltando", goal: "Meta", progress: "Progresso da Campanha" };
+
+export default function DonationsChart({ chartLabels = DEFAULT_LABELS }) {
   const [data, setData] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
   const [meta, setMeta] = useState(0);
@@ -62,8 +64,8 @@ export default function DonationsChart() {
 
         if (tempMeta > 0 && tempArrecadado >= 0) {
           setData([
-            { name: "Arrecadado", value: tempArrecadado },
-            { name: "Faltando", value: Math.max(0, tempMeta - tempArrecadado) },
+            { name: chartLabels.raised, value: tempArrecadado },
+            { name: chartLabels.remaining, value: Math.max(0, tempMeta - tempArrecadado) },
           ]);
           setMeta(tempMeta);
           setArrecadado(tempArrecadado);
@@ -129,7 +131,7 @@ export default function DonationsChart() {
     <div className="w-full mt-10 flex justify-center">
       <div className="w-full sm:w-[90%] lg:w-[700px] flex flex-col items-center justify-center">
         <h2 className="text-xl font-bold text-center mb-2">
-          Progresso da Campanha
+          {chartLabels.progress}
         </h2>
 
         {/* Gráfico de Pizza */}
@@ -184,8 +186,8 @@ export default function DonationsChart() {
             ></div>
           </div>
           <div className="flex justify-between text-sm mt-2">
-            <span>Arrecadado: R$ {arrecadado.toLocaleString("pt-BR")}</span>
-            <span>Meta: R$ {meta.toLocaleString("pt-BR")}</span>
+            <span>{chartLabels.raised}: R$ {arrecadado.toLocaleString("pt-BR")}</span>
+            <span>{chartLabels.goal}: R$ {meta.toLocaleString("pt-BR")}</span>
           </div>
         </div>
       </div>
