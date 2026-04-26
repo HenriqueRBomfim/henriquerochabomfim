@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import StoryBlock from "./components/storyBlock";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import HighlightsCarousel from "./components/highlightsCarousel";
 import CarrosselGrupos from './components/carrosselGrupos';
 import ContactForm from "./components/contactForm";
@@ -86,6 +87,7 @@ export default function Home() {
 
       <HighlightsCarousel highlights={T.highlights} title={T.ui.highlights.title} />
       <ContactForm ui={T.ui.contact} />
+      <Footer />
     </div>
   );
 }
