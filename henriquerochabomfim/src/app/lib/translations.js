@@ -247,7 +247,7 @@ export const t = {
         title: "Estágio de Engenharia de Software na BASF — Sede Mundial (Out/2025 – Fev/2026)",
         text: "Durante o intercâmbio, fui aprovado para um estágio de Engenharia de Software na sede global da BASF, a maior empresa química do mundo, em Ludwigshafen, Alemanha. /n Minha missão foi substituir um software legado em MatLab utilizado pela equipe de pesquisa e desenvolvimento global da empresa — um sistema pesado, difícil de manter e dependente de licenças caras. De forma autônoma, desenvolvi um Web App moderno em React/Vite para análise de calorimetria preditiva, sem nenhuma dependência externa, tornando a ferramenta acessível para engenheiros da BASF em todo o mundo. /n O resultado mais impactante foi a otimização de performance: reduzi o tempo de processamento das predições químicas de 5 minutos para apenas 15 segundos — uma melhoria de 20x. Além de acelerar o fluxo de trabalho dos pesquisadores, a nova interface eliminou a necessidade de licenças de software e democratizou o acesso à ferramenta globalmente. /n Essa experiência consolidou minha capacidade de entregar soluções de alto impacto de forma autônoma em um ambiente corporativo de nível mundial.",
         image: ["/Estágio na BASF Ludwigshafen Alemanha.jpg"],
-        caption: ["BASF — Sede Mundial em Ludwigshafen, Alemanha (placeholder — adicionar foto do estágio)"],
+        caption: ["BASF — Sede Mundial em Ludwigshafen, Alemanha"],
         reverse: false,
       },
       {
