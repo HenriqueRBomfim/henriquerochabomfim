@@ -229,7 +229,7 @@ export const t = {
         id: "thi_reason",
         title: "Por que escolhi a THI para meu intercâmbio?",
         text: "Estudar na Technische Hochschule Ingolstadt (THI) representou um passo essencial na minha trajetória acadêmica e profissional. Como estudante de Engenharia da Computação, sempre busquei oportunidades para expandir meus conhecimentos e desenvolver soluções inovadoras. A THI, com sua forte ênfase em tecnologia aplicada e parcerias com grandes empresas como a Audi e a BMW, foi o ambiente ideal para aprofundar minhas habilidades e aprender com profissionais e pesquisadores de alto nível da Europa. /n Além disso, a Alemanha é referência global em engenharia e inovação. Viver essa experiência imersiva me permitiu absorver metodologias de ensino avançadas, fazer um estágio na sede mundial da BASF, explorar a Europa e me conectar com uma comunidade acadêmica diversa e qualificada. /n O intercâmbio foi muito mais do que crescimento acadêmico — foi uma virada de chave que moldou o engenheiro e empreendedor que sou hoje. Continue lendo para saber como foi!",
-        image: ["/thi.jpeg", "thi.png"],
+        image: ["intercambio/thi.jpeg", "intercambio/thi.png"],
         caption: ["Universidade Técnica de Ciências Aplicadas de Ingolstadt", "Campus da THI Ingolstadt"],
         reverse: false,
       },

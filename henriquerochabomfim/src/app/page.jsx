@@ -342,7 +342,7 @@ Além dessas conquistas, dei mais um grande passo na minha trajetória: apliquei
 Agora, estou focado em viabilizar essa experiência. Consegui uma bolsa bilateral que cobre a mensalidade e um auxílio para viagens na Europa, mas ainda preciso reunir recursos para os custos diários durante os seis meses de estadia. /n
 Em relação às atividades que estou fazendo neste semestre: me tornei Gerente de Marketing na Insper Sec, liderando uma equipe de 4 membros a ficarem por dentro das mudanças no mundo da Cyber Segurança e publicarem curiosidades nas redes sociais da Sec; continuei como Presidente do Insper Coding, que neste momento passou por um Rebranding para “Insper Code”, após várias reuniões pela diretoria atual e membros de marketing. No Code, neste momento contando com 40 membros ativos, estamos desenvolvendo 9 projetos paralelamente, sendo 6 de web dev e programação como um todo, 1 de empreendedorismo e 2 de desenvolvimento de jogos digitais; Fui reeleito líder de sala pelo 7º semestre consecutivo; Continuei como Diretor de Idiomas do Insper Academy, agora com maior suporte para alemão e japonês; comecei um curso remoto ao vivo de inglês de nível avançado com um professor Nigeriano da Bloomberg, esse curso é 100% em inglês e terá duração de 1 ano; fui aprovado como NINJA/Aluno Monitor, da disciplina de Design de Software no Insper, um sonho que eu tinha desde meu 2º semestre da graduação;  estou estudando uma disciplina eletiva de Visão Computacional e outra de Análise de Dados Desestruturados da Web (WebScrapping e reconhecimento de texto) e continuo como violinista da CCB desde os meus 13 anos.
 "
-          image={["/btgequipe.jpeg","/btgceo.jpeg","/aspireequipe.jpeg","/aspireteam.jpeg", "/thi.jpeg","thi.png"]}
+          image={["/btgequipe.jpeg","/btgceo.jpeg","/aspireequipe.jpeg","/aspireteam.jpeg", "intercambio/thi.jpeg","thi.png"]}
           caption={[
             "Eu com a equipe de estagiários do BTG Pactual",
             "Eu com o CEO do BTG Pactual, Roberto Sallouti",
@@ -358,7 +358,7 @@ Em relação às atividades que estou fazendo neste semestre: me tornei Gerente 
           text="Estudar na Technische Hochschule Ingolstadt (THI) representou um passo essencial na minha trajetória acadêmica e profissional. Como estudante de Engenharia da Computação, sempre busquei oportunidades para expandir meus conhecimentos e desenvolver soluções inovadoras. A THI, com sua forte ênfase em tecnologia aplicada e parcerias com grandes empresas como a Audi e a BMW, foi o ambiente ideal para aprofundar minhas habilidades e aprender com profissionais e pesquisadores de alto nível da Europa. /n
 Além disso, a Alemanha é referência global em engenharia e inovação. Viver essa experiência imersiva me permitiu absorver metodologias de ensino avançadas, fazer um estágio na sede mundial da BASF, explorar a Europa e me conectar com uma comunidade acadêmica diversa e qualificada. /n
 O intercâmbio foi muito mais do que crescimento acadêmico — foi uma virada de chave que moldou o engenheiro e empreendedor que sou hoje. Continue lendo para saber como foi!"
-          image={["/thi.jpeg","thi.png"]}
+          image={["intercambio/thi.jpeg","intercambio/thi.png"]}
           caption={[
             "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
             "Universidade Técnica de Ciências Aplicadas de Ingolstadt",
