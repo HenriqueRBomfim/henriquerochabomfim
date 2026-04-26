@@ -15,6 +15,21 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
   const captions = Array.isArray(caption) ? caption : [caption];
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const getImageTitle = (imgPath) => {
+    if (!imgPath || typeof imgPath !== "string") return "";
+    const fileName = imgPath.split("/").pop() || "";
+    const decoded = decodeURIComponent(fileName);
+    return decoded.replace(/\.[^/.]+$/, "").trim();
+  };
+
+  const getCaption = (index) => {
+    const explicitCaption = captions[index];
+    if (typeof explicitCaption === "string" && explicitCaption.trim()) {
+      return explicitCaption;
+    }
+    return getImageTitle(images[index]);
+  };
+
   const handleDragEnd = (e, info) => {
     if (info.offset.x < -80) {
       setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -37,12 +52,12 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             <div key={`single-${idx}`} className="flex flex-col items-center">
               <img
                 src={img}
-                alt={`${title} - ${idx + 1}`}
+                alt={getCaption(idx) || `${title} - ${idx + 1}`}
                 className="rounded-xl shadow-lg w-full max-w-3xl object-contain bg-transparent"
               />
-              {captions[idx] && (
+              {getCaption(idx) && (
                 <p className="text-lg text-gray-500 mt-4 text-center">
-                  {captions[idx]}
+                  {getCaption(idx)}
                 </p>
               )}
             </div>
@@ -56,14 +71,14 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
               className="w-full flex flex-col items-center cursor-grab active:cursor-grabbing select-none"
               style={{ touchAction: "pan-y" }}
             >
-              {captions[currentIndex] && (
+              {getCaption(currentIndex) && (
                 <p className="text-lg text-gray-700 mb-4 text-center bg-white/80 px-4 py-2 rounded shadow-md">
-                  {captions[currentIndex]}
+                  {getCaption(currentIndex)}
                 </p>
               )}
               <img
                 src={images[currentIndex]}
-                alt={`${title} - ${currentIndex + 1}`}
+                alt={getCaption(currentIndex) || `${title} - ${currentIndex + 1}`}
                 className="rounded-xl shadow-md w-full max-w-4xl max-h-[76vh] object-contain bg-transparent"
               />
             </motion.div>
