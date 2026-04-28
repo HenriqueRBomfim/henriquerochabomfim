@@ -1,10 +1,32 @@
 "use client";
 
+import { useState } from "react";
+
+import { useLanguage } from "../context/languageContext";
+
 export default function CarrosselGrupos({ grupos = [] }) {
+  const { lang } = useLanguage();
+  const [isPaused, setIsPaused] = useState(false);
+
+  const buttonLabel = isPaused
+    ? lang === "pt"
+      ? "Continuar"
+      : "Resume"
+    : lang === "pt"
+      ? "Pausar"
+      : "Pause";
+
   return (
     <section className="py-2">
       <div className="max-w-4xl mx-auto overflow-hidden relative">
-        <div className="flex w-max animate-slide">
+        <button
+          type="button"
+          onClick={() => setIsPaused((current) => !current)}
+          className="absolute right-3 top-3 z-10 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-900 shadow-md hover:bg-white"
+        >
+          {buttonLabel}
+        </button>
+        <div className="flex w-max animate-slide" style={{ animationPlayState: isPaused ? "paused" : "running" }}>
           {[...Array(2)].flatMap((_, repeatIdx) =>
             grupos.map((item, idx) => (
               <a

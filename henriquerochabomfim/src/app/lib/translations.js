@@ -285,7 +285,7 @@ export const t = {
       },
     ],
     highlights: [
-      { title: "Startellite (2026 – Presente)", description: "Fundador e Tech Lead de plataforma que conecta startups aos melhores engenheiros do Brasil.", image: "/coding.png" },
+      { title: "Startellite (2026 – Presente)", description: "Fundador e Tech Lead de plataforma que conecta startups aos melhores engenheiros do Brasil.", image: "/site_startellite.png" },
       { title: "BASF — Sede Mundial (2025–2026)", description: "Estágio de Engenharia de Software na maior empresa química do mundo, em Ludwigshafen, Alemanha. Otimização 20x de pipeline global.", image: "/Estágio na BASF Ludwigshafen Alemanha.jpg" },
       { title: "Intercâmbio na Europa (2025–2026)", description: "12 países e 51 cidades europeias durante o intercâmbio na THI Ingolstadt, Alemanha.", image: "/intercambio/thi.png" },
       { title: "Troféu Trajetória de Impacto — Insper (2025)", description: "Eleito 1 de 2 bolsistas premiados entre 400 estudantes bolsistas — Top 0,5% da instituição. 642 horas extracurriculares.", image: "/henrique-rocha-bomfim.jpeg" },
@@ -608,7 +608,7 @@ export const t = {
       },
     ],
     highlights: [
-      { title: "Startellite (2026 – Present)", description: "Founder and Tech Lead of a platform connecting startups with Brazil's top software engineers.", image: "/coding.png" },
+      { title: "Startellite (2026 – Present)", description: "Founder and Tech Lead of a platform connecting startups with Brazil's top software engineers.", image: "/site_startellite.png" },
       { title: "BASF — Global HQ (2025–2026)", description: "Software Engineering intern at the world's largest chemical company in Ludwigshafen, Germany. 20x global pipeline optimization.", image: "/Estágio na BASF Ludwigshafen Alemanha.jpg" },
       { title: "European Exchange (2025–2026)", description: "12 countries and 51 European cities during the exchange at THI Ingolstadt, Germany.", image: "/intercambio/thi.png" },
       { title: "Impact Trajectory Trophy — Insper (2025)", description: "Elected 1 of 2 recognized scholars among 400 — Top 0.5% of the institution. 642 extracurricular hours.", image: "/henrique-rocha-bomfim.jpeg" },
