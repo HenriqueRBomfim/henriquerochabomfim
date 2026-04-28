@@ -19,7 +19,7 @@ export const t = {
       highlights: { title: "Destaques" },
       contact: {
         campaignTitle: "Os que tornaram o intercâmbio possível",
-        campaignSubtitle: "Em 2025, 146 pessoas se uniram para viabilizar os R$131.000 necessários para o intercâmbio na Alemanha. Cada contribuição foi essencial. Muito obrigado!",
+        campaignSubtitle: "Em 2025, 146 apoiadores se uniram para viabilizar os R$82.817 do intercâmbio na Alemanha. Cada contribuição foi essencial. Muito obrigado!",
         milestonesTitle: "Metas (todas atingidas! ✅)",
         donorsTitle: "✨ Pessoas que tornaram esse sonho possível ✨",
         donorsCount: "Total de apoiadores: ",
@@ -34,7 +34,7 @@ export const t = {
           { text: "✅ Meta até dia 15/07/2025: alcançar pelo menos 90% do valor arrecadado", achieved: "🏆 Meta alcançada em: 04/11/2025" },
           { text: "✅ Meta até dia 31/07/2025: alcançar 100% do valor arrecadado", achieved: "🏆 Meta alcançada em: 30/11/2025" },
         ],
-        chartLabels: { raised: "Arrecadado", remaining: "Faltando", goal: "Meta", progress: "Progresso da Campanha" },
+        chartLabels: { raised: "Arrecadado (Insper + Apoiadores)", remaining: "Faltando", goal: "Meta", progress: "Progresso da Campanha" },
       },
     },
     stories: [
@@ -237,7 +237,7 @@ export const t = {
       {
         id: "intercambio",
         title: "O Intercâmbio na Europa (Set/2025 – Fev/2026)",
-        text: "Em setembro de 2025, embarquei para a Alemanha para viver a experiência mais transformadora da minha vida. Além das disciplinas na THI — com foco em Inteligência Artificial, Software Security e Macroeconomia —, aproveitei cada semana livre para explorar a Europa. /n No total, passei por Alemanha, França, Holanda, Bélgica, Luxemburgo, Áustria, Suíça, Itália, Espanha, Portugal, Vaticano e Inglaterra. /n Para viabilizar os R$59.166 necessários para os 6 meses, organizei uma campanha de crowdfunding com 145 apoiadores. O Insper contribuiu com R$45 mil para a Bolsa Cultural, a campanha arrecadou R$37 mil e o complemento da BASF fechou o que faltava, além de ter me dado mais conforto depois. Gerenciar esse orçamento foi, por si só, uma formação valiosa em finanças e planejamento. /n A vivência intercultural foi profunda: convivi com estudantes de dezenas de países, aprendi sobre diferentes formas de resolver problemas e voltei com uma visão muito mais ampla sobre engenharia, negócios e vida.",
+        text: "Em setembro de 2025, embarquei para a Alemanha para viver a experiência mais transformadora da minha vida. Além das disciplinas na THI — com foco em Inteligência Artificial, Software Security e Macroeconomia —, aproveitei cada semana livre para explorar a Europa. /n No total, passei por Áustria, Bélgica, Espanha, França, Alemanha, Holanda, Inglaterra, Itália, Luxemburgo, Portugal, Suíça e Vaticano. /n Para viabilizar os R$59.166 necessários para os 6 meses, organizei uma campanha de crowdfunding com 145 apoiadores. O Insper contribuiu com R$45 mil para a Bolsa Cultural, a campanha arrecadou R$37 mil e o complemento da BASF fechou o que faltava, além de ter me dado mais conforto depois. Gerenciar esse orçamento foi, por si só, uma formação valiosa em finanças e planejamento. /n A vivência intercultural foi profunda: convivi com estudantes de dezenas de países, aprendi sobre diferentes formas de resolver problemas e voltei com uma visão muito mais ampla sobre engenharia, negócios e vida.",
         image: ["/intercambio/thi.jpeg", "/intercambio/thi.png", "/intercambio/THI Ingolstadt.jpg", "/intercambio/Faculdade THI Ingolstadt Alemanha.jpg", "/intercambio/Ingolstadt Alemanha.jpg", "/intercambio/Marienplatz Munique Alemanha.jpg", "/intercambio/Oktoberfest Munique Alemanha.jpg", "/intercambio/Frankfurt Alemanha.jpg", "/intercambio/Portão de Brandemburgo Berlim Alemanha.jpg", "/intercambio/Rothenburg ob der Tauber Alemanha.jpg", "/intercambio/Kufstein Austria.jpg", "/intercambio/Grindelwald First Mountain Suíça.jpg", "/intercambio/Lago Brienz Suíça.jpg", "/intercambio/Matterhorn Zermatt Suíça.jpg", "/intercambio/Pompeia Italia.jpg", "/intercambio/La Sagrada Família Barcelona Espanha.jpg", "/intercambio/Parque Güell Barcelona Espanha.jpg", "/intercambio/Urso de Madrid Espanha.jpg", "/intercambio/Parlamento Europeu Bruxelas Bélgica.jpg", "/intercambio/Universidade de Coimbra Portugal.jpg", "/intercambio/Lisboa.jpg", "/intercambio/Torrei Eiffel Paris França.jpg", "/intercambio/Escola de Atenas Vaticano.jpg", "/intercambio/Stonehenge Inglaterra.jpg"],
         caption: ["Universidade Técnica de Ciências Aplicadas de Ingolstadt — minha base na Alemanha", "Campus da THI Ingolstadt"],
         reverse: true,
@@ -245,7 +245,7 @@ export const t = {
       {
         id: "basf",
         title: "Estágio de Engenharia de Software na BASF — Sede Mundial (Out/2025 – Fev/2026)",
-        text: "Durante o intercâmbio, fui aprovado para um estágio de Engenharia de Software na sede global da BASF, a maior empresa química do mundo, em Ludwigshafen, Alemanha. /n Minha missão foi substituir um software legado em MatLab utilizado pela equipe de pesquisa e desenvolvimento global da empresa — um sistema pesado, difícil de manter e dependente de licenças caras. De forma autônoma, desenvolvi um Web App moderno em React/Vite para análise de calorimetria preditiva, sem nenhuma dependência externa, tornando a ferramenta acessível para engenheiros da BASF em todo o mundo. /n O resultado mais impactante foi a otimização de performance: reduzi o tempo de processamento das predições químicas de 5 minutos para apenas 15 segundos — uma melhoria de 20x. Além de acelerar o fluxo de trabalho dos pesquisadores, a nova interface eliminou a necessidade de licenças de software e democratizou o acesso à ferramenta globalmente. /n Essa experiência consolidou minha capacidade de entregar soluções de alto impacto de forma autônoma em um ambiente corporativo de nível mundial.",
+        text: "Durante o intercâmbio, fui aprovado para um estágio de Engenharia de Software na sede global da BASF, a maior empresa química do mundo, em Ludwigshafen, Alemanha. /n Minha missão foi substituir um software legado em MatLab utilizado pela equipe de pesquisa e desenvolvimento global da empresa — um sistema pesado e difícil de manter. De forma autônoma, desenvolvi um Web App moderno em React/Vite para análise de calorimetria preditiva, sem nenhuma dependência externa, tornando a ferramenta acessível para engenheiros da BASF em todo o mundo. /n O resultado mais impactante foi a otimização de performance: reduzi o tempo de processamento das predições químicas de 5 minutos para apenas 15 segundos — uma melhoria de 20x. Além de acelerar o fluxo de trabalho dos pesquisadores, a nova interface simplificou o acesso à ferramenta para engenheiros da BASF em todo o mundo. /n Essa experiência consolidou minha capacidade de entregar soluções de alto impacto de forma autônoma em um ambiente corporativo de nível mundial.",
         image: ["/Estágio na BASF Ludwigshafen Alemanha.jpg"],
         caption: ["BASF — Sede Mundial em Ludwigshafen, Alemanha"],
         reverse: false,
@@ -253,7 +253,7 @@ export const t = {
       {
         id: "trajetoria_impacto",
         title: "Troféu Trajetória de Impacto — Insper (Novembro 2025)",
-        text: "Em novembro de 2025, enquanto ainda estava na Alemanha, recebi uma das maiores honrarias da minha trajetória acadêmica: o Troféu Trajetória de Impacto do Insper. /n Esse prêmio é concedido anualmente aos bolsistas que mais se destacam em impacto acadêmico, extracurricular e social dentro da instituição. Em 2025, fui eleito 1 dos 2 bolsistas premiados em um universo de 400 estudantes bolsistas — o Top 0,5% da instituição. /n O reconhecimento levou em conta minhas 642 horas extracurriculares (6x acima da exigência mínima de formatura), minha atuação em 5 organizações estudantis, 7 semestres consecutivos como líder de sala, a presidência do Insper Code (de 9 para 46 membros), a cofundação do Insper Academy, o estágio no BTG Pactual e a trajetória desde a escola pública até o intercâmbio internacional. /n É o reconhecimento de que cada hora investida, cada aula dada no GAS, cada projeto entregue valeu a pena.",
+        text: "Em novembro de 2025, enquanto ainda estava na Alemanha, recebi uma das maiores honrarias da minha trajetória acadêmica: o Troféu Trajetória de Impacto do Insper. /n Esse prêmio é concedido anualmente aos bolsistas que mais se destacam em impacto acadêmico, extracurricular e social dentro da instituição. Em 2025, fui eleito 1 dos 2 bolsistas premiados entre 400 estudantes bolsistas — o Top 0,5% da instituição. /n O reconhecimento levou em conta minhas 642 horas extracurriculares (6x acima da exigência mínima de formatura), minha atuação em 5 organizações estudantis, 7 semestres consecutivos como líder de sala, a presidência do Insper Code (de 9 para 46 membros), a cofundação do Insper Academy, o estágio no BTG Pactual e a trajetória desde a escola pública até o intercâmbio internacional. /n É o reconhecimento de que cada hora investida, cada aula dada no GAS, cada projeto entregue valeu a pena.",
         image: ["/premio_bolsista_trajetoria_de_impacto.jpeg"],
         caption: ["Prêmio Trajetória de Impacto"],
         reverse: true,
@@ -262,7 +262,7 @@ export const t = {
       {
         id: "kardium",
         title: "Freelance em Contabilidade para Médicos — Kardium (2026)",
-        text: "Após o retorno ao Brasil, comecei a trabalhar como freelancer no projeto Kardium, uma plataforma de contabilidade especializada para médicos recém-formados. O projeto foi idealizado por profissionais experientes do mercado financeiro, da XP Investimentos e da RB Investimentos, que identificaram uma lacuna no mercado: médicos que acabam de iniciar suas carreiras têm grandes desafios para organizar suas finanças e contabilidade. /n Meu papel foi atuar como desenvolvedor full-stack, traduzindo as regras de negócio complexas do mercado médico-financeiro em código estruturado, escalável e seguro. Esse projeto me introduziu profundamente ao domínio de finanças para profissionais liberais e foi a semente para o que viria a seguir.",
+        text: "Após o retorno ao Brasil, estou atuando como freelancer no projeto Kardium, que ainda está em desenvolvimento e sem nada público por enquanto, uma plataforma de contabilidade especializada para médicos recém-formados. O projeto é idealizado por profissionais experientes do mercado financeiro, da XP Investimentos e da RB Investimentos, que identificaram uma lacuna no mercado: médicos que acabam de iniciar suas carreiras têm grandes desafios para organizar suas finanças e contabilidade. /n Meu papel é atuar como desenvolvedor full-stack, traduzindo as regras de negócio complexas do mercado médico-financeiro em código estruturado, escalável e seguro. Esse projeto me introduz profundamente ao domínio de finanças para profissionais liberais e é a semente para o que virá a seguir.",
         image: ["/kardium.png"],
         caption: ["Logo do projeto Kardium"],
         reverse: false,
@@ -270,9 +270,9 @@ export const t = {
       {
         id: "startellite",
         title: "Fundação da Startellite (2026 – Presente)",
-        text: "Com a experiência acumulada no BTG Pactual, na BASF, no Kardium e como Presidente do Insper Code, identifiquei um problema recorrente no ecossistema de startups: fundadores com ótimas ideias de negócio têm dificuldade de encontrar engenheiros de software qualificados, confiáveis e alinhados com a velocidade de uma startup. /n Em 2026, fundei a Startellite — uma plataforma que conecta fundadores de startups a desenvolvedores de software pré-selecionados das melhores universidades do Brasil (Insper, Inteli, USP e outras). Atuamos como elo de qualidade: apenas o Top 5% dos candidatos passam por nosso processo seletivo rigoroso de múltiplas etapas. /n Além da curadoria de talentos, a Startellite oferece suporte operacional completo para startups em fase inicial: serviços de CTO fracionado, precificação transparente através de uma calculadora proprietária, suporte jurídico e contábil, e auxílio na abertura de CNPJ. /n Como Tech Lead e desenvolvedor solo, conduzo o desenvolvimento full-stack da plataforma (front-end e back-end), projeto a arquitetura em nuvem (AWS), implemento protocolos de cybersegurança e traduzo a visão de negócio em um MVP escalável pronto para o go-to-market.",
+        text: "Com a experiência acumulada no BTG Pactual, na BASF, no Kardium e como Presidente do Insper Code, identifiquei um problema recorrente no ecossistema de startups: fundadores com ótimas ideias de negócio têm dificuldade de encontrar engenheiros de software qualificados, confiáveis e alinhados com a velocidade de uma startup. /n Em 2026, comecei a estruturar a Startellite — uma plataforma que conecta fundadores de startups a desenvolvedores de software de confiança das melhores universidades do Brasil (Insper, Inteli, USP e outras). /n Além da curadoria de talentos, a Startellite está sendo projetada para oferecer suporte operacional completo para startups em fase inicial: serviços de CTO fracionado, precificação transparente através de uma calculadora proprietária, suporte jurídico e contábil, e auxílio na abertura de CNPJ. /n Como Tech Lead e desenvolvedor solo, conduzo o desenvolvimento full-stack da plataforma (front-end e back-end), projeto a arquitetura em nuvem (AWS), implemento protocolos de cybersegurança e traduzo a visão de negócio em um MVP escalável pronto para o go-to-market.",
         image: ["/site_startellite.png"],
-        caption: ["www.startellite.com"],
+        caption: ["Startellite em construção"],
         reverse: true,
       },
       {
@@ -288,7 +288,7 @@ export const t = {
       { title: "Startellite (2026 – Presente)", description: "Fundador e Tech Lead de plataforma que conecta startups aos melhores engenheiros do Brasil.", image: "/coding.png" },
       { title: "BASF — Sede Mundial (2025–2026)", description: "Estágio de Engenharia de Software na maior empresa química do mundo, em Ludwigshafen, Alemanha. Otimização 20x de pipeline global.", image: "/Estágio na BASF Ludwigshafen Alemanha.jpg" },
       { title: "Intercâmbio na Europa (2025–2026)", description: "12 países e 51 cidades europeias durante o intercâmbio na THI Ingolstadt, Alemanha.", image: "/intercambio/thi.png" },
-      { title: "Troféu Trajetória de Impacto — Insper (2025)", description: "Eleito 1 de 2 bolsistas premiados entre 400 — Top 0,5% da instituição. 642 horas extracurriculares.", image: "/henrique-rocha-bomfim.jpeg" },
+      { title: "Troféu Trajetória de Impacto — Insper (2025)", description: "Eleito 1 de 2 bolsistas premiados entre 400 estudantes bolsistas — Top 0,5% da instituição. 642 horas extracurriculares.", image: "/henrique-rocha-bomfim.jpeg" },
       { title: "Insper Code", description: "Presidente da maior organização estudantil de software do Insper. Escalou de 9 para 46 membros.", image: "/coding.png" },
       { title: "BTG Pactual (2025)", description: "Estágio de férias no maior banco de investimentos da América Latina. Economia comprovada de 42 horas/mês.", image: "/btg.jpeg" },
       { title: "Aspire Leaders Program (2023 – Presente)", description: "Líder Comunitário de SP em programa de liderança global fundado em Harvard. Cresceu de 5 para 467 alumni em SP.", image: "/aspire.jpeg" },
@@ -342,7 +342,7 @@ export const t = {
       highlights: { title: "Highlights" },
       contact: {
         campaignTitle: "Those Who Made the Exchange Possible",
-        campaignSubtitle: "In 2025, 146 people came together to fund the R$131,000 needed for the exchange in Germany. Every contribution was essential. Thank you so much!",
+        campaignSubtitle: "In 2025, 146 supporters came together to fund the R$82,817 exchange in Germany. Every contribution was essential. Thank you so much!",
         milestonesTitle: "Milestones (all achieved! ✅)",
         donorsTitle: "✨ People who made this dream possible ✨",
         donorsCount: "Total supporters: ",
@@ -357,7 +357,7 @@ export const t = {
           { text: "✅ Goal by Jul 15, 2025: reach at least 90% raised", achieved: "🏆 Goal achieved on: Nov 4, 2025" },
           { text: "✅ Goal by Jul 31, 2025: reach 100% raised", achieved: "🏆 Goal achieved on: Nov 30, 2025" },
         ],
-        chartLabels: { raised: "Raised", remaining: "Remaining", goal: "Goal", progress: "Campaign Progress" },
+        chartLabels: { raised: "Raised (Insper + Supporters)", remaining: "Remaining", goal: "Goal", progress: "Campaign Progress" },
       },
     },
     stories: [
@@ -560,7 +560,7 @@ export const t = {
       {
         id: "intercambio",
         title: "The Exchange: 12 Countries and 51 European Cities (Sep/2025 – Feb/2026)",
-        text: "In September 2025, I flew to Germany to live the most transformative experience of my life. Beyond my courses at THI — focused on Artificial Intelligence, Software Security, and Macroeconomics — I made the most of every free week to explore Europe. /n In total, I traveled through 12 countries and 51 European cities: Germany, France, the Netherlands, Belgium, Luxembourg, Austria, Switzerland, the Czech Republic, Hungary, Italy, Spain, and Portugal. By train, bus, and on foot — from Berlin to Barcelona, from Amsterdam to Rome. /n To fund the R$131,000 needed for 6 months, I organized a crowdfunding campaign with 146 supporters, obtained institutional grants, and did international work. Managing a budget of this size in foreign currency was itself a valuable education in finance and planning. /n The cross-cultural experience was profound: I lived alongside students from dozens of countries, learned about different approaches to problem-solving, and returned with a much broader perspective on engineering, business, and life.",
+        text: "In September 2025, I flew to Germany to live the most transformative experience of my life. Beyond my courses at THI — focused on Artificial Intelligence, Software Security, and Macroeconomics — I made the most of every free week to explore Europe. /n In total, I traveled through Austria, Belgium, England, France, Germany, Holland, Italy, Luxembourg, Portugal, Spain, Switzerland, and Vatican City. By train, bus, and on foot — from Berlin to Barcelona, from Amsterdam to Rome. /n To fund the R$131,000 needed for 6 months, I organized a crowdfunding campaign with 146 supporters, obtained institutional grants, and did international work. Managing a budget of this size in foreign currency was itself a valuable education in finance and planning. /n The cross-cultural experience was profound: I lived alongside students from dozens of countries, learned about different approaches to problem-solving, and returned with a much broader perspective on engineering, business, and life.",
         image: ["/intercambio/thi.jpeg", "/intercambio/thi.png", "/intercambio/THI Ingolstadt.jpg", "/intercambio/Faculdade THI Ingolstadt Alemanha.jpg", "/intercambio/Ingolstadt Alemanha.jpg", "/intercambio/Marienplatz Munique Alemanha.jpg", "/intercambio/Oktoberfest Munique Alemanha.jpg", "/intercambio/Frankfurt Alemanha.jpg", "/intercambio/Portão de Brandemburgo Berlim Alemanha.jpg", "/intercambio/Rothenburg ob der Tauber Alemanha.jpg", "/intercambio/Kufstein Austria.jpg", "/intercambio/Grindelwald First Mountain Suíça.jpg", "/intercambio/Lago Brienz Suíça.jpg", "/intercambio/Matterhorn Zermatt Suíça.jpg", "/intercambio/Pompeia Italia.jpg", "/intercambio/La Sagrada Família Barcelona Espanha.jpg", "/intercambio/Parque Güell Barcelona Espanha.jpg", "/intercambio/Urso de Madrid Espanha.jpg", "/intercambio/Parlamento Europeu Bruxelas Bélgica.jpg", "/intercambio/Universidade de Coimbra Portugal.jpg", "/intercambio/Lisboa.jpg", "/intercambio/Torrei Eiffel Paris França.jpg", "/intercambio/Escola de Atenas Vaticano.jpg", "/intercambio/Stonehenge Inglaterra.jpg"],
         caption: ["Technische Hochschule Ingolstadt — my base in Germany", "THI Ingolstadt campus"],
         reverse: true,
@@ -585,7 +585,7 @@ export const t = {
       {
         id: "kardium",
         title: "Freelance for Doctors' Accounting — Kardium (2026)",
-        text: "After returning to Brazil, I began freelancing on the Kardium project, an accounting platform specialized for recently graduated doctors. The project was conceived by experienced professionals from XP Investimentos and RB Investimentos, who identified a market gap: newly-practicing doctors face major challenges organizing their finances and accounting. /n My role was to act as a full-stack developer, translating the complex business rules of the medical-financial sector into structured, scalable, and secure code. This project introduced me deeply to the domain of finance for independent professionals and was the seed for what came next.",
+        text: "After returning to Brazil, I am freelancing on the Kardium project, which is still under development and not public yet, an accounting platform specialized for recently graduated doctors. The project was conceived by experienced professionals from XP Investimentos and RB Investimentos, who identified a market gap: newly-practicing doctors face major challenges organizing their finances and accounting. /n My role is to act as a full-stack developer, translating the complex business rules of the medical-financial sector into structured, scalable, and secure code. This project is introducing me deeply to the domain of finance for independent professionals and is the seed for what comes next.",
         image: ["/coding.png"],
         caption: ["Placeholder — add Kardium project logo or image"],
         reverse: false,
@@ -593,9 +593,9 @@ export const t = {
       {
         id: "startellite",
         title: "Founding Startellite (2026 – Present)",
-        text: "With the experience accumulated at BTG Pactual, BASF, Kardium, and as President of Insper Code, I identified a recurring problem in the startup ecosystem: founders with great business ideas struggle to find qualified, reliable software engineers who can match a startup's pace. /n In 2026, I founded Startellite — a platform that connects startup founders with pre-selected software developers from Brazil's best universities (Insper, Inteli, USP, and others). We act as a quality bridge: only the top 5% of candidates pass our rigorous multi-stage selection process. /n Beyond talent curation, Startellite offers complete operational support for early-stage startups: fractional CTO services, transparent pricing through a proprietary calculator, legal and accounting support, and business registration assistance. /n As Tech Lead and solo developer, I manage the full-stack development of the platform (front-end and back-end), design the cloud architecture (AWS), implement cybersecurity protocols, and translate the business vision into a scalable MVP ready for go-to-market.",
+        text: "With the experience accumulated at BTG Pactual, BASF, Kardium, and as President of Insper Code, I identified a recurring problem in the startup ecosystem: founders with great business ideas struggle to find qualified, reliable software engineers who can match a startup's pace. /n In 2026, I started structuring Startellite — a platform that connects startup founders with software developers from Brazil's best universities (Insper, Inteli, USP, and others), still under construction and not public yet. /n Beyond talent curation, Startellite is being designed to offer complete operational support for early-stage startups: fractional CTO services, transparent pricing through a proprietary calculator, legal and accounting support, and business registration assistance. /n As Tech Lead and solo developer, I manage the full-stack development of the platform (front-end and back-end), design the cloud architecture (AWS), implement cybersecurity protocols, and translate the business vision into a scalable MVP ready for go-to-market.",
         image: ["/coding.png"],
-        caption: ["Placeholder — add Startellite logo or image (www.startellite.com)"],
+        caption: ["Startellite in progress"],
         reverse: true,
       },
       {
