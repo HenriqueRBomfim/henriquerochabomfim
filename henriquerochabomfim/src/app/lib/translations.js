@@ -107,8 +107,8 @@ export const t = {
         id: "olimpiadas_3ano",
         title: "3º ano de olimpíadas (2021)",
         text: "Assim que iniciou 2021, finalizei um curso presencial de 120 horas do pacote office, Photoshop e empreendedorismo empresarial que eu vinha fazendo há anos na Futuro Qualificação Profissional/Estácio, conhecimento que uso até o presente momento. /n Chegando no meu 3º ano do ensino médio, eu já estava mais preparado para enfrentar os vestibulares e as olimpíadas. Também havia feito testes vocacionais pelo Ismart que apontavam que eu teria interesse em ciências da computação. Fiz alguns cursos de programação em Python pelo Ismart e pelo site da Coursera, me deixando mais preparado para qualquer curso de computação que eu escolhesse. /n Em relação às olimpíadas nesse momento, fiz a OBA, OBR e ONC, desta vez conquistando medalha de Ouro nas 3! Dos 2.318.452 estudantes inscritos na ONC em 2021, apenas o top 5% dos melhores alunos participantes da 2ª fase receberam medalhas, sendo que os melhores entre eles receberam a de ouro. Com isso, fui premiado presencialmente pelo ministro do MCTI e astronauta brasileiro Marcos Pontes no início de 2022.",
-        image: "/marcos.jpg",
-        caption: "Eu e o astronauta Marcos Pontes",
+        image: ["/marcos.jpg", "/eucommedalhas.jpg"],
+        caption: ["Eu e o astronauta Marcos Pontes", "Eu com as medalhas de ouro na OBA, OBR e ONC"],
         reverse: false,
       },
       {
