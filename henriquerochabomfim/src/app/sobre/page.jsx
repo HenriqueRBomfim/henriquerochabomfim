@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 export const metadata = {
   title: "Sobre Henrique Rocha Bomfim | Founder & CEO da Startellite",
   description:
-    "Conheca a trajetoria de Henrique Rocha Bomfim: formacao no Insper, experiencia em BTG Pactual e BASF, e lideranca como Founder & CEO da Startellite.",
+    "Conheça a trajetória de Henrique Rocha Bomfim: formação no Insper, experiência em BTG Pactual e BASF, e liderança como Founder & CEO da Startellite.",
   alternates: {
     canonical: "/sobre",
   },
@@ -48,35 +48,35 @@ export default function SobrePage() {
       <main className="mx-auto max-w-4xl px-6 pt-28 pb-16">
         <h1 className="text-4xl font-bold tracking-tight">Henrique Rocha Bomfim</h1>
         <p className="mt-4 text-lg leading-relaxed text-slate-700">
-          Henrique Rocha Bomfim e engenheiro de computacao em formacao no Insper e atua na construcao de
-          produtos digitais com foco em impacto e execucao. Hoje, Henrique Rocha Bomfim e Founder & CEO da
-          Startellite, plataforma que conecta fundadores de startups a engenheiros de software pre-selecionados.
+          Henrique Rocha Bomfim é engenheiro de computação em formação no Insper e atua na construção de
+          produtos digitais com foco em impacto e execução. Hoje, Henrique Rocha Bomfim é Founder & CEO da
+          Startellite, plataforma que conecta fundadores de startups a engenheiros de software pré-selecionados.
         </p>
 
         <section className="mt-10 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold">Formacao</h2>
+          <h2 className="text-2xl font-semibold">Formação</h2>
           <p className="text-slate-700 leading-relaxed">
-            Henrique Rocha Bomfim cursa Engenharia de Computacao no Insper, com enfase em fundamentos tecnicos,
-            gestao e aplicacao pratica em projetos de tecnologia e inovacao.
+            Henrique Rocha Bomfim cursa Engenharia de Computação no Insper, com ênfase em fundamentos técnicos,
+            gestão e aplicação prática em projetos de tecnologia e inovação.
           </p>
         </section>
 
         <section className="mt-6 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold">Experiencia</h2>
+          <h2 className="text-2xl font-semibold">Experiência</h2>
           <p className="text-slate-700 leading-relaxed">
-            A experiencia profissional de Henrique Rocha Bomfim inclui passagem por instituicoes de alta performance,
-            como BTG Pactual e BASF, com vivencia em ambientes exigentes e orientados a resultado.
+            A experiência profissional de Henrique Rocha Bomfim inclui passagem por instituições de alta performance,
+            como BTG Pactual e BASF, com vivência em ambientes exigentes e orientados a resultado.
           </p>
         </section>
 
         <section className="mt-6 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-semibold">Founder & CEO da Startellite</h2>
           <p className="text-slate-700 leading-relaxed">
-            Na Startellite, Henrique Rocha Bomfim lidera estrategia, produto e crescimento. O objetivo e reduzir
-            o tempo entre ideia e execucao, aproximando startups de talentos tecnicos com alto potencial.
+            Na Startellite, Henrique Rocha Bomfim lidera estratégia, produto e crescimento. O objetivo é reduzir
+            o tempo entre ideia e execução, aproximando startups de talentos técnicos com alto potencial.
           </p>
           <p className="text-slate-700 leading-relaxed">
-            Conheca a empresa em
+            Conheça a empresa em
             {" "}
             <a
               href="https://www.startellite.com/"

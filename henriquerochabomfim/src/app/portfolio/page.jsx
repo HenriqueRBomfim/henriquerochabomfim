@@ -77,7 +77,7 @@ export default function PortfolioPage() {
         pt: "Modificação para o jogo Minecraft desenvolvida em Java. Trabalhei meses para deixá-lo bonito e com uma jogabilidade engajante.",
         en: "Modification for the game Minecraft developed in Java. Worked for months to make it visually appealing and with engaging gameplay.",
       },
-      image: "/1semestre.jpg",
+      image: "/thefinalrecipes.png",
       tags: ["Java", "Game Dev", "Modding"],
     },
     {

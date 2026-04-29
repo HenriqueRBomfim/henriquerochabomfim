@@ -132,8 +132,8 @@ export const t = {
         id: "sem1",
         title: "1º Semestre (2022.1)",
         text: "Eu estava em uma sala com cerca de 50 pessoas que eu não conhecia. Para facilitar a minha integração, me candidatei em dupla para ser líder de sala. Diversas duplas fizeram suas campanhas e discursos. No fim das contas, eu e uma colega fomos os líderes de sala durante o primeiro semestre de 2022 (2022.1). /n Descobri que existiam cerca de 50 organizações estudantis no Insper, grupos voltados à preparação de seus membros aos mais diversos setores do mercado de trabalho, todos geridos por alunos. Vi que existia uma chamada Insper Coding, que no momento possuía cerca de 11 pessoas e tinha áreas de desenvolvimento de jogos digitais, soluções com visão computacional e IA. /n Ao longo desse semestre, eu só fui líder de sala mesmo, mas estudei a linguagem de programação Java e o desenvolvimento de modificações (Mods) para o jogo Minecraft, a fim de me preparar para entrar no Insper Coding no 2º semestre de 2022 (2022.2). No fim das contas, consegui fazer um mod que trabalhei meses para deixá-lo bonito e jogável: The Final Recipes - Minecraft Mods - CurseForge",
-        image: "/1semestre.jpg",
-        caption: "Amigos do Insper no 1º semestre ❤️",
+        image: ["/1semestre.jpg", "/thefinalrecipes.png"],
+        caption: ["Amigos do Insper no 1º semestre ❤️", "Mod The Final Recipes - Minecraft"],
         reverse: true,
       },
       {
@@ -455,8 +455,8 @@ export const t = {
         id: "sem1",
         title: "1st Semester (2022.1)",
         text: "I was in a class of about 50 people I didn't know. To help my integration, I ran with a partner to become class representative. In the end, my partner and I were elected class reps for 2022.1. /n I discovered there were about 50 student organizations at Insper, all student-run. I found one called Insper Coding, which at the time had about 11 members with areas in digital game development, computer vision, and AI. /n Throughout the semester, I just served as class rep, but studied Java and Minecraft mod development to prepare to join Insper Coding in the 2nd semester. In the end, I built a mod I worked months on: The Final Recipes - Minecraft Mods - CurseForge",
-        image: "/1semestre.jpg",
-        caption: "Friends at Insper in the 1st semester ❤️",
+        image: ["/1semestre.jpg", "/thefinalrecipes.png"],
+        caption: ["Friends at Insper in the 1st semester ❤️", "The Final Recipes - Minecraft Mod"],
         reverse: true,
       },
       {
