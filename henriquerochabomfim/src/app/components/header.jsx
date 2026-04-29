@@ -47,6 +47,14 @@ const Header = () => {
 
           <nav className="flex items-center gap-1">
             <a
+              href="/portfolio"
+              onClick={(e) => { e.preventDefault(); router.push("/portfolio"); setMenuOpen(false); }}
+              className="px-3 py-1.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-all"
+            >
+              {nav.portfolio}
+            </a>
+
+            <a
               href="#about"
               onClick={navToAbout}
               className="px-3 py-1.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-all"
@@ -117,6 +125,13 @@ const Header = () => {
                   className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                 >
                   {nav.games}
+                </a>
+                <a
+                  href="/portfolio"
+                  onClick={() => { router.push("/portfolio"); setMenuOpen(false); }}
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                >
+                  {nav.portfolio}
                 </a>
                 <a
                   href="/sobre"

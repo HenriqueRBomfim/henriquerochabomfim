@@ -5,7 +5,7 @@ export const t = {
   pt: {
     ui: {
       languageToggle: "EN",
-      nav: { about: "Sobre", menu: "Menu", home: "Página principal", games: "Jogos", resume: "Currículo" },
+      nav: { portfolio: "Portfólio", about: "Sobre", menu: "Menu", home: "Página principal", games: "Jogos", resume: "Currículo" },
       sections: { whereIveBeen: "Por onde eu já passei", myStory: "Minha História" },
       hero: {
         subtitle: "Estudante de Engenharia da Computação no Insper, fundador da Startellite e ex-estagiário da BASF global. Apaixonado por resolver problemas de altíssima escala.",
@@ -328,7 +328,7 @@ export const t = {
   en: {
     ui: {
       languageToggle: "PT",
-      nav: { about: "About", menu: "Menu", home: "Home", games: "Games", resume: "Resume" },
+      nav: { portfolio: "Portfolio", about: "About", menu: "Menu", home: "Home", games: "Games", resume: "Resume" },
       sections: { whereIveBeen: "Where I've Been", myStory: "My Story" },
       hero: {
         subtitle: "Computer Engineering student at Insper, founder of Startellite, and former Software Engineering intern at BASF's global HQ. Passionate about solving large-scale problems.",
