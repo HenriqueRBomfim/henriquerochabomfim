@@ -39,7 +39,7 @@ export function GearDivider({ chapter }) {
       <div className="absolute inset-0 flex items-center px-8">
         <div className="w-full border-t border-dashed border-blue-200" />
       </div>
-      <div className="relative z-10 flex items-center gap-1 bg-slate-50 px-5 py-2 rounded-full border border-blue-100 shadow-sm">
+      <div className="relative z-10 flex items-center gap-1 bg-slate-50 dark:bg-[#0F172A] px-5 py-2 rounded-full border border-blue-100 dark:border-[#1A9BDB]/30 shadow-sm">
         {chapter && (
           <span className="font-mono text-xs text-blue-500 mr-2 select-none">
             {"// "}{chapter}

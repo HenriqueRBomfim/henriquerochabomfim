@@ -1,9 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "../context/languageContext";
+import { useTheme } from "../context/themeContext";
 import { t } from "../lib/translations";
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
   const { lang, setLang } = useLanguage();
+  const { isDark, toggleTheme } = useTheme();
   const nav = t[lang].ui.nav;
 
   useEffect(() => {
@@ -32,15 +34,15 @@ const Header = () => {
       <motion.header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100"
-            : "bg-white shadow-md"
+            ? "bg-white/90 dark:bg-[#0F172A]/95 backdrop-blur-md shadow-sm border-b border-gray-100 dark:border-[#1A9BDB]/20"
+            : "bg-white dark:bg-[#0F172A] shadow-md dark:shadow-[#1A9BDB]/10"
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
           <a
             href="/"
             onClick={(e) => { e.preventDefault(); router.push("/"); }}
-            className="text-base font-semibold tracking-tight text-gray-900 hover:text-blue-700 transition-colors"
+            className="text-base font-semibold tracking-tight text-gray-900 dark:text-[#F1F5F9] hover:text-[#1AC1D6] dark:hover:text-[#6EE2D6] transition-colors"
           >
             Henrique Rocha Bomfim
           </a>
@@ -49,7 +51,7 @@ const Header = () => {
             <a
               href="/portfolio"
               onClick={(e) => { e.preventDefault(); router.push("/portfolio"); setMenuOpen(false); }}
-              className="px-3 py-1.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-all"
+              className="px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-slate-400 rounded-md hover:bg-gray-100 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-all"
             >
               {nav.portfolio}
             </a>
@@ -57,22 +59,31 @@ const Header = () => {
             <a
               href="#about"
               onClick={navToAbout}
-              className="px-3 py-1.5 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-all"
+              className="px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-slate-400 rounded-md hover:bg-gray-100 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-all"
             >
               {nav.about}
             </a>
 
             <button
               onClick={toggleLang}
-              className="px-3 py-1.5 text-sm font-semibold rounded-md bg-gray-100 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-all"
+              className="px-3 py-1.5 text-sm font-semibold rounded-md bg-gray-100 dark:bg-[#162032] text-gray-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-[#1A9BDB]/20 hover:text-blue-700 dark:hover:text-[#6EE2D6] transition-all"
               title={lang === "pt" ? "Switch to English" : "Mudar para Português"}
             >
               {t[lang].ui.languageToggle}
             </button>
 
             <button
+              onClick={toggleTheme}
+              className="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-[#162032] text-gray-700 dark:text-[#6EE2D6] transition-colors ml-1"
+              aria-label={isDark ? "Modo claro" : "Modo escuro"}
+              title={isDark ? "Modo claro" : "Modo escuro"}
+            >
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+
+            <button
               onClick={() => setMenuOpen(true)}
-              className="p-1.5 rounded-md hover:bg-gray-100 text-gray-700 transition-colors ml-1"
+              className="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-[#162032] text-gray-700 dark:text-slate-300 transition-colors ml-1"
               aria-label="Open menu"
             >
               <Menu size={22} />
@@ -98,13 +109,13 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 320, damping: 32 }}
-              className="fixed top-0 right-0 h-full w-72 bg-white z-50 flex flex-col shadow-2xl"
+              className="fixed top-0 right-0 h-full w-72 bg-white dark:bg-[#0F172A] z-50 flex flex-col shadow-2xl dark:shadow-[#1A9BDB]/10"
             >
-              <div className="flex items-center justify-between px-5 h-14 border-b border-gray-100">
-                <span className="text-sm font-semibold text-gray-900">{nav.menu}</span>
+              <div className="flex items-center justify-between px-5 h-14 border-b border-gray-100 dark:border-[#1A9BDB]/20">
+                <span className="text-sm font-semibold text-gray-900 dark:text-[#F1F5F9]">{nav.menu}</span>
                 <button
                   onClick={() => setMenuOpen(false)}
-                  className="p-1.5 rounded-md hover:bg-gray-100 text-gray-600 transition-colors"
+                  className="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-[#162032] text-gray-600 dark:text-slate-400 transition-colors"
                   aria-label="Close menu"
                 >
                   <X size={20} />
@@ -115,28 +126,28 @@ const Header = () => {
                 <a
                   href="/"
                   onClick={() => { router.push("/"); setMenuOpen(false); }}
-                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-colors"
                 >
                   {nav.home}
                 </a>
                 <a
                   href="/jogos"
                   onClick={() => setMenuOpen(false)}
-                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-colors"
                 >
                   {nav.games}
                 </a>
                 <a
                   href="/portfolio"
                   onClick={() => { router.push("/portfolio"); setMenuOpen(false); }}
-                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-colors"
                 >
                   {nav.portfolio}
                 </a>
                 <a
                   href="/sobre"
                   onClick={navToAbout}
-                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-colors"
                 >
                   {nav.about}
                 </a>
@@ -144,30 +155,37 @@ const Header = () => {
                   href="/curriculo.pdf"
                   download
                   onClick={() => setMenuOpen(false)}
-                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-[#162032] hover:text-gray-900 dark:hover:text-[#F1F5F9] transition-colors"
                 >
                   {nav.resume}
                 </a>
               </nav>
 
-              <div className="px-3 border-t border-gray-100 mx-3 pt-3">
+              <div className="px-3 border-t border-gray-100 dark:border-[#1A9BDB]/20 mx-3 pt-3 space-y-2">
                 <button
                   onClick={toggleLang}
-                  className="w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 transition-colors"
+                  className="w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-blue-700 dark:text-[#6EE2D6] bg-blue-50 dark:bg-[#1A9BDB]/10 hover:bg-blue-100 dark:hover:bg-[#1A9BDB]/20 transition-colors"
                 >
                   🌐 {lang === "pt" ? "English" : "Português"}
                 </button>
+                <button
+                  onClick={toggleTheme}
+                  className="w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-gray-700 dark:text-[#6EE2D6] bg-gray-100 dark:bg-[#162032] hover:bg-gray-200 dark:hover:bg-[#1A9BDB]/20 transition-colors"
+                >
+                  {isDark ? <Sun size={16} /> : <Moon size={16} />}
+                  {isDark ? (lang === "pt" ? "Modo Claro" : "Light Mode") : (lang === "pt" ? "Modo Escuro" : "Dark Mode")}
+                </button>
               </div>
 
-              <div className="mt-auto px-5 py-6 border-t border-gray-100">
-                <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide font-medium">Links</p>
+              <div className="mt-auto px-5 py-6 border-t border-gray-100 dark:border-[#1A9BDB]/20">
+                <p className="text-xs text-gray-400 dark:text-slate-600 mb-3 uppercase tracking-wide font-medium">Links</p>
                 <div className="flex items-center gap-2">
                   <a
                     href="https://www.linkedin.com/in/henriquerochabomfim/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="p-2 rounded-lg text-gray-500 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+                    className="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-[#1AC1D6] hover:bg-blue-50 dark:hover:bg-[#1A9BDB]/10 transition-colors"
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -180,7 +198,7 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
-                    className="p-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+                    className="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-[#F1F5F9] hover:bg-gray-100 dark:hover:bg-[#162032] transition-colors"
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
@@ -191,7 +209,7 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="p-2 rounded-lg text-gray-500 hover:text-pink-600 hover:bg-pink-50 transition-colors"
+                    className="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -204,7 +222,7 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Startellite"
-                    className="p-2 rounded-lg text-gray-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+                    className="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:text-[#1AC1D6] dark:hover:text-[#6EE2D6] hover:bg-blue-50 dark:hover:bg-[#1A9BDB]/10 transition-colors"
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="12" cy="12" r="10"/>

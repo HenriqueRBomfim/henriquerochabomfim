@@ -160,14 +160,14 @@ export default function ContactForm() {
     <section className="p-6 mt-10 text-center">
       <h1 className="text-2xl font-bold py-2">{ui.campaignTitle}</h1>
 
-      <p className="mb-6 text-gray-700">{ui.campaignSubtitle}</p>
+      <p className="mb-6 text-gray-700 dark:text-slate-300">{ui.campaignSubtitle}</p>
 
       <DonationsChart chartLabels={ui.chartLabels} />
 
       <h2 className="text-2xl font-bold mb-2 text-center py-2">{ui.milestonesTitle}</h2>
       <div className="flex justify-center items-center flex-col">
         {ui.milestones.map((m, i) => (
-          <p key={i} className="text-sm text-center text-gray-600 mb-2 py-3">
+          <p key={i} className="text-sm text-center text-gray-600 dark:text-slate-400 mb-2 py-3">
             {m.text}
             <br />
             <span className="text-xs text-gray-500">{m.achieved}</span>
@@ -175,14 +175,14 @@ export default function ContactForm() {
         ))}
       </div>
 
-      <div className="w-full max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-6">
-        <h3 className="text-xl font-semibold text-center text-gray-800 mb-4">{ui.donorsTitle}</h3>
-        <p className="text-lg text-center text-gray-700 mb-4">{ui.donorsCount}{doadores.length}</p>
+      <div className="w-full max-w-4xl mx-auto bg-white dark:bg-[#162032] shadow-lg rounded-2xl p-6 mt-6">
+        <h3 className="text-xl font-semibold text-center text-gray-800 dark:text-[#F1F5F9] mb-4">{ui.donorsTitle}</h3>
+        <p className="text-lg text-center text-gray-700 dark:text-slate-300 mb-4">{ui.donorsCount}{doadores.length}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[300px] overflow-y-auto px-2">
           {doadores.map((nome, index) => (
             <div
               key={index}
-              className="bg-gray-100 rounded-xl px-4 py-2 text-sm text-gray-700 text-center shadow-sm hover:bg-yellow-100 transition duration-200"
+              className="bg-gray-100 dark:bg-[#0F172A] rounded-xl px-4 py-2 text-sm text-gray-700 dark:text-slate-300 text-center shadow-sm hover:bg-yellow-100 dark:hover:bg-[#1A9BDB]/10 transition duration-200"
             >
               {nome}
             </div>

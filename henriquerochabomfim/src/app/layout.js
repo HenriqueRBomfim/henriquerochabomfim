@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
 import { LanguageProvider } from "./context/languageContext";
+import { ThemeProvider } from "./context/themeContext";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -98,9 +99,11 @@ export default function RootLayout({ children }) {
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3440014283691586"
         crossOrigin="anonymous"></script>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>

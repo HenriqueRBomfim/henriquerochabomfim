@@ -22,7 +22,7 @@ export default function CarrosselGrupos({ grupos = [] }) {
         <button
           type="button"
           onClick={() => setIsPaused((current) => !current)}
-          className="absolute right-3 top-3 z-10 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-900 shadow-md hover:bg-white"
+          className="absolute right-3 top-3 z-10 rounded-full bg-white/95 dark:bg-[#162032] px-3 py-1 text-xs font-semibold text-slate-900 dark:text-[#F1F5F9] shadow-md hover:bg-white dark:hover:bg-[#1A9BDB]/20"
         >
           {buttonLabel}
         </button>
@@ -37,14 +37,14 @@ export default function CarrosselGrupos({ grupos = [] }) {
                 className="w-[250px] sm:w-[300px] text-center px-4 shrink-0 inline-block"
               >
                 <p className="text-sm font-semibold mb-2">{item.nome}</p>
-                <div className="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-md overflow-hidden hover:scale-105 transition-transform duration-200">
+                <div className="bg-white dark:bg-[#162032] rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-md overflow-hidden hover:scale-105 transition-transform duration-200">
                   <img
                     src={item.logo}
                     alt={item.nome}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-xs mt-2 text-gray-600">{item.cargo}</p>
+                <p className="text-xs mt-2 text-gray-600 dark:text-slate-400">{item.cargo}</p>
               </a>
             ))
           )}

@@ -94,16 +94,16 @@ export default function PortfolioPage() {
   ];
 
   return (
-    <div className="bg-slate-50 text-gray-900 relative min-h-screen flex flex-col">
+    <div className="bg-slate-50 dark:bg-[#0F172A] text-gray-900 dark:text-[#F1F5F9] relative min-h-screen flex flex-col transition-colors duration-300">
       <FloatingGears />
       <Header />
 
       <main className="flex-1 pt-24 pb-12 px-4 max-w-7xl mx-auto w-full relative z-10">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-[#F1F5F9] mb-4">
             {lang === "pt" ? "Meu Portfólio" : "My Portfolio"}
           </h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             {lang === "pt"
               ? "Uma coleção dos projetos que desenvolvi ao longo da minha jornada, desde os primeiros robôs até sistemas escaláveis para grandes empresas."
               : "A collection of projects I've developed throughout my journey, from my first robots to scalable systems for large companies."}
@@ -114,9 +114,9 @@ export default function PortfolioPage() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col border border-gray-100 group"
+              className="bg-white dark:bg-[#162032] rounded-2xl shadow-lg hover:shadow-xl dark:shadow-[#1A9BDB]/10 transition-all duration-300 overflow-hidden flex flex-col border border-gray-100 dark:border-[#1A9BDB]/20 group"
             >
-              <div className="relative w-full h-56 bg-gray-100 overflow-hidden">
+              <div className="relative w-full h-56 bg-gray-100 dark:bg-[#0F172A] overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -125,15 +125,15 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-2xl font-bold text-slate-800 mb-3">{project.title}</h3>
-                <p className="text-slate-600 text-sm mb-6 flex-1 leading-relaxed">
+                <h3 className="text-2xl font-bold text-slate-800 dark:text-[#F1F5F9] mb-3">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
                   {project.description[lang]}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full"
+                      className="px-3 py-1 bg-blue-50 dark:bg-[#1A9BDB]/10 text-blue-700 dark:text-[#6EE2D6] text-xs font-semibold rounded-full"
                     >
                       {tag}
                     </span>
@@ -145,7 +145,7 @@ export default function PortfolioPage() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 text-sm font-semibold inline-flex items-center gap-1 transition-colors"
+                      className="text-[#1A9BDB] dark:text-[#6EE2D6] hover:text-[#1AC1D6] dark:hover:text-[#6EE2D6]/80 text-sm font-semibold inline-flex items-center gap-1 transition-colors"
                     >
                       {lang === "pt" ? "Acessar projeto" : "View project"}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">

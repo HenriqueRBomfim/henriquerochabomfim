@@ -56,7 +56,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                 className="rounded-xl shadow-lg w-full max-w-3xl object-contain bg-transparent"
               />
               {getCaption(idx) && (
-                <p className="text-lg text-gray-500 mt-4 text-center">
+                <p className="text-lg text-gray-500 dark:text-slate-400 mt-4 text-center">
                   {getCaption(idx)}
                 </p>
               )}
@@ -72,7 +72,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
               style={{ touchAction: "pan-y" }}
             >
               {getCaption(currentIndex) && (
-                <p className="text-lg text-gray-700 mb-4 text-center bg-white/80 px-4 py-2 rounded shadow-md">
+                <p className="text-lg text-gray-700 dark:text-slate-300 mb-4 text-center bg-white/80 dark:bg-[#162032]/80 px-4 py-2 rounded shadow-md">
                   {getCaption(currentIndex)}
                 </p>
               )}
@@ -89,7 +89,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
                   type="button"
                   onClick={() => setCurrentIndex(index)}
                   className={`h-2.5 rounded-full transition-all ${
-                    index === currentIndex ? "w-8 bg-gray-800" : "w-2.5 bg-gray-400"
+                    index === currentIndex ? "w-8 bg-gray-800 dark:bg-[#1AC1D6]" : "w-2.5 bg-gray-400 dark:bg-slate-600"
                   }`}
                   aria-label={`Ir para a foto ${index + 1}`}
                 />
@@ -105,7 +105,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
             <p key={index}>{line}</p>
           ))}
         </h2>
-        <div className="text-lg text-gray-700 space-y-4">
+        <div className="text-lg text-gray-700 dark:text-slate-300 space-y-4">
           {text.split("/n").map((paragraph, index) => (
             <p key={index}>
               {paragraph.replace(
