@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 
-const StoryBlock = ({ title, text, image, caption, reverse }) => {
+const StoryBlock = ({ id, title, text, image, caption, reverse }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -40,6 +40,7 @@ const StoryBlock = ({ title, text, image, caption, reverse }) => {
 
   return (
     <motion.div
+      id={id}
       ref={ref}
       style={{ opacity }}
       className={`flex flex-col md:flex-row items-center gap-8 py-16 px-4 sm:px-6 max-w-6xl mx-auto ${

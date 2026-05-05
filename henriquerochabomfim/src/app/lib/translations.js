@@ -10,10 +10,10 @@ export const t = {
       hero: {
         subtitle: "Estudante de Engenharia da Computação no Insper, fundador da Startellite e ex-estagiário da BASF global. Apaixonado por resolver problemas de altíssima escala.",
         stats: [
-          { value: "12", label: "países" },
-          { value: "20×", label: "BASF" },
-          { value: "642h", label: "extra" },
-          { value: "Top 0.5%", label: "Insper" },
+          { value: "12", label: "países", target: "intercambio" },
+          { value: "20×", label: "BASF", target: "basf" },
+          { value: "642h", label: "extras", target: "trajetoria_impacto" },
+          { value: "Top 0.5%", label: "Insper", target: "trajetoria_impacto" },
         ],
       },
       highlights: { title: "Destaques" },
@@ -237,7 +237,7 @@ export const t = {
       {
         id: "intercambio",
         title: "O Intercâmbio na Europa (Set/2025 – Fev/2026)",
-        text: "Em setembro de 2025, embarquei para a Alemanha para viver a experiência mais transformadora da minha vida. Além das disciplinas na THI — com foco em Inteligência Artificial, Software Security e Macroeconomia —, aproveitei cada semana livre para explorar a Europa. /n No total, passei por Áustria, Bélgica, Espanha, França, Alemanha, Holanda, Inglaterra, Itália, Luxemburgo, Portugal, Suíça e Vaticano. /n Para viabilizar os R$59.166 necessários para os 6 meses, organizei uma campanha de crowdfunding com 145 apoiadores. O Insper contribuiu com R$45 mil para a Bolsa Cultural, a campanha arrecadou R$37 mil e o complemento da BASF fechou o que faltava, além de ter me dado mais conforto depois. Gerenciar esse orçamento foi, por si só, uma formação valiosa em finanças e planejamento. /n A vivência intercultural foi profunda: convivi com estudantes de dezenas de países, aprendi sobre diferentes formas de resolver problemas e voltei com uma visão muito mais ampla sobre engenharia, negócios e vida.",
+        text: "Em setembro de 2025, embarquei para a Alemanha para viver a experiência mais transformadora da minha vida. Além das disciplinas na THI — com foco em Inteligência Artificial, Software Security e Macroeconomia —, aproveitei cada semana livre para explorar a Europa. /n No total, passei por 12 países: Alemanha, Áustria, Bélgica, Espanha, França, Holanda, Inglaterra, Itália, Luxemburgo, Portugal, Suíça e Vaticano. E 51 cidades europeias. /n Para viabilizar os R$59.166 necessários para os 6 meses, organizei uma campanha de crowdfunding com 145 apoiadores. O Insper contribuiu com R$45 mil para a Bolsa Cultural, a campanha arrecadou R$37 mil e o complemento da BASF fechou o que faltava, além de ter me dado mais conforto depois. Gerenciar esse orçamento foi, por si só, uma formação valiosa em finanças e planejamento. /n A vivência intercultural foi profunda: convivi com estudantes de dezenas de países, aprendi sobre diferentes formas de resolver problemas e voltei com uma visão muito mais ampla sobre engenharia, negócios e vida.",
         image: ["/intercambio/thi.jpeg", "/intercambio/thi.png", "/intercambio/THI Ingolstadt.jpg", "/intercambio/Faculdade THI Ingolstadt Alemanha.jpg", "/intercambio/Ingolstadt Alemanha.jpg", "/intercambio/Marienplatz Munique Alemanha.jpg", "/intercambio/Oktoberfest Munique Alemanha.jpg", "/intercambio/Frankfurt Alemanha.jpg", "/intercambio/Portão de Brandemburgo Berlim Alemanha.jpg", "/intercambio/Rothenburg ob der Tauber Alemanha.jpg", "/intercambio/Kufstein Austria.jpg", "/intercambio/Grindelwald First Mountain Suíça.jpg", "/intercambio/Lago Brienz Suíça.jpg", "/intercambio/Matterhorn Zermatt Suíça.jpg", "/intercambio/Pompeia Italia.jpg", "/intercambio/La Sagrada Família Barcelona Espanha.jpg", "/intercambio/Parque Güell Barcelona Espanha.jpg", "/intercambio/Urso de Madrid Espanha.jpg", "/intercambio/Parlamento Europeu Bruxelas Bélgica.jpg", "/intercambio/Universidade de Coimbra Portugal.jpg", "/intercambio/Lisboa.jpg", "/intercambio/Torrei Eiffel Paris França.jpg", "/intercambio/Escola de Atenas Vaticano.jpg", "/intercambio/Stonehenge Inglaterra.jpg"],
         caption: ["Universidade Técnica de Ciências Aplicadas de Ingolstadt — minha base na Alemanha", "Campus da THI Ingolstadt"],
         reverse: true,
@@ -333,10 +333,10 @@ export const t = {
       hero: {
         subtitle: "Computer Engineering student at Insper, founder of Startellite, and former Software Engineering intern at BASF's global HQ. Passionate about solving large-scale problems.",
         stats: [
-          { value: "12", label: "countries" },
-          { value: "20×", label: "BASF" },
-          { value: "642h", label: "extra" },
-          { value: "Top 0.5%", label: "Insper" },
+          { value: "12", label: "countries", target: "intercambio" },
+          { value: "20×", label: "BASF", target: "basf" },
+          { value: "642h", label: "extras", target: "trajetoria_impacto" },
+          { value: "Top 0.5%", label: "Insper", target: "trajetoria_impacto" },
         ],
       },
       highlights: { title: "Highlights" },

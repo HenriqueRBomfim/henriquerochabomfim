@@ -50,10 +50,17 @@ export default function HomePageClient() {
 
           <div className="flex gap-4 flex-wrap justify-center">
             {T.ui.hero.stats.map((stat, i) => (
-              <div key={i} className="bg-[#1A9BDB] dark:bg-[#1AC1D6]/80 bg-opacity-90 text-white rounded-xl px-4 py-2 shadow-md text-center min-w-[70px]">
-                <div className="text-xl font-bold font-mono">{stat.value}</div>
-                <div className="text-xs opacity-80">{stat.label}</div>
-              </div>
+              <a
+                key={i}
+                href={stat.target ? `#${stat.target}` : undefined}
+                className="inline-block"
+                aria-label={stat.label}
+              >
+                <div className="bg-[#1A9BDB] dark:bg-[#1AC1D6]/80 bg-opacity-90 text-white rounded-xl px-4 py-2 shadow-md text-center min-w-[70px] hover:opacity-90 transition-opacity">
+                  <div className="text-xl font-bold font-mono">{stat.value}</div>
+                  <div className="text-xs opacity-80">{stat.label}</div>
+                </div>
+              </a>
             ))}
           </div>
 
