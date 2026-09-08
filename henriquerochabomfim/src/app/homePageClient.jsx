@@ -22,11 +22,6 @@ export default function HomePageClient() {
       <Header />
 
       <section className="h-screen flex flex-col justify-center items-center text-center p-3 mt-5 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-100"
-          style={{ backgroundImage: "url('/banner1.png')" }}
-        />
-
         <div className="relative z-10 flex flex-col items-center gap-4">
           <div className="bg-white dark:bg-[#0F172A]/95 bg-opacity-90 rounded-4xl p-3 shadow-lg dark:shadow-[#1A9BDB]/20">
             <Image
