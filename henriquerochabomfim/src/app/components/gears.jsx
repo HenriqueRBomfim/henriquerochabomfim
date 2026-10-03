@@ -20,10 +20,10 @@ function GearSVG({ size = 60, teeth = 12, color = "#1d4ed8" }) {
   const d = "M " + pts.map(p => p[0].toFixed(2) + "," + p[1].toFixed(2)).join(" L ") + " Z";
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ display: "block" }}>
-      <path d={d} fill={color} opacity="0.18" />
-      <circle cx={cx} cy={cy} r={r * 0.55} fill="none" stroke={color} strokeWidth="1" opacity="0.12" />
+      <path d={d} fill={color} opacity="0.144" />
+      <circle cx={cx} cy={cy} r={r * 0.55} fill="none" stroke={color} strokeWidth="1" opacity="0.096" />
       <circle cx={cx} cy={cy} r={hub} fill="white" />
-      <circle cx={cx} cy={cy} r={hub * 0.45} fill={color} opacity="0.25" />
+      <circle cx={cx} cy={cy} r={hub * 0.45} fill={color} opacity="0.2" />
     </svg>
   );
 }
