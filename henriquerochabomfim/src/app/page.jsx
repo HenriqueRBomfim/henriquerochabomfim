@@ -1,9 +1,9 @@
 import HomePageClient from "./homePageClient";
 
 export const metadata = {
-  title: "Henrique Rocha Bomfim | Founder & CEO da Startellite",
+  title: "Henrique Rocha Bomfim",
   description:
-    "Henrique Rocha Bomfim: engenheiro de computacao no Insper, ex-BTG Pactual e BASF, Founder & CEO da Startellite.",
+    "Henrique Rocha Bomfim: engenheiro de computacao no Insper, ex-BTG Pactual e BASF, criador da plataforma Startellite.",
   alternates: {
     canonical: "/",
   },

@@ -3,9 +3,9 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 export const metadata = {
-  title: "Sobre Henrique Rocha Bomfim | Founder & CEO da Startellite",
+  title: "Sobre Henrique Rocha Bomfim",
   description:
-    "Conheça a trajetória de Henrique Rocha Bomfim: formação no Insper, experiência em BTG Pactual e BASF, e liderança como Founder & CEO da Startellite.",
+    "Conheça a trajetória de Henrique Rocha Bomfim: formação no Insper, experiência em BTG Pactual e BASF, e liderança como criador da plataforma Startellite.",
   alternates: {
     canonical: "/sobre",
   },
@@ -49,7 +49,7 @@ export default function SobrePage() {
         <h1 className="text-4xl font-bold tracking-tight">Henrique Rocha Bomfim</h1>
         <p className="mt-4 text-lg leading-relaxed text-slate-700 dark:text-slate-300">
           Henrique Rocha Bomfim é engenheiro de computação em formação no Insper e atua na construção de
-          produtos digitais com foco em impacto e execução. Hoje, Henrique Rocha Bomfim é Founder & CEO da
+          produtos digitais com foco em impacto e execução. Hoje, Henrique Rocha Bomfim é criador da plataforma
           Startellite, plataforma que conecta fundadores de startups a engenheiros de software pré-selecionados.
         </p>
 
@@ -70,7 +70,7 @@ export default function SobrePage() {
         </section>
 
         <section className="mt-6 space-y-4 rounded-2xl border border-slate-200 dark:border-[#1A9BDB]/20 bg-white dark:bg-[#162032] p-6 shadow-sm dark:shadow-[#1A9BDB]/10">
-          <h2 className="text-2xl font-semibold">Founder & CEO da Startellite</h2>
+          <h2 className="text-2xl font-semibold">Criador da plataforma Startellite</h2>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             Na Startellite, Henrique Rocha Bomfim lidera estratégia, produto e crescimento. O objetivo é reduzir
             o tempo entre ideia e execução, aproximando startups de talentos técnicos com alto potencial.

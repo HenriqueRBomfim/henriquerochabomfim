@@ -23,7 +23,7 @@ export const metadata = {
     template: "%s | Henrique Rocha Bomfim",
   },
   description:
-    "Site oficial de Henrique Rocha Bomfim, Founder & CEO da Startellite, engenheiro de computacao no Insper, com experiencia em BTG Pactual e BASF.",
+    "Site oficial de Henrique Rocha Bomfim, criador da plataforma Startellite, engenheiro de computacao no Insper, com experiencia em BTG Pactual e BASF.",
   alternates: {
     canonical: "/",
   },
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
     alternateName: "Rique Rocha",
     url: "https://www.henriquerochabomfim.com.br/",
     image: "https://www.henriquerochabomfim.com.br/henrique-rocha-bomfim.jpeg",
-    jobTitle: "Founder & CEO da Startellite",
+    jobTitle: "Criador da plataforma Startellite",
     worksFor: {
       "@type": "Organization",
       name: "Startellite",
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
       "https://www.instagram.com/_riquerocha_/",
     ],
     description:
-      "Henrique Rocha Bomfim e engenheiro de computacao no Insper, ex-BTG Pactual e BASF, e Founder & CEO da Startellite.",
+      "Henrique Rocha Bomfim e engenheiro de computacao no Insper, ex-BTG Pactual e BASF, e criador da plataforma Startellite.",
   };
 
   const websiteSchema = {

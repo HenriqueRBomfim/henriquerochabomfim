@@ -8,7 +8,7 @@ export const t = {
       nav: { portfolio: "Portfólio", about: "Sobre", menu: "Menu", home: "Página principal", games: "Jogos", resume: "Currículo" },
       sections: { whereIveBeen: "Por onde eu já passei", myStory: "Minha História" },
       hero: {
-        subtitle: "Estudante de Engenharia da Computação no Insper, fundador da Startellite e ex-estagiário da BASF global. Apaixonado por resolver problemas de altíssima escala.",
+        subtitle: "Estudante de Engenharia da Computação no Insper, criador da plataforma Startellite e ex-estagiário da BASF global. Apaixonado por resolver problemas de altíssima escala.",
         stats: [
           { value: "12", label: "países", target: "intercambio" },
           { value: "20×", label: "BASF", target: "basf" },
@@ -364,7 +364,7 @@ export const t = {
       { title: "Pravaler (2026 – Presente)", description: "Engenheiro de Software na maior fintech de financiamento estudantil do Brasil, no time de Modelagem de Negócios e Seguros.", image: "/henrique-rocha-bomfim.jpeg" },
       { title: "Folha de S.Paulo (Agosto 2026)", description: "Reportagem especial sobre o efeito multiplicador da bolsa integral no Insper na minha família.", image: "/henrique-rocha-bomfim.jpeg" },
       { title: "Guia.care — 1º lugar no GAS eNova (2026)", description: "Cofundador da startup vencedora da 1ª edição do programa de aceleração do Grupo de Ação Social do Insper.", image: "/logo_gas.png" },
-      { title: "Startellite (2026 – Presente)", description: "Fundador e Tech Lead de plataforma que conecta startups aos melhores engenheiros do Brasil.", image: "/site_startellite.png" },
+      { title: "Startellite (2026 – Presente)", description: "Criador e Tech Lead da plataforma que conecta startups aos melhores engenheiros do Brasil.", image: "/site_startellite.png" },
       { title: "BASF — Sede Mundial (2025–2026)", description: "Estágio de Engenharia de Software na maior empresa química do mundo, em Ludwigshafen, Alemanha. Otimização 20x de pipeline global.", image: "/Estágio na BASF Ludwigshafen Alemanha.jpg" },
       { title: "Intercâmbio na Europa (2025–2026)", description: "12 países e 51 cidades europeias durante o intercâmbio na THI Ingolstadt, Alemanha.", image: "/intercambio/thi.png" },
       { title: "Troféu Trajetória de Impacto — Insper (2025)", description: "Eleito 1 de 2 bolsistas premiados entre 400 estudantes bolsistas — Top 0,5% da instituição. 642 horas extracurriculares.", image: "/henrique-rocha-bomfim.jpeg" },
@@ -376,7 +376,7 @@ export const t = {
     ],
     groups: [
       { logo: "/pravaler_logo.jpg", nome: "Pravaler", cargo: "Estagiário de Engenharia de Software", link: "https://www.pravaler.com.br/" },
-      { logo: "/startellite_logo.jpeg", nome: "Startellite", cargo: "Fundador & Tech Lead", link: "https://www.startellite.com/" },
+      { logo: "/startellite_logo.jpeg", nome: "Startellite", cargo: "Criador da plataforma Startellite", link: "https://www.startellite.com/" },
       { logo: "/logo_gas.png", nome: "Guia.care (GAS eNova)", cargo: "Cofundador — Estruturação Técnica", link: "https://www.gasinsper.com/" },
       { logo: "/logo_insper.png", nome: "Hub Paulo Cunha — Insper", cargo: "Fellow (Startellite)", link: "https://www.insper.edu.br/" },
       { logo: "/mctic_logo.jpg", nome: "CTI/MCTI", cargo: "Capstone — Otimização de Processador RISC-V", link: "https://www.cti.gov.br/" },
@@ -416,7 +416,7 @@ export const t = {
       nav: { portfolio: "Portfolio", about: "About", menu: "Menu", home: "Home", games: "Games", resume: "Resume" },
       sections: { whereIveBeen: "Where I've Been", myStory: "My Story" },
       hero: {
-        subtitle: "Computer Engineering student at Insper, founder of Startellite, and former Software Engineering intern at BASF's global HQ. Passionate about solving large-scale problems.",
+        subtitle: "Computer Engineering student at Insper, creator of the Startellite platform, and former Software Engineering intern at BASF's global HQ. Passionate about solving large-scale problems.",
         stats: [
           { value: "12", label: "countries", target: "intercambio" },
           { value: "20×", label: "BASF", target: "basf" },
@@ -772,7 +772,7 @@ export const t = {
       { title: "Pravaler (2026 – Present)", description: "Software Engineer at Brazil's largest student-financing fintech, on the Business Modeling and Insurance team.", image: "/henrique-rocha-bomfim.jpeg" },
       { title: "Folha de S.Paulo (August 2026)", description: "Special feature on the multiplier effect of my full scholarship at Insper on my family.", image: "/henrique-rocha-bomfim.jpeg" },
       { title: "Guia.care — 1st place at GAS eNova (2026)", description: "Co-founder of the startup that won the 1st edition of Insper's Social Action Group acceleration program.", image: "/logo_gas.png" },
-      { title: "Startellite (2026 – Present)", description: "Founder and Tech Lead of a platform connecting startups with Brazil's top software engineers.", image: "/site_startellite.png" },
+      { title: "Startellite (2026 – Present)", description: "Creator and Tech Lead of a platform connecting startups with Brazil's top software engineers.", image: "/site_startellite.png" },
       { title: "BASF — Global HQ (2025–2026)", description: "Software Engineering intern at the world's largest chemical company in Ludwigshafen, Germany. 20x global pipeline optimization.", image: "/Estágio na BASF Ludwigshafen Alemanha.jpg" },
       { title: "European Exchange (2025–2026)", description: "12 countries and 51 European cities during the exchange at THI Ingolstadt, Germany.", image: "/intercambio/thi.png" },
       { title: "Impact Trajectory Trophy — Insper (2025)", description: "Elected 1 of 2 recognized scholars among 400 — Top 0.5% of the institution. 642 extracurricular hours.", image: "/henrique-rocha-bomfim.jpeg" },
@@ -784,7 +784,7 @@ export const t = {
     ],
     groups: [
       { logo: "/pravaler_logo.jpg", nome: "Pravaler", cargo: "Software Engineering Intern", link: "https://www.pravaler.com.br/" },
-      { logo: "/startellite_logo.jpeg", nome: "Startellite", cargo: "Founder & Tech Lead", link: "https://www.startellite.com/" },
+      { logo: "/startellite_logo.jpeg", nome: "Startellite", cargo: "Creator of the Startellite platform", link: "https://www.startellite.com/" },
       { logo: "/logo_gas.png", nome: "Guia.care (GAS eNova)", cargo: "Co-Founder — Technical Structuring", link: "https://www.gasinsper.com/" },
       { logo: "/logo_insper.png", nome: "Paulo Cunha Hub — Insper", cargo: "Fellow (Startellite)", link: "https://www.insper.edu.br/" },
       { logo: "/mctic_logo.jpg", nome: "CTI/MCTI", cargo: "Capstone — RISC-V Processor Optimization", link: "https://www.cti.gov.br/" },
